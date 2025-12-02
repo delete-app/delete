@@ -35,21 +35,24 @@ Delete flips this model by:
 - **Vercel**: Hosting for landing app (trydelete.app). Planned for my app as well.
 - **Social**: Instagram (@trydelete.app), X/Twitter (@trydeleteapp)
 
+## External Systems (Implemented)
+
+- **PostgreSQL 16 + pgvector**: Database with vector search for AI-powered matching (Docker Compose for local dev)
+
 ## Planned External Systems (Future)
 
-- **PostgreSQL + pgvector**: Database with vector search for AI-powered matching
-- **Python FastAPI**: Backend API (chosen for ML/AI capabilities)
 - **React Native**: Mobile apps (iOS/Android)
+- **Production PostgreSQL**: Managed PostgreSQL instance for production
 
 ## Containers
 
 - [container:landing:v1] - Astro landing page with Starlight educational content
 - [container:my:v1] - React SPA for authenticated users (placeholder)
+- [container:api:v1] - Python FastAPI backend with JWT auth and async SQLAlchemy
 - [container:shared:v1] - Shared TypeScript types and utilities
 
 ## Planned Containers (Future)
 
-- `container:api` - Python FastAPI backend
 - `container:mobile` - React Native app
 
 ## Key Decisions

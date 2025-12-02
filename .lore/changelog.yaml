@@ -2,6 +2,35 @@
 # Tracks significant architectural changes
 
 versions:
+  - version: "lore-v0.2.0@b0d89d6"
+    date: "2025-12-03"
+    description: "FastAPI backend scaffolded"
+    changes:
+      - type: added
+        description: "New container: API (Python FastAPI backend)"
+        details: |
+          Scaffolded complete FastAPI backend with:
+          - Async SQLAlchemy with asyncpg driver
+          - JWT-based auth (access + refresh tokens)
+          - PostgreSQL 16 with pgvector extension
+          - User model with UUID, email, password
+          - Auth endpoints (signup, login, refresh)
+          - Health check endpoint
+          - Alembic migrations
+          - Docker Compose for local development
+        links:
+          - container:api:v1
+          - decision:0004:v1
+          - entity:user:v1
+      - type: added
+        description: "Docker Compose configuration for PostgreSQL with pgvector"
+        details: "PostgreSQL 16 with pgvector extension for future AI-powered matching"
+      - type: updated
+        description: "User entity now has implementation code references"
+        details: "Previously planned, now has SQLAlchemy model and Pydantic schemas"
+        links:
+          - entity:user:v1
+
   - version: "lore-v0.1.0@6e458fd"
     date: "2025-12-03"
     description: "Initial Lorekeeper bootstrap"

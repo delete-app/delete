@@ -1,13 +1,14 @@
-# User Entity (Planned)
-# This entity is not yet implemented - documenting planned structure
+# User Entity
+# Core fields implemented, profile fields planned
 
 id: "entity:user:v1"
 name: "User"
 description: "A registered Delete user with profile, preferences, and matching data"
-status: planned  # not yet implemented
+status: partial  # core auth fields implemented, profile fields planned
 updated: "2025-12-03"
 
-fields:
+# Implemented fields (in database)
+implemented_fields:
   - name: id
     type: uuid
     primary: true
@@ -19,12 +20,36 @@ fields:
     constraints:
       - unique
       - required
+      - indexed
+
+  - name: hashed_password
+    type: string
+    description: "Bcrypt-hashed password"
+    constraints:
+      - required
+
+  - name: name
+    type: string
+    description: "User's name (optional)"
+    constraints:
+      - nullable
+
+  - name: is_active
+    type: boolean
+    description: "Whether account is active (for soft disable)"
+    default: true
 
   - name: created_at
     type: timestamp
     description: "Account creation timestamp"
 
-  # Profile fields (planned)
+  - name: updated_at
+    type: timestamp
+    description: "Last update timestamp"
+
+# Planned fields (not yet in database)
+planned_fields:
+  # Profile fields
   - name: display_name
     type: string
     description: "Name shown to other users"
@@ -61,7 +86,7 @@ fields:
     type: json
     description: "Matching preferences (age range, distance, etc.)"
 
-# Relationships to other entities
+# Relationships to other entities (planned)
 relations:
   - entity: Match
     type: one-to-many
@@ -75,18 +100,36 @@ relations:
     type: one-to-many
     description: "User completes assessments over time"
 
-code_refs: {}  # Not yet implemented
+code_refs:
+  model:
+    path: "apps/api/src/app/models/user.py"
+    description: "SQLAlchemy ORM model"
+  schemas:
+    path: "apps/api/src/app/schemas/user.py"
+    description: "Pydantic request/response schemas (UserCreate, UserResponse, Token)"
+  service:
+    path: "apps/api/src/app/services/user.py"
+    description: "User CRUD operations and authentication"
+  migration:
+    path: "apps/api/alembic/versions/001_create_users_table.py"
+    description: "Initial users table migration"
 
 notes: |
   The User entity is central to Delete's differentiation:
-  - Attachment style, conflict style, and emotional needs are first-class fields
-  - Profile embedding enables AI-powered matching
-  - Assessment history allows tracking growth over time
+  - Attachment style, conflict style, and emotional needs are first-class fields (planned)
+  - Profile embedding enables AI-powered matching (pgvector ready)
+  - Assessment history allows tracking growth over time (planned)
 
-  When implementing, consider:
+  Current implementation:
+  - Core auth fields (email, password, active status)
+  - UUID primary key for distributed systems
+  - Timestamps for auditing
+
+  When expanding, consider:
   - Privacy: What data is shown to other users vs internal
   - GDPR: Data export and deletion capabilities
   - Verification: Email/phone verification flow
 
 links:
   - decision:0004:v1  # PostgreSQL + pgvector
+  - container:api:v1

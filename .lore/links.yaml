@@ -7,6 +7,7 @@ graph:
     links_to:
       - container:landing:v1
       - container:my:v1
+      - container:api:v1
       - container:shared:v1
       - decision:0001:v1
       - decision:0002:v1
@@ -31,16 +32,31 @@ graph:
       - decision:0003:v1
       - decision:0004:v1
       - container:shared:v1
+      - container:api:v1
     linked_by:
       - context:system:v1
       - decision:0001:v1
       - decision:0003:v1
+      - container:api:v1
+
+  "container:api:v1":
+    links_to:
+      - decision:0004:v1
+      - container:my:v1
+      - container:shared:v1
+      - entity:user:v1
+    linked_by:
+      - context:system:v1
+      - container:my:v1
+      - decision:0001:v1
+      - decision:0004:v1
 
   "container:shared:v1":
     links_to: []
     linked_by:
       - context:system:v1
       - container:my:v1
+      - container:api:v1
       - decision:0001:v1
 
   # Decisions
@@ -75,10 +91,18 @@ graph:
     title: "Python FastAPI for backend (ML-native)"
     links_to:
       - decision:0003:v1
+      - container:api:v1
     linked_by:
       - context:system:v1
       - container:my:v1
+      - container:api:v1
       - decision:0003:v1
+
+  "entity:user:v1":
+    links_to:
+      - decision:0004:v1
+    linked_by:
+      - container:api:v1
 
   "decision:0005:v1":
     title: "Wikipedia-style superscript citations for credibility"
