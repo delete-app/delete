@@ -40,9 +40,13 @@ Attachment theory is the most validated framework we have for understanding rela
 Hazan & Shaver's 1987 study in *Journal of Personality and Social Psychology* first applied attachment theory to adult romantic love. Since then, hundreds of studies have confirmed:
 
 - Attachment styles predict relationship satisfaction, conflict patterns, and breakup likelihood
-- ~70-80% of people maintain the same attachment style across relationships
+- Attachment shows moderate stability over time, though it can change with significant life events or relationships (Fraley, 2002)
 - Securely attached people have longer, more satisfying relationships
-- Anxious-avoidant pairings are the most common — and most volatile
+- Anxious-avoidant pairings are common — and often volatile
+
+*Note: Attachment percentages (50% secure, 20% anxious, etc.) are approximations based on multiple studies and vary by population and measurement method. The exact distribution differs across cultures and research samples.*
+
+*Reference: Fraley, R. C. (2002). Attachment stability from infancy to adulthood: Meta-analysis and dynamic modeling of developmental mechanisms. Personality and Social Psychology Review, 6(2), 123-151.*
 
 ## Quick Self-Assessment
 

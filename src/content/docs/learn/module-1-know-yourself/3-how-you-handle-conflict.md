@@ -37,7 +37,7 @@ When conflict arises, your nervous system picks a survival strategy. These patte
 
 ## The Research
 
-John Gottman's research at the "Love Lab" found that conflict itself doesn't predict divorce — **how couples handle conflict does**.
+John Gottman's research at the "Love Lab" found that conflict itself doesn't predict divorce — **how couples handle conflict does** (Gottman & Levenson, 1992).
 
 His "Four Horsemen" of relationship apocalypse:
 1. **Criticism** (attacking character, not behavior)
@@ -45,7 +45,9 @@ His "Four Horsemen" of relationship apocalypse:
 3. **Defensiveness** (denying responsibility)
 4. **Stonewalling** (shutting down, walking away)
 
-Stonewalling (flight/freeze) is the strongest predictor of divorce. Couples who learn to "repair" — pause, take a break, and return to the conversation — have 90%+ success rates.
+**Contempt is the strongest predictor of divorce** — it signals fundamental disrespect. Couples who learn to "repair" — pause, take a break, return to the conversation without the Four Horsemen — fare significantly better. Gottman's research could predict divorce with over 90% accuracy based on these patterns.
+
+*Reference: Gottman, J. M., & Levenson, R. W. (1992). Marital processes predictive of later dissolution. Journal of Personality and Social Psychology, 63(2), 221-233.*
 
 ---
 

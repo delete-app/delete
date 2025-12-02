@@ -32,7 +32,7 @@ Sound familiar? Most people have experienced this. Most people also call it "fal
 | Idealization of the other person | Realistic view, accepting flaws |
 | Feels like anxiety, high highs and low lows | Feels calm, stable, grounding |
 | Fades when reciprocated and secure | Deepens with reciprocation and security |
-| Chemical: dopamine, PEA | Chemical: oxytocin, vasopressin |
+| Chemical: dopamine, norepinephrine | Chemical: oxytocin, vasopressin |
 
 Here's the key insight: **limerence fades when you become secure.**
 
@@ -40,13 +40,18 @@ That's why people say "the spark is gone" after 3-6 months of a stable relations
 
 ## The Brain Chemistry
 
-Helen Fisher's brain scan studies showed that limerence activates the same neural pathways as cocaine addiction. The chemicals involved:
+Helen Fisher's brain scan studies showed that early romantic love activates similar neural pathways to addiction — particularly the dopamine-rich reward system. Her research found heightened activity in the ventral tegmental area (VTA) and caudate nucleus when people viewed photos of their romantic interests.
+
+*Reference: Fisher, H. E., Aron, A., & Brown, L. L. (2006). Romantic love: A mammalian brain system for mate choice. Philosophical Transactions of the Royal Society B: Biological Sciences, 361(1476), 2173-2186.*
+
+The chemicals involved:
 
 - **Dopamine** — The "reward" chemical. Uncertainty triggers dopamine release (variable rewards, like slot machines)
-- **Phenylethylamine (PEA)** — Creates that euphoric, high-energy feeling
 - **Norepinephrine** — Explains the racing heart, sweaty palms, can't-sleep feeling
 
-This cocktail creates an altered state. You're literally high on a person. And like any high, it's temporary.
+*Note: Phenylethylamine (PEA) is sometimes mentioned in popular accounts of love chemistry, but its role in romantic attraction is not well-established in peer-reviewed research.*
+
+This cocktail creates an altered state. You're experiencing a powerful neurochemical response. And like any such state, it's temporary.
 
 Long-term love involves different chemicals:
 - **Oxytocin** — The "bonding" hormone, released through touch and closeness
@@ -101,13 +106,17 @@ She never felt limerence for him. At first, she wondered if that was a problem. 
 
 We've been conditioned to believe that "the spark" indicates compatibility. Movies, songs, and friends all reinforce: *if it's right, you'll just know.*
 
-But research suggests the opposite. High initial "chemistry" often predicts:
+But research suggests caution. Eastwick & Finkel (2008) found that people's stated preferences before meeting someone (wanting someone "exciting" or having "chemistry") didn't actually predict who they were attracted to in real interactions. Initial intensity can be misleading.
+
+High initial "chemistry" can be associated with:
 - Anxious-avoidant dynamics
 - Mistaking intensity for connection
 - Ignoring red flags because the feeling is so strong
 - Confusion when the intensity fades
 
 Stable, lasting relationships often start with less spark and more curiosity. The bond builds over time, through shared experiences and growing trust — not through obsessive thinking in week two.
+
+*Reference: Eastwick, P. W., & Finkel, E. J. (2008). Sex differences in mate preferences revisited: Do people know what they initially desire in a romantic partner? Journal of Personality and Social Psychology, 94(2), 245-264.*
 
 ---
 

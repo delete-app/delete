@@ -30,13 +30,17 @@ It's not navel-gazing or endless journaling. Self-awareness in dating means unde
 
 ## The Research
 
-Studies consistently show that self-awareness predicts relationship satisfaction better than personality compatibility. A 2010 meta-analysis in *Psychological Bulletin* found that people with higher self-awareness:
+Research consistently shows that self-awareness predicts relationship satisfaction. People with higher self-awareness tend to:
 - Choose more compatible partners
 - Communicate needs more effectively
 - Leave unhealthy relationships faster
 - Report higher relationship satisfaction
 
+A key concept here is *self-clarity* — knowing who you are and what you want. Lewandowski & Nardone (2012) found that self-concept clarity predicts relationship quality: people who understand themselves form healthier, more satisfying relationships.
+
 The good news? Self-awareness isn't fixed. It's a skill you can develop.
+
+*Reference: Lewandowski, G. W., & Nardone, N. (2012). Self-concept clarity's role in self–other agreement and the accuracy of behavioral prediction. Self and Identity, 11(1), 71-89.*
 
 ---
 

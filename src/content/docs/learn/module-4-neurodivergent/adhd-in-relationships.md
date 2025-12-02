@@ -44,7 +44,9 @@ This is the number one relationship killer for ADHD people. Not because they don
 
 ## Rejection Sensitive Dysphoria (RSD)
 
-Research by Dr. William Dodson suggests that 98% of adults with ADHD experience RSD — an intense emotional response to perceived rejection.
+Many adults with ADHD experience what clinicians call RSD — an intense emotional response to perceived rejection. Dr. William Dodson, an ADHD specialist, reports that the vast majority of his ADHD patients experience this.
+
+*Note: RSD is not a formal diagnosis in the DSM-5 or ICD-11. It's a clinical term used by some ADHD specialists based on patient observations, not controlled research studies. However, emotional dysregulation is a well-documented feature of ADHD.*
 
 It's not just "being sensitive." It's:
 - Physical pain in response to criticism
