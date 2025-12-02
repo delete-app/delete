@@ -168,4 +168,4 @@ If you're dating someone with ADHD: It's not personal. But it is real. And love 
 
 *Module 4 continues with: Autism & Intimacy (coming soon)*
 
-*Or go back to: [Module 1: Know Yourself First](/module-1-know-yourself/1-why-self-awareness-matters/)*
+*Or go back to: [Module 1: Know Yourself First](/learn/module-1-know-yourself/1-why-self-awareness-matters/)*

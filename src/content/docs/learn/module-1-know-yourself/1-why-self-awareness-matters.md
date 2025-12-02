@@ -61,4 +61,4 @@ Keep these somewhere you'll see them. Refer back when you're tempted to ignore w
 
 ---
 
-*Next up: [Your Attachment Style](/module-1-know-yourself/2-your-attachment-style/) — the most validated framework for understanding why you do what you do in relationships.*
+*Next up: [Your Attachment Style](/learn/module-1-know-yourself/2-your-attachment-style/) — the most validated framework for understanding why you do what you do in relationships.*

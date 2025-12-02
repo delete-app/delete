@@ -92,4 +92,4 @@ Just naming it creates space. You don't have to change your response immediately
 
 ---
 
-*Next up: [Your Emotional Needs](/module-1-know-yourself/4-your-emotional-needs/) — what actually makes you feel loved.*
+*Next up: [Your Emotional Needs](/learn/module-1-know-yourself/4-your-emotional-needs/) — what actually makes you feel loved.*

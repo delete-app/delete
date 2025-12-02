@@ -138,4 +138,4 @@ If the appeal is partly in the chase, that's not love. That's a chemical state t
 
 *Module 2 continues with: The Chemistry of Love (coming soon)*
 
-*Or skip to: [ADHD in Relationships](/module-4-neurodivergent/adhd-in-relationships/) — for when your brain works differently.*
+*Or skip to: [ADHD in Relationships](/learn/module-4-neurodivergent/adhd-in-relationships/) — for when your brain works differently.*

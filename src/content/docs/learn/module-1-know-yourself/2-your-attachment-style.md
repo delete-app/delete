@@ -94,4 +94,4 @@ The first step is just knowing what you're working with.
 
 ---
 
-*Next up: [How You Handle Conflict](/module-1-know-yourself/3-how-you-handle-conflict/) — fight, flight, freeze, or fawn?*
+*Next up: [How You Handle Conflict](/learn/module-1-know-yourself/3-how-you-handle-conflict/) — fight, flight, freeze, or fawn?*

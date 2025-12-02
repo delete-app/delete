@@ -104,4 +104,4 @@ This is the foundation. Everything else builds on this.
 
 ---
 
-*Next: [Limerence vs Love](/module-2-attraction/limerence-vs-love/) — that obsessive feeling isn't what you think it is.*
+*Next: [Limerence vs Love](/learn/module-2-attraction/limerence-vs-love/) — that obsessive feeling isn't what you think it is.*
