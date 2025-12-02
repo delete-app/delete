@@ -14,6 +14,10 @@ graph:
       - decision:0003:v1
       - decision:0004:v1
       - decision:0005:v1
+      - decision:0006:v1
+      - decision:0007:v1
+      - decision:0008:v1
+      - decision:0009:v1
     linked_by: []
 
   # Containers
@@ -43,6 +47,9 @@ graph:
     links_to:
       - decision:0004:v1
       - decision:0006:v1
+      - decision:0007:v1
+      - decision:0008:v1
+      - decision:0009:v1
       - container:my:v1
       - container:shared:v1
       - entity:user:v1
@@ -52,6 +59,9 @@ graph:
       - decision:0001:v1
       - decision:0004:v1
       - decision:0006:v1
+      - decision:0007:v1
+      - decision:0008:v1
+      - decision:0009:v1
 
   "container:shared:v1":
     links_to: []
@@ -122,4 +132,34 @@ graph:
       - container:api:v1
       - decision:0004:v1
     linked_by:
+      - context:system:v1
+      - container:api:v1
+
+  "decision:0007:v1":
+    title: "Railway for API hosting with PostgreSQL"
+    links_to:
+      - container:api:v1
+      - decision:0004:v1
+    linked_by:
+      - context:system:v1
+      - container:api:v1
+      - decision:0008:v1
+      - decision:0009:v1
+
+  "decision:0008:v1":
+    title: "Railpack builder over deprecated Nixpacks"
+    links_to:
+      - container:api:v1
+      - decision:0007:v1
+    linked_by:
+      - context:system:v1
+      - container:api:v1
+
+  "decision:0009:v1":
+    title: "Simplified API paths: /v1/* instead of /api/v1/*"
+    links_to:
+      - container:api:v1
+      - decision:0007:v1
+    linked_by:
+      - context:system:v1
       - container:api:v1

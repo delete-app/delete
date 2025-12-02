@@ -1,6 +1,6 @@
 name: "Delete"
 description: "A dating app designed to be deleted - built for lasting relationships, not engagement"
-version: "lore-v0.2.1@3012485"
+version: "lore-v0.3.0@fe21a0d"
 created: "2025-12-03"
 updated: "2025-12-03"
 
@@ -12,6 +12,7 @@ domains:
   production:
     landing: "https://trydelete.app"
     learn: "https://trydelete.app/learn"
+    api: "https://api.trydelete.app"
     my: "https://my.trydelete.app"  # planned
 
 config:

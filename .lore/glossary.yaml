@@ -48,6 +48,17 @@ terms:
     links:
       - decision:0004:v1
 
+  - term: "Railway"
+    definition: "PaaS hosting platform used for the API backend (api.trydelete.app). Provides always-on containers and managed PostgreSQL, avoiding serverless cold starts."
+    links:
+      - decision:0007:v1
+      - container:api:v1
+
+  - term: "Railpack"
+    definition: "Railway's native build system that auto-detects project types and builds containers. Replaces the deprecated Nixpacks builder."
+    links:
+      - decision:0008:v1
+
   - term: "Tally"
     definition: "Form builder service (tally.so) used for waitlist collection. Form ID: rjD9ZL."
 

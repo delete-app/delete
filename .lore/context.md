@@ -31,18 +31,15 @@ Delete flips this model by:
 
 ## External Systems
 
+- **Railway**: Hosting for API backend (api.trydelete.app). Provides always-on container hosting and managed PostgreSQL. See [decision:0007:v1].
+- **Vercel**: Hosting for landing app (trydelete.app) and my app (my.trydelete.app).
 - **Tally (tally.so)**: Waitlist form collection. Form ID: `rjD9ZL`. Prefills email and city from landing page.
-- **Vercel**: Hosting for landing app (trydelete.app). Planned for my app as well.
+- **PostgreSQL 16 + pgvector**: Database with vector search for AI-powered matching. Managed by Railway in production, Docker Compose for local dev.
 - **Social**: Instagram (@trydelete.app), X/Twitter (@trydeleteapp)
-
-## External Systems (Implemented)
-
-- **PostgreSQL 16 + pgvector**: Database with vector search for AI-powered matching (Docker Compose for local dev)
 
 ## Planned External Systems (Future)
 
 - **React Native**: Mobile apps (iOS/Android)
-- **Production PostgreSQL**: Managed PostgreSQL instance for production
 
 ## Containers
 
@@ -62,6 +59,10 @@ Delete flips this model by:
 - [decision:0003:v1] - React SPA over Next.js for authenticated app
 - [decision:0004:v1] - Python FastAPI for backend (ML-native)
 - [decision:0005:v1] - Wikipedia-style citations for credibility
+- [decision:0006:v1] - Python dependency fixes
+- [decision:0007:v1] - Railway for API hosting
+- [decision:0008:v1] - Railpack builder configuration
+- [decision:0009:v1] - Simplified API paths (/v1/* not /api/v1/*)
 
 ## Product Timeline
 

@@ -3,6 +3,10 @@ id: container:api:v1
 type: api
 technology: "Python 3.12 + FastAPI + SQLAlchemy"
 updated: 2025-12-03
+deployment:
+  platform: Railway
+  domain: api.trydelete.app
+  builder: Railpack
 ---
 
 # API - Backend Service
@@ -10,6 +14,13 @@ updated: 2025-12-03
 ## Purpose
 
 RESTful backend API for the Delete dating app. Handles authentication, user management, and will eventually power matching, messaging, and AI-driven features. Built with Python/FastAPI for ML-native capabilities.
+
+## Deployment
+
+- **Platform**: Railway (always-on container, not serverless)
+- **Domain**: https://api.trydelete.app
+- **Database**: Railway managed PostgreSQL 16 with pgvector
+- **Builder**: Railpack (Railway's native builder, replaces deprecated Nixpacks)
 
 ## Technology Stack
 
@@ -25,16 +36,16 @@ RESTful backend API for the Delete dating app. Handles authentication, user mana
 
 ### Versioning
 
-All endpoints are prefixed with `/api/v1` for future versioning support.
+All endpoints are prefixed with `/v1` for future versioning support. Note: We use `/v1` not `/api/v1` because the API lives on a dedicated subdomain (`api.trydelete.app`), making the `/api` prefix redundant. See [decision:0009:v1].
 
 ### Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/v1/health` | Health check (returns status + version) |
-| POST | `/api/v1/auth/signup` | User registration |
-| POST | `/api/v1/auth/login` | User login (returns JWT tokens) |
-| POST | `/api/v1/auth/refresh` | Refresh access token |
+| GET | `/v1/health` | Health check (returns status + version) |
+| POST | `/v1/auth/signup` | User registration |
+| POST | `/v1/auth/login` | User login (returns JWT tokens) |
+| POST | `/v1/auth/refresh` | Refresh access token |
 
 ### Authentication
 
@@ -103,7 +114,18 @@ apps/api/
 
 ## Infrastructure
 
-Development database via Docker Compose:
+### Production (Railway)
+
+- **Container**: Railpack-built Python container
+- **Database**: Railway managed PostgreSQL 16 with pgvector extension
+- **Config**: `railway.json` defines start command and health checks
+- **Deploys**: Automatic on push to main branch
+
+See [decision:0007:v1] for why Railway was chosen and [decision:0008:v1] for Railpack configuration.
+
+### Development (Docker Compose)
+
+Local database via Docker Compose:
 ```yaml
 services:
   db:
@@ -177,6 +199,9 @@ Use `pydantic[email]` in dependencies to enable `EmailStr` validation. The base 
 
 - [decision:0004:v1] - Why Python/FastAPI was chosen over Node.js
 - [decision:0006:v1] - Python dependency fixes (bcrypt, pydantic[email], async SQLAlchemy)
+- [decision:0007:v1] - Railway for API hosting with PostgreSQL
+- [decision:0008:v1] - Railpack builder over deprecated Nixpacks
+- [decision:0009:v1] - Simplified API paths (/v1/* instead of /api/v1/*)
 - Async SQLAlchemy for performance with I/O-bound workloads
 - pgvector enabled from day one for future AI matching features
 - JWT access + refresh token pattern for secure, scalable auth

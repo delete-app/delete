@@ -2,6 +2,41 @@
 # Tracks significant architectural changes
 
 versions:
+  - version: "lore-v0.3.0@fe21a0d"
+    date: "2025-12-03"
+    description: "API deployed to Railway with simplified paths"
+    changes:
+      - type: added
+        description: "Railway hosting for API backend"
+        details: |
+          Deployed FastAPI backend to Railway at api.trydelete.app:
+          - Always-on container (no serverless cold starts)
+          - Managed PostgreSQL with pgvector extension
+          - Railpack builder (Railway's new default, replaces deprecated Nixpacks)
+          - Automatic deploys on push to main
+        links:
+          - decision:0007:v1
+          - decision:0008:v1
+          - container:api:v1
+      - type: changed
+        description: "Simplified API paths from /api/v1/* to /v1/*"
+        details: |
+          Since API lives at api.trydelete.app subdomain, the /api prefix was redundant.
+          New paths:
+          - /v1/health (was /api/v1/health)
+          - /v1/auth/signup (was /api/v1/auth/signup)
+          - /v1/auth/login (was /api/v1/auth/login)
+        links:
+          - decision:0009:v1
+          - container:api:v1
+      - type: documented
+        description: "Architecture Decision Records 0007-0009"
+        details: "Documented Railway hosting, Railpack builder, and path simplification decisions"
+        links:
+          - decision:0007:v1
+          - decision:0008:v1
+          - decision:0009:v1
+
   - version: "lore-v0.2.1@3012485"
     date: "2025-12-03"
     description: "FastAPI backend dependency fixes"
