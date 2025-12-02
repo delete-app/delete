@@ -2,6 +2,31 @@
 # Tracks significant architectural changes
 
 versions:
+  - version: "lore-v0.2.1@3012485"
+    date: "2025-12-03"
+    description: "FastAPI backend dependency fixes"
+    changes:
+      - type: fixed
+        description: "Python dependency and configuration issues resolved"
+        details: |
+          Fixed several issues preventing FastAPI backend from running:
+          - Removed non-existent README.md reference from pyproject.toml
+          - Added Hatch wheel target for proper src/app package discovery
+          - Changed pydantic to pydantic[email] for EmailStr support
+          - Added sqlalchemy[asyncio] and greenlet for async support
+          - Replaced passlib with direct bcrypt (passlib incompatible with bcrypt 4.x)
+          - Fixed alembic env.py to use create_async_engine with settings.database_url
+        links:
+          - decision:0006:v1
+          - container:api:v1
+      - type: documented
+        description: "Local development gotchas for API backend"
+        details: |
+          Added documentation for common local dev issues:
+          - Port 5432 conflict with local PostgreSQL (Homebrew)
+          - bcrypt vs passlib decision rationale
+          - Pydantic email extras requirement
+
   - version: "lore-v0.2.0@b0d89d6"
     date: "2025-12-03"
     description: "FastAPI backend scaffolded"

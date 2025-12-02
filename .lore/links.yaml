@@ -42,6 +42,7 @@ graph:
   "container:api:v1":
     links_to:
       - decision:0004:v1
+      - decision:0006:v1
       - container:my:v1
       - container:shared:v1
       - entity:user:v1
@@ -50,6 +51,7 @@ graph:
       - container:my:v1
       - decision:0001:v1
       - decision:0004:v1
+      - decision:0006:v1
 
   "container:shared:v1":
     links_to: []
@@ -113,3 +115,11 @@ graph:
       - context:system:v1
       - container:landing:v1
       - decision:0002:v1
+
+  "decision:0006:v1":
+    title: "Python dependency fixes for FastAPI backend"
+    links_to:
+      - container:api:v1
+      - decision:0004:v1
+    linked_by:
+      - container:api:v1

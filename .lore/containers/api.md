@@ -135,9 +135,48 @@ uv run alembic upgrade head
 uv run uvicorn app.main:app --reload
 ```
 
+## Local Development Gotchas
+
+### Port 5432 Conflict (PostgreSQL)
+
+If you have a local PostgreSQL installation (e.g., via Homebrew), it may be running on port 5432 and will conflict with the Docker container.
+
+**Symptoms:**
+- Docker container starts but API can't connect
+- Connection refused errors
+- API connects to wrong (empty) database
+
+**Solution:**
+```bash
+# Check what's using port 5432
+lsof -i :5432
+
+# Stop Homebrew PostgreSQL
+brew services stop postgresql@14  # or postgresql@15, postgresql@16
+
+# Then restart Docker container
+docker compose down && docker compose up -d
+```
+
+**Alternative:** Change the Docker port mapping in `docker-compose.yml`:
+```yaml
+ports:
+  - "5433:5432"  # Map to different host port
+```
+Then update `DATABASE_URL` in `.env` to use port 5433.
+
+### Password Hashing with bcrypt
+
+We use `bcrypt` directly (not `passlib`) because passlib is incompatible with bcrypt 4.x. See [decision:0006:v1] for details.
+
+### Pydantic Email Validation
+
+Use `pydantic[email]` in dependencies to enable `EmailStr` validation. The base pydantic package doesn't include email validation.
+
 ## Decisions
 
 - [decision:0004:v1] - Why Python/FastAPI was chosen over Node.js
+- [decision:0006:v1] - Python dependency fixes (bcrypt, pydantic[email], async SQLAlchemy)
 - Async SQLAlchemy for performance with I/O-bound workloads
 - pgvector enabled from day one for future AI matching features
 - JWT access + refresh token pattern for secure, scalable auth
