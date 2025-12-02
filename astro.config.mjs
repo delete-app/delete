@@ -4,33 +4,39 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://trydelete.app',
 	integrations: [
 		starlight({
 			title: 'Delete Learn',
 			description: 'Relationship education, the Zerodha Varsity way. Research-backed, no fluff.',
-			social: [
-				{ icon: 'instagram', label: 'Instagram', href: 'https://instagram.com/trydelete.app' },
-				{ icon: 'x.com', label: 'X', href: 'https://twitter.com/trydeleteapp' },
-			],
+			logo: {
+				light: './src/assets/logo-light.svg',
+				dark: './src/assets/logo-dark.svg',
+				replacesTitle: true,
+			},
+			social: {
+				instagram: 'https://instagram.com/trydelete.app',
+				'x.com': 'https://twitter.com/trydeleteapp',
+			},
 			customCss: ['./src/styles/custom.css'],
 			sidebar: [
 				{
 					label: 'Start Here',
 					items: [
-						{ label: 'Welcome', slug: 'index' },
+						{ label: 'Welcome', slug: 'learn' },
 					],
 				},
 				{
 					label: 'Module 1: Know Yourself First',
-					autogenerate: { directory: 'module-1-know-yourself' },
+					autogenerate: { directory: 'learn/module-1-know-yourself' },
 				},
 				{
 					label: 'Module 2: The Science of Attraction',
-					autogenerate: { directory: 'module-2-attraction' },
+					autogenerate: { directory: 'learn/module-2-attraction' },
 				},
 				{
 					label: 'Module 4: The Neurodivergent Lens',
-					autogenerate: { directory: 'module-4-neurodivergent' },
+					autogenerate: { directory: 'learn/module-4-neurodivergent' },
 				},
 			],
 			head: [
@@ -42,6 +48,7 @@ export default defineConfig({
 					},
 				},
 			],
+			disable404Route: true,
 		}),
 	],
 });

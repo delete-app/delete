@@ -1,12 +1,14 @@
 {
   "name": "delete-landing",
+  "type": "module",
   "version": "1.0.0",
   "description": "Delete - A dating app designed to be deleted",
   "private": true,
   "scripts": {
-    "serve": "npx serve .",
-    "lint": "npx htmlhint index.html",
-    "test": "npm run lint",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
     "prepare": "husky"
   },
   "repository": {
@@ -19,14 +21,11 @@
     "url": "https://github.com/delete-app/landing/issues"
   },
   "homepage": "https://trydelete.app",
-  "lint-staged": {
-    "*.html": [
-      "htmlhint"
-    ]
+  "dependencies": {
+    "astro": "^5.1.1",
+    "@astrojs/starlight": "^0.31.1"
   },
   "devDependencies": {
-    "htmlhint": "^1.8.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.7"
+    "husky": "^9.1.7"
   }
 }
