@@ -1,17 +1,18 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { $api } from '../lib/api/hooks'
+import { $api } from '../lib/api/client'
+import { useAuth } from '../lib/auth/context'
 
 export default function Login() {
   const navigate = useNavigate()
+  const { login } = useAuth()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
 
   const loginMutation = $api.useMutation('post', '/v1/auth/login', {
     onSuccess: (data) => {
-      localStorage.setItem('access_token', data.access_token)
-      localStorage.setItem('refresh_token', data.refresh_token)
+      login(data.access_token, data.refresh_token)
       navigate('/')
     },
     onError: (err) => {
@@ -20,7 +21,7 @@ export default function Login() {
     },
   })
 
-  async function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setError('')
     loginMutation.mutate({
