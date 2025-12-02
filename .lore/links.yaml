@@ -18,6 +18,7 @@ graph:
       - decision:0007:v1
       - decision:0008:v1
       - decision:0009:v1
+      - decision:0010:v1
     linked_by: []
 
   # Containers
@@ -35,12 +36,14 @@ graph:
     links_to:
       - decision:0003:v1
       - decision:0004:v1
+      - decision:0010:v1
       - container:shared:v1
       - container:api:v1
     linked_by:
       - context:system:v1
       - decision:0001:v1
       - decision:0003:v1
+      - decision:0010:v1
       - container:api:v1
 
   "container:api:v1":
@@ -62,6 +65,7 @@ graph:
       - decision:0007:v1
       - decision:0008:v1
       - decision:0009:v1
+      - decision:0010:v1
 
   "container:shared:v1":
     links_to: []
@@ -163,3 +167,15 @@ graph:
     linked_by:
       - context:system:v1
       - container:api:v1
+      - decision:0010:v1
+
+  "decision:0010:v1":
+    title: "Typed API client with openapi-fetch and openapi-react-query"
+    links_to:
+      - container:my:v1
+      - container:api:v1
+      - decision:0004:v1
+      - decision:0009:v1
+    linked_by:
+      - context:system:v1
+      - container:my:v1

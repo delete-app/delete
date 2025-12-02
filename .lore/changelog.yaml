@@ -2,6 +2,46 @@
 # Tracks significant architectural changes
 
 versions:
+  - version: "lore-v0.4.0@7816112"
+    date: "2025-12-03"
+    description: "Typed API client with openapi-fetch and React Query"
+    changes:
+      - type: added
+        description: "Typed API client stack for frontend"
+        details: |
+          Replaced manual fetch wrapper with fully typed solution:
+          - openapi-typescript for generating TypeScript types from OpenAPI spec
+          - openapi-fetch for type-safe HTTP requests
+          - openapi-react-query for React Query hooks with type inference
+
+          New file structure:
+          - apps/my/src/lib/api/schema.d.ts (auto-generated types)
+          - apps/my/src/lib/api/openapi.json (local OpenAPI spec)
+          - apps/my/src/lib/api/client.ts (openapi-fetch client)
+          - apps/my/src/lib/api/hooks.ts ($api React Query hooks)
+        links:
+          - decision:0010:v1
+          - container:my:v1
+      - type: added
+        description: "QueryClientProvider in main.tsx"
+        details: "React Query provider wraps app with 1-minute stale time defaults"
+        links:
+          - container:my:v1
+      - type: changed
+        description: "Login/Signup components now use $api.useMutation()"
+        details: |
+          Components use typed mutations with full type safety:
+          - Request body typed from OpenAPI spec
+          - Response data typed (TokenResponse)
+          - Error structure typed for validation errors
+        links:
+          - container:my:v1
+      - type: removed
+        description: "Deleted old apps/my/src/lib/api.ts"
+        details: "Manual fetch wrapper replaced by typed openapi-fetch client"
+        links:
+          - container:my:v1
+
   - version: "lore-v0.3.0@fe21a0d"
     date: "2025-12-03"
     description: "API deployed to Railway with simplified paths"
