@@ -1,0 +1,37 @@
+name: "Delete"
+description: "A dating app designed to be deleted - built for lasting relationships, not engagement"
+version: "lore-v0.1.0@6e458fd"
+created: "2025-12-03"
+updated: "2025-12-03"
+
+repository:
+  url: "https://github.com/delete-app/landing"
+  default_branch: "main"
+
+domains:
+  production:
+    landing: "https://trydelete.app"
+    learn: "https://trydelete.app/learn"
+    my: "https://my.trydelete.app"  # planned
+
+config:
+  source_roots:
+    - apps/landing/src
+    - apps/my/src
+    - packages/shared/src
+  ignore:
+    - node_modules
+    - dist
+    - .astro
+    - "*.test.*"
+    - ".turbo"
+
+  versioning: hybrid  # semantic + commit hash
+  id_format: "{type}:{path}:v{version}"
+
+monorepo:
+  manager: "turborepo"
+  package_manager: "pnpm@10.6.1"
+  workspaces:
+    - "apps/*"
+    - "packages/*"

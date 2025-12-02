@@ -1,0 +1,47 @@
+# Waitlist Signup Entity (External)
+# This entity lives in Tally, not our database
+
+id: "entity:waitlist-signup:v1"
+name: "WaitlistSignup"
+description: "A waitlist signup collected via Tally form"
+status: active
+storage: external  # Stored in Tally, not our database
+updated: "2025-12-03"
+
+fields:
+  - name: email
+    type: string
+    description: "Email address (prefilled from landing page)"
+    constraints:
+      - required
+
+  - name: city
+    type: string
+    description: "User's city (prefilled from landing page dropdown)"
+    values: ["Hyderabad", "Somewhere else"]
+
+  - name: submitted_at
+    type: timestamp
+    description: "Form submission timestamp (Tally-managed)"
+
+external_system:
+  name: "Tally"
+  form_id: "rjD9ZL"
+  url: "https://tally.so/r/rjD9ZL"
+  prefill_pattern: "?prefill_email={email}&prefill_city={city}"
+
+notes: |
+  Tally manages:
+  - Form rendering
+  - Data validation
+  - Email storage
+  - Submission notifications
+  - Export capabilities
+
+  Data will need to be exported/imported when:
+  - Building invite system
+  - Migrating to production database
+  - Analyzing waitlist demographics
+
+links:
+  - component:landing.homepage:v1  # Collects this data

@@ -1,0 +1,91 @@
+# Delete Architecture Link Graph
+# Bidirectional index for fast relationship traversal
+
+graph:
+  # System Context
+  "context:system:v1":
+    links_to:
+      - container:landing:v1
+      - container:my:v1
+      - container:shared:v1
+      - decision:0001:v1
+      - decision:0002:v1
+      - decision:0003:v1
+      - decision:0004:v1
+      - decision:0005:v1
+    linked_by: []
+
+  # Containers
+  "container:landing:v1":
+    links_to:
+      - decision:0002:v1
+      - decision:0005:v1
+    linked_by:
+      - context:system:v1
+      - decision:0001:v1
+      - decision:0002:v1
+      - decision:0005:v1
+
+  "container:my:v1":
+    links_to:
+      - decision:0003:v1
+      - decision:0004:v1
+      - container:shared:v1
+    linked_by:
+      - context:system:v1
+      - decision:0001:v1
+      - decision:0003:v1
+
+  "container:shared:v1":
+    links_to: []
+    linked_by:
+      - context:system:v1
+      - container:my:v1
+      - decision:0001:v1
+
+  # Decisions
+  "decision:0001:v1":
+    title: "Turborepo monorepo with pnpm workspaces"
+    links_to:
+      - container:landing:v1
+      - container:my:v1
+      - container:shared:v1
+    linked_by:
+      - context:system:v1
+
+  "decision:0002:v1":
+    title: "Astro + Starlight for educational content"
+    links_to:
+      - container:landing:v1
+      - decision:0005:v1
+    linked_by:
+      - context:system:v1
+      - container:landing:v1
+
+  "decision:0003:v1":
+    title: "React SPA over Next.js for authenticated app"
+    links_to:
+      - container:my:v1
+      - decision:0004:v1
+    linked_by:
+      - context:system:v1
+      - decision:0004:v1
+
+  "decision:0004:v1":
+    title: "Python FastAPI for backend (ML-native)"
+    links_to:
+      - decision:0003:v1
+    linked_by:
+      - context:system:v1
+      - container:my:v1
+      - decision:0003:v1
+
+  "decision:0005:v1":
+    title: "Wikipedia-style superscript citations for credibility"
+    links_to:
+      - container:landing:v1
+      - decision:0002:v1
+    linked_by:
+      - context:system:v1
+      - container:landing:v1
+      - decision:0002:v1

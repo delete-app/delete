@@ -1,0 +1,92 @@
+# User Entity (Planned)
+# This entity is not yet implemented - documenting planned structure
+
+id: "entity:user:v1"
+name: "User"
+description: "A registered Delete user with profile, preferences, and matching data"
+status: planned  # not yet implemented
+updated: "2025-12-03"
+
+fields:
+  - name: id
+    type: uuid
+    primary: true
+    description: "Unique user identifier"
+
+  - name: email
+    type: string
+    description: "User's email address (for auth)"
+    constraints:
+      - unique
+      - required
+
+  - name: created_at
+    type: timestamp
+    description: "Account creation timestamp"
+
+  # Profile fields (planned)
+  - name: display_name
+    type: string
+    description: "Name shown to other users"
+
+  - name: bio
+    type: text
+    description: "Self-description"
+
+  - name: photos
+    type: array
+    description: "Profile photos (URLs)"
+
+  # Psychological profile (core to Delete's matching)
+  - name: attachment_style
+    type: enum
+    values: [secure, anxious, avoidant, disorganized, unknown]
+    description: "Self-reported or assessed attachment style"
+
+  - name: conflict_style
+    type: enum
+    values: [fight, flight, freeze, fawn, mixed]
+    description: "Primary conflict response pattern"
+
+  - name: emotional_needs
+    type: array
+    description: "Top emotional needs (from assessment)"
+
+  # Matching data
+  - name: embedding
+    type: vector
+    description: "Profile embedding for similarity search (pgvector)"
+
+  - name: preferences
+    type: json
+    description: "Matching preferences (age range, distance, etc.)"
+
+# Relationships to other entities
+relations:
+  - entity: Match
+    type: one-to-many
+    description: "User has many matches"
+
+  - entity: Message
+    type: one-to-many
+    description: "User sends many messages"
+
+  - entity: Assessment
+    type: one-to-many
+    description: "User completes assessments over time"
+
+code_refs: {}  # Not yet implemented
+
+notes: |
+  The User entity is central to Delete's differentiation:
+  - Attachment style, conflict style, and emotional needs are first-class fields
+  - Profile embedding enables AI-powered matching
+  - Assessment history allows tracking growth over time
+
+  When implementing, consider:
+  - Privacy: What data is shown to other users vs internal
+  - GDPR: Data export and deletion capabilities
+  - Verification: Email/phone verification flow
+
+links:
+  - decision:0004:v1  # PostgreSQL + pgvector

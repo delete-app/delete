@@ -1,0 +1,70 @@
+# Delete Architecture Changelog
+# Tracks significant architectural changes
+
+versions:
+  - version: "lore-v0.1.0@6e458fd"
+    date: "2025-12-03"
+    description: "Initial Lorekeeper bootstrap"
+    changes:
+      - type: added
+        description: "Initial .lore/ knowledge store created"
+        details: "Bootstrapped architecture documentation for existing codebase"
+      - type: documented
+        description: "System context (C4 Level 1)"
+        links:
+          - context:system:v1
+      - type: documented
+        description: "Container documentation for landing, my, and shared packages"
+        links:
+          - container:landing:v1
+          - container:my:v1
+          - container:shared:v1
+      - type: documented
+        description: "Architecture Decision Records (ADRs 0001-0005)"
+        links:
+          - decision:0001:v1
+          - decision:0002:v1
+          - decision:0003:v1
+          - decision:0004:v1
+          - decision:0005:v1
+      - type: documented
+        description: "Domain glossary with 14 terms"
+
+# Historical changes inferred from git history
+historical:
+  - date: "2024-12-03"
+    commit: "6bf190a"
+    description: "Converted to Turborepo monorepo with pnpm workspaces"
+    significance: high
+    links:
+      - decision:0001:v1
+
+  - date: "2024-12-03"
+    commit: "0002929"
+    description: "Added Wikipedia-style superscript citations with References sections"
+    significance: medium
+    links:
+      - decision:0005:v1
+
+  - date: "2024-12-03"
+    commit: "43e2e64"
+    description: "Added Delete Learn - relationship education content (Starlight)"
+    significance: high
+    links:
+      - decision:0002:v1
+      - container:landing:v1
+
+  - date: "2024-12-03"
+    commit: "4e20c7f"
+    description: "Force dark mode via Starlight component overrides"
+    significance: low
+
+  - date: "2024-12-03"
+    commit: "a474dce"
+    description: "Unified landing page and Learn into single Astro build"
+    significance: medium
+
+  - date: "2024-12-03"
+    commit: "363b043"
+    description: "Initial landing page"
+    significance: high

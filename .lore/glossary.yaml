@@ -1,0 +1,66 @@
+# Delete Domain Glossary
+# Terms specific to this codebase and domain
+
+terms:
+  # Brand & Product Terms
+  - term: "Delete"
+    definition: "The dating app brand. Named to emphasize the goal: finding a relationship so good you delete the app."
+    aliases: ["Delete App", "trydelete"]
+
+  - term: "Delete Learn"
+    definition: "The educational content section at /learn, providing research-backed relationship psychology content."
+    aliases: ["Learn", "/learn"]
+    links:
+      - container:landing:v1
+
+  - term: "My App"
+    definition: "The authenticated user dashboard at my.trydelete.app where the actual dating features will live."
+    aliases: ["my", "dashboard", "user app"]
+    links:
+      - container:my:v1
+
+  # Domain Concepts (Relationship Psychology)
+  - term: "Attachment Style"
+    definition: "A psychological framework describing how individuals form emotional bonds. Four types: secure, anxious, avoidant, disorganized. Core to Delete's matching philosophy."
+    aliases: ["attachment theory", "attachment type"]
+
+  - term: "Limerence"
+    definition: "The obsessive, all-consuming infatuation phase often mistaken for love. Characterized by intrusive thoughts, mood dependency on reciprocation, and fear of rejection. Distinct from mature love."
+    links:
+      - "module-2-attraction/limerence-vs-love"
+
+  - term: "Conflict Style"
+    definition: "How individuals respond to relationship conflict. Common patterns: fight (confront aggressively), flight (avoid), freeze (shut down), fawn (people-please)."
+    links:
+      - "module-1-know-yourself/3-how-you-handle-conflict"
+
+  - term: "Emotional Needs"
+    definition: "The core psychological needs that must be met in relationships. Delete's content helps users identify their non-negotiables before dating."
+
+  # Technical Terms
+  - term: "Starlight"
+    definition: "Astro's documentation theme used for the Learn section. Provides sidebar navigation, search (Pagefind), and documentation-optimized layouts."
+    links:
+      - decision:0002:v1
+
+  - term: "pgvector"
+    definition: "PostgreSQL extension for vector similarity search. Will be used to store and query profile embeddings for AI-powered matching."
+    links:
+      - decision:0004:v1
+
+  - term: "Tally"
+    definition: "Form builder service (tally.so) used for waitlist collection. Form ID: rjD9ZL."
+
+  # Content Patterns
+  - term: "Zerodha Varsity"
+    definition: "Indian financial education platform known for research-backed, jargon-free content. The inspiration for Delete Learn's approach to relationship education."
+
+  - term: "Superscript Citation"
+    definition: "Delete Learn's citation style using Wikipedia-like superscript numbers linking to DOIs. Format: <sup>[[1]](doi-link)</sup>"
+    links:
+      - decision:0005:v1
+
+  # User Segments
+  - term: "Neurodivergent"
+    definition: "Umbrella term for ADHD, autism, and other neurological differences. Delete has dedicated content acknowledging that dating works differently for these groups."
+    aliases: ["ND"]
