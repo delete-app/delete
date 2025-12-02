@@ -24,5 +24,10 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 30
     refresh_token_expire_days: int = 7
 
+    # Cookies
+    cookie_domain: str | None = None  # Set to ".trydelete.app" in production
+    cookie_secure: bool = False  # Set to True in production (HTTPS only)
+    cookie_samesite: str = "lax"
+
 
 settings = Settings()

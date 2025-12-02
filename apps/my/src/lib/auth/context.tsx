@@ -1,77 +1,91 @@
 import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from 'react'
 import { fetchClient } from '../api/client'
-import { STORAGE_KEYS } from '../config'
 
 interface AuthState {
   isAuthenticated: boolean
   isLoading: boolean
-  accessToken: string | null
 }
 
 interface AuthContextType extends AuthState {
-  login: (accessToken: string, refreshToken: string) => void
-  logout: () => void
-  refreshAccessToken: () => Promise<boolean>
+  login: () => void
+  logout: () => Promise<void>
+  checkAuth: () => Promise<boolean>
 }
 
 const AuthContext = createContext<AuthContextType | null>(null)
 
-function getInitialAuthState(): AuthState {
-  const accessToken = localStorage.getItem(STORAGE_KEYS.ACCESS_TOKEN)
-  return {
-    isAuthenticated: !!accessToken,
-    isLoading: false,
-    accessToken,
-  }
-}
-
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [state, setState] = useState<AuthState>(getInitialAuthState)
+  const [state, setState] = useState<AuthState>({
+    isAuthenticated: false,
+    isLoading: true, // Start loading to verify auth on mount
+  })
 
-  const login = useCallback((accessToken: string, refreshToken: string) => {
-    localStorage.setItem(STORAGE_KEYS.ACCESS_TOKEN, accessToken)
-    localStorage.setItem(STORAGE_KEYS.REFRESH_TOKEN, refreshToken)
+  const login = useCallback(() => {
+    // Called after successful login API call
+    // Cookies are set by the server, we just update local state
     setState({
       isAuthenticated: true,
       isLoading: false,
-      accessToken,
     })
   }, [])
 
-  const logout = useCallback(() => {
-    localStorage.removeItem(STORAGE_KEYS.ACCESS_TOKEN)
-    localStorage.removeItem(STORAGE_KEYS.REFRESH_TOKEN)
+  const logout = useCallback(async () => {
+    try {
+      // Call logout endpoint to clear cookies on server
+      await fetchClient.POST('/v1/auth/logout', {})
+    } catch {
+      // Ignore errors, still clear local state
+    }
     setState({
       isAuthenticated: false,
       isLoading: false,
-      accessToken: null,
     })
   }, [])
 
-  const refreshAccessToken = useCallback(async (): Promise<boolean> => {
-    const refreshToken = localStorage.getItem(STORAGE_KEYS.REFRESH_TOKEN)
-    if (!refreshToken) {
-      logout()
-      return false
-    }
-
+  const checkAuth = useCallback(async (): Promise<boolean> => {
     try {
-      const { data, error } = await fetchClient.POST('/v1/auth/refresh', {
-        body: { refresh_token: refreshToken },
-      })
+      // Try to refresh tokens - if successful, we have valid auth
+      const { error } = await fetchClient.POST('/v1/auth/refresh', {})
 
-      if (error || !data) {
-        logout()
+      if (error) {
+        setState({ isAuthenticated: false, isLoading: false })
         return false
       }
 
-      login(data.access_token, data.refresh_token)
+      setState({ isAuthenticated: true, isLoading: false })
       return true
     } catch {
-      logout()
+      setState({ isAuthenticated: false, isLoading: false })
       return false
     }
-  }, [login, logout])
+  }, [])
+
+  // Check auth status on mount by attempting to refresh
+  useEffect(() => {
+    let cancelled = false
+
+    async function verifyAuth() {
+      try {
+        const { error } = await fetchClient.POST('/v1/auth/refresh', {})
+        if (!cancelled) {
+          setState({
+            isAuthenticated: !error,
+            isLoading: false,
+          })
+        }
+      } catch {
+        if (!cancelled) {
+          setState({ isAuthenticated: false, isLoading: false })
+        }
+      }
+    }
+
+    verifyAuth()
+
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
   // Set up token refresh interval (refresh 5 minutes before expiry, assuming 30 min token)
   useEffect(() => {
@@ -79,13 +93,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     const refreshInterval = setInterval(
       () => {
-        refreshAccessToken()
+        checkAuth()
       },
       25 * 60 * 1000
     ) // 25 minutes
 
     return () => clearInterval(refreshInterval)
-  }, [state.isAuthenticated, refreshAccessToken])
+  }, [state.isAuthenticated, checkAuth])
 
   return (
     <AuthContext.Provider
@@ -93,7 +107,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         ...state,
         login,
         logout,
-        refreshAccessToken,
+        checkAuth,
       }}
     >
       {children}

@@ -11,8 +11,9 @@ export default function Login() {
   const [error, setError] = useState('')
 
   const loginMutation = $api.useMutation('post', '/v1/auth/login', {
-    onSuccess: (data) => {
-      login(data.access_token, data.refresh_token)
+    onSuccess: () => {
+      // Cookies are set by the server, just update local auth state
+      login()
       navigate('/')
     },
     onError: (err) => {
