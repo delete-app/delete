@@ -85,6 +85,21 @@ header.header {
 	margin-bottom: 1.25rem;
 }
 
+/* Headings - make them white/light, not accent color */
+.sl-markdown-content h1,
+.sl-markdown-content h2,
+.sl-markdown-content h3,
+.sl-markdown-content h4,
+.sl-markdown-content h5,
+.sl-markdown-content h6 {
+	color: #fafafa;
+}
+
+/* Page title */
+h1.title {
+	color: #fafafa;
+}
+
 /* Blockquotes for hooks */
 .sl-markdown-content blockquote {
 	border-left: 3px solid var(--sl-color-accent);
