@@ -18,6 +18,11 @@ export default defineConfig({
 				instagram: 'https://instagram.com/trydelete.app',
 				'x.com': 'https://twitter.com/trydeleteapp',
 			},
+			// Force dark mode only - hide theme selector
+			components: {
+				ThemeProvider: './src/components/ForceDarkTheme.astro',
+				ThemeSelect: './src/components/EmptyComponent.astro',
+			},
 			customCss: ['./src/styles/custom.css'],
 			sidebar: [
 				{

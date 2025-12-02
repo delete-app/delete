@@ -2,13 +2,13 @@
    Matches landing page: dark mode, amber accent, system fonts */
 
 :root {
-	/* Colors matching landing page */
+	/* Accent colors - amber to match landing page */
 	--sl-color-accent-low: #2a1a0a;
 	--sl-color-accent: #e67e22;
 	--sl-color-accent-high: #f39c12;
 
-	/* Dark background matching landing page #0a0a0a */
-	--sl-color-black: #0a0a0a;
+	/* Gray scale for dark theme - DO NOT override --sl-color-white or --sl-color-black
+	   as Starlight uses these semantically (white = text color, black = background) */
 	--sl-color-gray-1: #fafafa;
 	--sl-color-gray-2: #c9c9c9;
 	--sl-color-gray-3: #888888;
@@ -16,7 +16,6 @@
 	--sl-color-gray-5: #333333;
 	--sl-color-gray-6: #1a1a1a;
 	--sl-color-gray-7: #141414;
-	--sl-color-white: #0a0a0a;
 
 	/* System fonts like landing page */
 	--sl-font: system-ui, -apple-system, sans-serif;
@@ -27,7 +26,7 @@
 	--sl-text-h2: clamp(1.4rem, 3vw, 1.75rem);
 }
 
-/* Force dark mode */
+/* Dark theme backgrounds matching landing page #0a0a0a */
 :root,
 [data-theme='light'] {
 	--sl-color-bg: #0a0a0a;
@@ -83,22 +82,6 @@ header.header {
 
 .sl-markdown-content p {
 	margin-bottom: 1.25rem;
-}
-
-/* Headings - make them white/light, not accent color */
-.sl-markdown-content h1,
-.sl-markdown-content h2,
-.sl-markdown-content h3,
-.sl-markdown-content h4,
-.sl-markdown-content h5,
-.sl-markdown-content h6 {
-	color: #fafafa;
-}
-
-/* Page title - Starlight uses #_top id for main page heading */
-h1#_top,
-main h1 {
-	color: #fafafa !important;
 }
 
 /* Blockquotes for hooks */
