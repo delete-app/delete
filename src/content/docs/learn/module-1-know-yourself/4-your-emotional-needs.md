@@ -18,7 +18,7 @@ Someone can speak your love language fluently and still not meet your core needs
 
 ## The Deeper Needs
 
-Research on close relationships (Reis & Shaver, 2015) and self-determination theory (Deci & Ryan, 2000) points to core emotional needs:
+Research on close relationships ([Reis & Shaver, 1988](https://doi.org/10.1016/S0065-2601(08)60227-6)) and self-determination theory ([Deci & Ryan, 2000](https://doi.org/10.1037/0003-066X.55.1.68)) points to core emotional needs:
 
 ### Security
 - Knowing they're committed, not going anywhere

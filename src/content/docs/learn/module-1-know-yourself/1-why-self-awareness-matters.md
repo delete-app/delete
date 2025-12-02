@@ -36,11 +36,9 @@ Research consistently shows that self-awareness predicts relationship satisfacti
 - Leave unhealthy relationships faster
 - Report higher relationship satisfaction
 
-A key concept here is *self-clarity* — knowing who you are and what you want. Lewandowski & Nardone (2012) found that self-concept clarity predicts relationship quality: people who understand themselves form healthier, more satisfying relationships.
+A key concept here is *self-clarity* — knowing who you are and what you want. [Lewandowski & Nardone (2012)](https://doi.org/10.1080/15298868.2010.512133) found that self-concept clarity predicts relationship quality: people who understand themselves form healthier, more satisfying relationships.
 
 The good news? Self-awareness isn't fixed. It's a skill you can develop.
-
-*Reference: Lewandowski, G. W., & Nardone, N. (2012). Self-concept clarity's role in self–other agreement and the accuracy of behavioral prediction. Self and Identity, 11(1), 71-89.*
 
 ---
 

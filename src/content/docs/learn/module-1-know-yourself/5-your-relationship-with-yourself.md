@@ -34,7 +34,7 @@ The inner critic isn't telling you the truth. It's telling you what it learned l
 
 ## The Research
 
-Studies on self-esteem and relationship quality (Murray et al., 2000) consistently show:
+Studies on self-esteem and relationship quality ([Murray et al., 2000](https://doi.org/10.1037/0022-3514.79.6.995)) consistently show:
 
 - People with low self-worth stay in unsatisfying relationships longer
 - They're more likely to interpret neutral partner behavior as rejection
