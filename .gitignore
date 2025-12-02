@@ -1,5 +1,12 @@
 # Dependencies
 node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+.astro/
+.turbo/
 
 # IDE
 .idea/
@@ -23,8 +30,19 @@ Thumbs.db
 # Logs
 *.log
 npm-debug.log*
+pnpm-debug.log*
 
-# Build output
-dist/
-build/
-.astro/
+# Python (for apps/api)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.Python
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Testing
+coverage/
+.nyc_output/

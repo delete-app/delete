@@ -1,16 +1,8 @@
 {
-  "name": "delete-landing",
-  "type": "module",
+  "name": "delete",
   "version": "1.0.0",
-  "description": "Delete - A dating app designed to be deleted",
   "private": true,
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "prepare": "husky"
-  },
+  "description": "Delete - A dating app designed to be deleted",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/delete-app/landing.git"
@@ -21,11 +13,18 @@
     "url": "https://github.com/delete-app/landing/issues"
   },
   "homepage": "https://trydelete.app",
-  "dependencies": {
-    "astro": "^5.1.1",
-    "@astrojs/starlight": "^0.31.1"
+  "packageManager": "pnpm@10.6.1",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "dev:landing": "turbo dev --filter=@delete/landing",
+    "dev:my": "turbo dev --filter=@delete/my",
+    "build:landing": "turbo build --filter=@delete/landing",
+    "build:my": "turbo build --filter=@delete/my",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "husky": "^9.1.7"
+    "husky": "^9.1.7",
+    "turbo": "^2.3.3"
   }
 }
