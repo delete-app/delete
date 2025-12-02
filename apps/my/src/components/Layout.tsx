@@ -18,7 +18,9 @@ export function Layout({ children }: LayoutProps) {
   return (
     <div className="app-layout">
       <header className="app-header">
-        <Link to="/" className="logo">×</Link>
+        <Link to="/" className="logo">
+          ×
+        </Link>
         {isAuthenticated && (
           <nav className="nav">
             <Link to="/dashboard" className={location.pathname === '/dashboard' ? 'active' : ''}>
@@ -33,9 +35,7 @@ export function Layout({ children }: LayoutProps) {
           </nav>
         )}
       </header>
-      <main className="app-main">
-        {children}
-      </main>
+      <main className="app-main">{children}</main>
     </div>
   )
 }

@@ -16,12 +16,17 @@ interface AuthContextType extends AuthState {
 
 const AuthContext = createContext<AuthContextType | null>(null)
 
+function getInitialAuthState(): AuthState {
+  const accessToken = localStorage.getItem(STORAGE_KEYS.ACCESS_TOKEN)
+  return {
+    isAuthenticated: !!accessToken,
+    isLoading: false,
+    accessToken,
+  }
+}
+
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [state, setState] = useState<AuthState>({
-    isAuthenticated: false,
-    isLoading: true,
-    accessToken: null,
-  })
+  const [state, setState] = useState<AuthState>(getInitialAuthState)
 
   const login = useCallback((accessToken: string, refreshToken: string) => {
     localStorage.setItem(STORAGE_KEYS.ACCESS_TOKEN, accessToken)
@@ -68,27 +73,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, [login, logout])
 
-  // Check for existing token on mount
-  useEffect(() => {
-    const accessToken = localStorage.getItem(STORAGE_KEYS.ACCESS_TOKEN)
-    if (accessToken) {
-      setState({
-        isAuthenticated: true,
-        isLoading: false,
-        accessToken,
-      })
-    } else {
-      setState(prev => ({ ...prev, isLoading: false }))
-    }
-  }, [])
-
   // Set up token refresh interval (refresh 5 minutes before expiry, assuming 30 min token)
   useEffect(() => {
     if (!state.isAuthenticated) return
 
-    const refreshInterval = setInterval(() => {
-      refreshAccessToken()
-    }, 25 * 60 * 1000) // 25 minutes
+    const refreshInterval = setInterval(
+      () => {
+        refreshAccessToken()
+      },
+      25 * 60 * 1000
+    ) // 25 minutes
 
     return () => clearInterval(refreshInterval)
   }, [state.isAuthenticated, refreshAccessToken])

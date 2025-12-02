@@ -29,7 +29,9 @@ export default function ComingSoon() {
 
   return (
     <div className="container">
-      <h1 onClick={handleLogoClick} style={{ cursor: 'default' }}>×</h1>
+      <h1 onClick={handleLogoClick} style={{ cursor: 'default' }}>
+        ×
+      </h1>
       <p>Delete — coming soon</p>
       <p className="hint">my.trydelete.app</p>
     </div>
