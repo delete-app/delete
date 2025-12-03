@@ -8,6 +8,7 @@ import {
   DialogTitle,
   DialogDescription,
   DialogCloseTrigger,
+  Loading,
 } from '../components/ui'
 
 export default function Settings() {
@@ -15,11 +16,7 @@ export default function Settings() {
   const { data: user, isLoading, error } = $api.useQuery('get', '/v1/users/me')
 
   if (isLoading) {
-    return (
-      <div className="max-w-xl">
-        <div className="text-text-dim">Loading...</div>
-      </div>
-    )
+    return <Loading text="Loading settings..." />
   }
 
   if (error) {

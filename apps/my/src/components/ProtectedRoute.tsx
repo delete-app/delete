@@ -1,5 +1,6 @@
 import { Navigate, useLocation } from 'react-router-dom'
 import { useAuth } from '../lib/auth/context'
+import { Loading } from './ui'
 
 interface ProtectedRouteProps {
   children: React.ReactNode
@@ -11,11 +12,7 @@ export function ProtectedRoute({ children, requireProfileComplete = true }: Prot
   const location = useLocation()
 
   if (isLoading) {
-    return (
-      <div className="loading-container">
-        <div className="loading-spinner" />
-      </div>
-    )
+    return <Loading />
   }
 
   if (!isAuthenticated) {

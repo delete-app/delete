@@ -8,3 +8,4 @@ export {
   DialogDescription,
   DialogCloseTrigger,
 } from './dialog'
+export { Spinner, Loading } from './spinner'
