@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useAuth } from '../lib/auth/context'
+import { Button } from './ui'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -39,12 +40,9 @@ export function Layout({ children }: LayoutProps) {
             >
               Settings
             </Link>
-            <button
-              onClick={logout}
-              className="bg-transparent border-none text-text-dim text-sm cursor-pointer p-0 transition-colors hover:text-text"
-            >
+            <Button variant="ghost" size="sm" onClick={logout} className="p-0">
               Sign out
-            </button>
+            </Button>
           </nav>
         )}
       </header>

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { $api } from '../lib/api/client'
 import { useAuth } from '../lib/auth/context'
+import { Button, Input, Textarea, Label } from '../components/ui'
 
 type Step = 'basics' | 'details' | 'preferences'
 
@@ -77,13 +78,6 @@ export default function Onboarding() {
     })
   }
 
-  const inputClass =
-    'py-3.5 px-4 text-base border border-border rounded-lg bg-bg-secondary text-text outline-none transition-colors focus:border-text-dim placeholder:text-text-dimmer font-[inherit]'
-  const primaryBtnClass =
-    'flex-1 py-3.5 px-4 text-base font-medium border-none rounded-lg bg-text text-bg cursor-pointer transition-opacity hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed'
-  const secondaryBtnClass =
-    'flex-1 py-3.5 px-4 text-base font-medium border border-border rounded-lg bg-transparent text-text-muted cursor-pointer transition-colors hover:border-text-dim hover:text-text'
-
   return (
     <div className="max-w-md mx-auto pt-8">
       <div className="flex items-center justify-center mb-12">
@@ -124,56 +118,53 @@ export default function Onboarding() {
           )}
 
           <div className="flex flex-col gap-2">
-            <label className="text-sm text-text-muted">Your name</label>
-            <input
+            <Label>Your name</Label>
+            <Input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="What should we call you?"
               required
-              className={inputClass}
             />
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-sm text-text-muted">Birthday</label>
-            <input
+            <Label>Birthday</Label>
+            <Input
               type="date"
               value={birthDate}
               onChange={(e) => setBirthDate(e.target.value)}
               max={MAX_BIRTH_DATE}
               required
-              className={inputClass}
             />
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-sm text-text-muted">I am</label>
+            <Label>I am</Label>
             <div className="flex gap-2 flex-wrap">
               {['male', 'female', 'non-binary', 'other'].map((g) => (
-                <button
+                <Button
                   key={g}
                   type="button"
-                  className={`flex-1 min-w-[100px] py-3 px-4 text-sm border rounded-lg cursor-pointer transition-all ${
-                    gender === g
-                      ? 'border-text bg-text text-bg'
-                      : 'border-border bg-transparent text-text-muted hover:border-text-dim hover:text-text'
-                  }`}
+                  variant="chip"
+                  size="sm"
+                  selected={gender === g}
                   onClick={() => setGender(g)}
+                  className="flex-1 min-w-[100px]"
                 >
                   {g.charAt(0).toUpperCase() + g.slice(1).replace('-', ' ')}
-                </button>
+                </Button>
               ))}
             </div>
           </div>
 
-          <button
+          <Button
             type="submit"
             disabled={updateMutation.isPending || !name || !birthDate || !gender}
-            className={`${primaryBtnClass} mt-4`}
+            className="mt-4"
           >
             {updateMutation.isPending ? 'Saving...' : 'Continue'}
-          </button>
+          </Button>
         </form>
       )}
 
@@ -189,36 +180,39 @@ export default function Onboarding() {
           )}
 
           <div className="flex flex-col gap-2">
-            <label className="text-sm text-text-muted">About you</label>
-            <textarea
+            <Label>About you</Label>
+            <Textarea
               value={bio}
               onChange={(e) => setBio(e.target.value)}
               placeholder="Write a short bio..."
               rows={4}
               maxLength={500}
-              className={`${inputClass} resize-y min-h-[100px]`}
             />
             <span className="text-xs text-text-dimmer text-right">{bio.length}/500</span>
           </div>
 
           <div className="flex flex-col gap-2">
-            <label className="text-sm text-text-muted">Location</label>
-            <input
+            <Label>Location</Label>
+            <Input
               type="text"
               value={location}
               onChange={(e) => setLocation(e.target.value)}
               placeholder="City, Country"
-              className={inputClass}
             />
           </div>
 
           <div className="flex gap-4 mt-4">
-            <button type="button" className={secondaryBtnClass} onClick={() => setStep('basics')}>
+            <Button
+              type="button"
+              variant="secondary"
+              onClick={() => setStep('basics')}
+              className="flex-1"
+            >
               Back
-            </button>
-            <button type="submit" disabled={updateMutation.isPending} className={primaryBtnClass}>
+            </Button>
+            <Button type="submit" disabled={updateMutation.isPending} className="flex-1">
               {updateMutation.isPending ? 'Saving...' : 'Continue'}
-            </button>
+            </Button>
           </div>
         </form>
       )}
@@ -235,40 +229,44 @@ export default function Onboarding() {
           )}
 
           <div className="flex flex-col gap-2">
-            <label className="text-sm text-text-muted">I'm interested in</label>
+            <Label>I'm interested in</Label>
             <div className="flex gap-2 flex-wrap">
               {[
                 { value: 'male', label: 'Men' },
                 { value: 'female', label: 'Women' },
                 { value: 'everyone', label: 'Everyone' },
               ].map((option) => (
-                <button
+                <Button
                   key={option.value}
                   type="button"
-                  className={`flex-1 min-w-[100px] py-3 px-4 text-sm border rounded-lg cursor-pointer transition-all ${
-                    lookingFor === option.value
-                      ? 'border-text bg-text text-bg'
-                      : 'border-border bg-transparent text-text-muted hover:border-text-dim hover:text-text'
-                  }`}
+                  variant="chip"
+                  size="sm"
+                  selected={lookingFor === option.value}
                   onClick={() => setLookingFor(option.value)}
+                  className="flex-1 min-w-[100px]"
                 >
                   {option.label}
-                </button>
+                </Button>
               ))}
             </div>
           </div>
 
           <div className="flex gap-4 mt-4">
-            <button type="button" className={secondaryBtnClass} onClick={() => setStep('details')}>
+            <Button
+              type="button"
+              variant="secondary"
+              onClick={() => setStep('details')}
+              className="flex-1"
+            >
               Back
-            </button>
-            <button
+            </Button>
+            <Button
               type="submit"
               disabled={updateMutation.isPending || !lookingFor}
-              className={primaryBtnClass}
+              className="flex-1"
             >
               {updateMutation.isPending ? 'Saving...' : 'Complete Setup'}
-            </button>
+            </Button>
           </div>
         </form>
       )}

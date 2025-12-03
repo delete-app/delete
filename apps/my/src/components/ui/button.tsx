@@ -1,11 +1,12 @@
 import { forwardRef, type ButtonHTMLAttributes } from 'react'
 
-type ButtonVariant = 'primary' | 'secondary' | 'danger' | 'ghost'
+type ButtonVariant = 'primary' | 'secondary' | 'danger' | 'ghost' | 'chip'
 type ButtonSize = 'sm' | 'md' | 'lg'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant
   size?: ButtonSize
+  selected?: boolean
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
@@ -15,7 +16,12 @@ const variantStyles: Record<ButtonVariant, string> = {
     'bg-transparent text-text-muted border border-border hover:border-text-dim hover:text-text',
   danger: 'bg-transparent text-danger border border-danger hover:bg-danger hover:text-bg',
   ghost: 'bg-transparent text-text-dim border-none hover:text-text hover:bg-bg-secondary',
+  chip: 'border rounded-lg transition-all',
 }
+
+const chipSelectedStyles = 'border-text bg-text text-bg'
+const chipUnselectedStyles =
+  'border-border bg-transparent text-text-muted hover:border-text-dim hover:text-text'
 
 const sizeStyles: Record<ButtonSize, string> = {
   sm: 'py-2.5 px-4 text-sm',
@@ -24,11 +30,14 @@ const sizeStyles: Record<ButtonSize, string> = {
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ variant = 'primary', size = 'md', className = '', children, ...props }, ref) => {
+  ({ variant = 'primary', size = 'md', selected, className = '', children, ...props }, ref) => {
+    const chipStyles =
+      variant === 'chip' ? (selected ? chipSelectedStyles : chipUnselectedStyles) : ''
+
     return (
       <button
         ref={ref}
-        className={`font-medium rounded-lg cursor-pointer transition-all ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+        className={`font-medium rounded-lg cursor-pointer transition-all ${variantStyles[variant]} ${sizeStyles[size]} ${chipStyles} ${className}`}
         {...props}
       >
         {children}
