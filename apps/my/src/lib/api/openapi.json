@@ -80,17 +80,98 @@
         "tags": ["auth"],
         "summary": "Refresh Token",
         "operationId": "refresh_token_v1_auth_refresh_post",
+        "parameters": [
+          {
+            "name": "refresh_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Refresh Token"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
-            "application/json": { "schema": { "$ref": "#/components/schemas/TokenRefresh" } }
-          },
-          "required": true
+            "application/json": {
+              "schema": {
+                "anyOf": [{ "$ref": "#/components/schemas/TokenRefresh" }, { "type": "null" }],
+                "title": "Token Data"
+              }
+            }
+          }
         },
         "responses": {
           "200": {
             "description": "Successful Response",
             "content": {
               "application/json": { "schema": { "$ref": "#/components/schemas/Token" } }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/HTTPValidationError" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/auth/logout": {
+      "post": {
+        "tags": ["auth"],
+        "summary": "Logout",
+        "description": "Clear auth cookies.",
+        "operationId": "logout_v1_auth_logout_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "additionalProperties": { "type": "string" },
+                  "type": "object",
+                  "title": "Response Logout V1 Auth Logout Post"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/users/me": {
+      "get": {
+        "tags": ["users"],
+        "summary": "Get Current User",
+        "description": "Get the current authenticated user's profile.",
+        "operationId": "get_current_user_v1_users_me_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Authorization"
+            }
+          },
+          {
+            "name": "access_token",
+            "in": "cookie",
+            "required": false,
+            "schema": {
+              "anyOf": [{ "type": "string" }, { "type": "null" }],
+              "title": "Access Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/UserResponse" } }
             }
           },
           "422": {

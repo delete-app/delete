@@ -150,3 +150,139 @@ p {
   border-color: #666;
   color: #fafafa;
 }
+
+/* App Layout */
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.app-header .logo {
+  font-size: 2rem;
+  font-weight: 200;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.app-header .nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.app-header .nav a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+.app-header .nav a:hover,
+.app-header .nav a.active {
+  color: #fafafa;
+}
+
+.app-header .nav-logout {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.app-header .nav-logout:hover {
+  color: #fafafa;
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Dashboard */
+.dashboard {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.dashboard h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+/* Settings */
+.settings {
+  max-width: 600px;
+}
+
+.settings h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.settings-loading {
+  color: #666;
+}
+
+.settings-section {
+  margin-bottom: 2.5rem;
+}
+
+.settings-section h3 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.settings-item label {
+  color: #888;
+  font-size: 0.875rem;
+}
+
+.settings-item span {
+  color: #fafafa;
+  font-size: 0.875rem;
+}
+
+.btn-danger {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  border: 1px solid #ff4444;
+  border-radius: 8px;
+  background: transparent;
+  color: #ff4444;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-danger:hover {
+  background: #ff4444;
+  color: #0a0a0a;
+}
