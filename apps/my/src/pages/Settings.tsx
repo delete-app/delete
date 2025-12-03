@@ -79,11 +79,9 @@ export default function Settings() {
             </DialogDescription>
             <div className="flex gap-3 justify-end">
               <DialogCloseTrigger asChild>
-                <Button variant="secondary" size="sm">
-                  Cancel
-                </Button>
+                <Button variant="secondary">Cancel</Button>
               </DialogCloseTrigger>
-              <Button variant="danger" size="sm" onClick={logout}>
+              <Button variant="danger" onClick={logout}>
                 Sign out
               </Button>
             </div>
