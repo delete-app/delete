@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { $api } from '../lib/api/client'
 import { useAuth } from '../lib/auth/context'
 import {
@@ -10,10 +11,17 @@ import {
   DialogCloseTrigger,
   Loading,
 } from '../components/ui'
+import { notify } from '../lib/toast'
 
 export default function Settings() {
   const { logout } = useAuth()
   const { data: user, isLoading, error } = $api.useQuery('get', '/v1/users/me')
+
+  useEffect(() => {
+    if (error) {
+      notify.error('Failed to load profile')
+    }
+  }, [error])
 
   if (isLoading) {
     return <Loading text="Loading settings..." />
@@ -22,9 +30,7 @@ export default function Settings() {
   if (error) {
     return (
       <div className="max-w-xl">
-        <div className="py-3 px-4 text-sm text-error bg-error/10 rounded-lg">
-          Failed to load profile
-        </div>
+        <p className="text-text-dim">Unable to load settings. Please try again.</p>
       </div>
     )
   }

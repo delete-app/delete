@@ -2,28 +2,27 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { $api } from '../lib/api/client'
 import { Button, Input } from '../components/ui'
+import { notify } from '../lib/toast'
 
 export default function Signup() {
   const navigate = useNavigate()
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [error, setError] = useState('')
 
   const signupMutation = $api.useMutation('post', '/v1/auth/signup', {
     onSuccess: () => {
-      // Signup successful, redirect to login
+      notify.success('Account created! Please sign in.')
       navigate('/login')
     },
     onError: (err) => {
       const detail = err.detail?.[0]?.msg
-      setError(detail || 'Signup failed')
+      notify.error(detail || 'Signup failed')
     },
   })
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    setError('')
     signupMutation.mutate({
       body: { email, password, name: name || undefined },
     })
@@ -36,12 +35,6 @@ export default function Signup() {
         <h2 className="text-2xl font-normal text-text-muted mb-8">Create account</h2>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-          {error && (
-            <div className="py-3 px-4 text-sm text-error bg-error/10 rounded-lg text-left">
-              {error}
-            </div>
-          )}
-
           <Input
             type="text"
             placeholder="Name"

@@ -3,13 +3,13 @@ import { Link, useNavigate } from 'react-router-dom'
 import { $api } from '../lib/api/client'
 import { useAuth } from '../lib/auth/context'
 import { Button, Input } from '../components/ui'
+import { notify } from '../lib/toast'
 
 export default function Login() {
   const navigate = useNavigate()
   const { login } = useAuth()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [error, setError] = useState('')
 
   const loginMutation = $api.useMutation('post', '/v1/auth/login', {
     onSuccess: async () => {
@@ -19,13 +19,12 @@ export default function Login() {
     },
     onError: (err) => {
       const detail = err.detail?.[0]?.msg
-      setError(detail || 'Login failed')
+      notify.error(detail || 'Login failed')
     },
   })
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    setError('')
     loginMutation.mutate({
       body: { email, password },
     })
@@ -38,12 +37,6 @@ export default function Login() {
         <h2 className="text-2xl font-normal text-text-muted mb-8">Welcome back</h2>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-          {error && (
-            <div className="py-3 px-4 text-sm text-error bg-error/10 rounded-lg text-left">
-              {error}
-            </div>
-          )}
-
           <Input
             type="email"
             placeholder="Email"

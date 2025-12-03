@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { $api } from '../lib/api/client'
 import { useAuth } from '../lib/auth/context'
 import { Button, Input, Textarea, Label } from '../components/ui'
+import { notify } from '../lib/toast'
 
 type Step = 'basics' | 'details' | 'preferences'
 
@@ -18,7 +19,6 @@ export default function Onboarding() {
   const navigate = useNavigate()
   const { refetchUser } = useAuth()
   const [step, setStep] = useState<Step>('basics')
-  const [error, setError] = useState('')
 
   // Form state
   const [name, setName] = useState('')
@@ -37,17 +37,17 @@ export default function Onboarding() {
       } else {
         // Refetch user to update profile_complete in auth context
         await refetchUser()
+        notify.success('Profile complete!')
         navigate('/dashboard')
       }
     },
     onError: (err) => {
-      setError(err.detail?.[0]?.msg || 'Failed to save')
+      notify.error(err.detail?.[0]?.msg || 'Failed to save')
     },
   })
 
   function handleBasics(e: React.FormEvent) {
     e.preventDefault()
-    setError('')
     updateMutation.mutate({
       body: {
         name,
@@ -59,7 +59,6 @@ export default function Onboarding() {
 
   function handleDetails(e: React.FormEvent) {
     e.preventDefault()
-    setError('')
     updateMutation.mutate({
       body: {
         bio: bio || undefined,
@@ -70,7 +69,6 @@ export default function Onboarding() {
 
   function handlePreferences(e: React.FormEvent) {
     e.preventDefault()
-    setError('')
     updateMutation.mutate({
       body: {
         looking_for: lookingFor || undefined,
@@ -110,12 +108,6 @@ export default function Onboarding() {
         <form onSubmit={handleBasics} className="flex flex-col gap-6">
           <h2 className="text-2xl font-medium mb-0">Let's get to know you</h2>
           <p className="text-text-dim text-sm -mt-4">Tell us the basics</p>
-
-          {error && (
-            <div className="py-3 px-4 text-sm text-error bg-error/10 rounded-lg text-left">
-              {error}
-            </div>
-          )}
 
           <div className="flex flex-col gap-2">
             <Label>Your name</Label>
@@ -173,12 +165,6 @@ export default function Onboarding() {
           <h2 className="text-2xl font-medium mb-0">Add some details</h2>
           <p className="text-text-dim text-sm -mt-4">Help others get to know you</p>
 
-          {error && (
-            <div className="py-3 px-4 text-sm text-error bg-error/10 rounded-lg text-left">
-              {error}
-            </div>
-          )}
-
           <div className="flex flex-col gap-2">
             <Label>About you</Label>
             <Textarea
@@ -221,12 +207,6 @@ export default function Onboarding() {
         <form onSubmit={handlePreferences} className="flex flex-col gap-6">
           <h2 className="text-2xl font-medium mb-0">Who are you looking for?</h2>
           <p className="text-text-dim text-sm -mt-4">We'll help you find the right match</p>
-
-          {error && (
-            <div className="py-3 px-4 text-sm text-error bg-error/10 rounded-lg text-left">
-              {error}
-            </div>
-          )}
 
           <div className="flex flex-col gap-2">
             <Label>I'm interested in</Label>
