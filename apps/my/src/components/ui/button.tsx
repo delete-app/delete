@@ -24,9 +24,9 @@ const chipUnselectedStyles =
   'border-border bg-transparent text-text-muted hover:border-text-dim hover:text-text'
 
 const sizeStyles: Record<ButtonSize, string> = {
-  sm: 'py-3 px-4 text-sm',
-  md: 'py-4 px-5 text-base',
-  lg: 'py-5 px-6 text-base',
+  sm: 'py-2 px-3 text-sm',
+  md: 'py-3 px-4 text-base',
+  lg: 'py-3.5 px-5 text-base',
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(

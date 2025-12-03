@@ -1,7 +1,7 @@
 import { forwardRef, type InputHTMLAttributes, type TextareaHTMLAttributes } from 'react'
 
 const baseInputStyles =
-  'w-full py-4 px-5 text-base border border-border rounded-lg bg-bg-secondary text-text outline-none transition-colors focus:border-text-dim placeholder:text-text-dimmer font-[inherit]'
+  'w-full py-3 px-4 text-base border border-border rounded-lg bg-bg-secondary text-text outline-none transition-colors focus:border-text-dim placeholder:text-text-dimmer font-[inherit]'
 
 type InputProps = InputHTMLAttributes<HTMLInputElement>
 
