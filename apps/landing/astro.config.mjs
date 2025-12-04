@@ -8,7 +8,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Delete Learn',
-			description: 'Relationship education, the Zerodha Varsity way. Research-backed, no fluff.',
+			description: 'Research-backed relationship education. Understand yourself, attraction, compatibility, and how to build lasting connections — with peer-reviewed sources.',
 			logo: {
 				light: './src/assets/logo-light.svg',
 				dark: './src/assets/logo-dark.svg',
@@ -40,16 +40,70 @@ export default defineConfig({
 					autogenerate: { directory: 'learn/module-2-attraction' },
 				},
 				{
+					label: 'Module 3: Compatibility Decoded',
+					autogenerate: { directory: 'learn/module-3-compatibility' },
+				},
+				{
 					label: 'Module 4: The Neurodivergent Lens',
 					autogenerate: { directory: 'learn/module-4-neurodivergent' },
 				},
+				{
+					label: 'Module 5: Building Something Real',
+					autogenerate: { directory: 'learn/module-5-building-real' },
+				},
 			],
 			head: [
+				// Favicon
 				{
 					tag: 'link',
 					attrs: {
 						rel: 'icon',
-						href: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>×</text></svg>",
+						type: 'image/svg+xml',
+						href: '/favicon.svg',
+					},
+				},
+				// Open Graph
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:type',
+						content: 'website',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:site_name',
+						content: 'Delete Learn',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:image',
+						content: 'https://trydelete.app/og-image.svg',
+					},
+				},
+				// Twitter Card
+				{
+					tag: 'meta',
+					attrs: {
+						name: 'twitter:card',
+						content: 'summary_large_image',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						name: 'twitter:site',
+						content: '@trydeleteapp',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						name: 'twitter:image',
+						content: 'https://trydelete.app/og-image.svg',
 					},
 				},
 			],
