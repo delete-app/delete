@@ -1,5 +1,5 @@
 ---
-title: "ADHD in Relationships"
+title: "4.1 ADHD in Relationships"
 description: "Hyperfocus, rejection sensitivity, time blindness — dating with ADHD is different. Finally, content that gets it."
 sidebar:
   order: 1
@@ -245,6 +245,6 @@ If you're dating someone with ADHD: It's not personal. But it is real. And love 
 
 ---
 
-*Module 4 continues with: Autism & Intimacy (coming soon)*
+*Next: [Autism & Intimacy](/learn/module-4-neurodivergent/2-autism-and-intimacy/) — dating when your brain processes social cues differently.*
 
 *Or go back to: [Module 1: Know Yourself First](/learn/module-1-know-yourself/1-why-self-awareness-matters/)*
