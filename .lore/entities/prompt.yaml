@@ -1,0 +1,121 @@
+# Prompt Entity
+# Profile prompts (questions and answers)
+
+id: "entity:prompt:v1"
+name: "Prompt"
+description: "User's answer to a profile prompt question, showing personality"
+status: implemented
+updated: "2025-12-04"
+
+fields:
+  - name: id
+    type: uuid
+    primary: true
+    description: "Unique prompt answer identifier"
+
+  - name: user_id
+    type: uuid
+    description: "User who answered"
+    constraints:
+      - required
+      - foreign_key: users.id
+
+  - name: question
+    type: string
+    description: "The prompt question (from AVAILABLE_PROMPTS)"
+    constraints:
+      - required
+      - max_length: 200
+
+  - name: answer
+    type: text
+    description: "User's answer to the prompt"
+    constraints:
+      - required
+
+  - name: order
+    type: integer
+    description: "Display order"
+    constraints:
+      - default: 0
+
+  - name: created_at
+    type: timestamp
+    description: "When prompt was answered"
+
+available_prompts:
+  location: "apps/api/src/app/schemas/profile.py"
+  constant: "AVAILABLE_PROMPTS"
+  examples:
+    - "A perfect day for me looks like..."
+    - "I'm looking for someone who..."
+    - "My most controversial opinion is..."
+    - "I geek out about..."
+    - "You should NOT date me if..."
+
+validation:
+  - rule: "Question must be in AVAILABLE_PROMPTS list"
+    error: "Invalid prompt question"
+
+  - rule: "User cannot answer same question twice"
+    error: "You already answered this prompt"
+
+profile_requirements:
+  minimum: 1
+  completion_check: "len(prompts) >= 1 for profile_complete"
+
+operations:
+  - operation: "get_user_prompts"
+    returns: "Prompts ordered by order field"
+
+  - operation: "create_prompt"
+    validation: "Question must be in AVAILABLE_PROMPTS"
+    behavior: "Auto-assigns next order number"
+
+  - operation: "update_prompt"
+    behavior: "Updates answer text only"
+
+  - operation: "delete_prompt"
+    behavior: "Removes prompt answer"
+
+code_refs:
+  model:
+    path: "apps/api/src/app/models/profile.py"
+    class: "Prompt"
+    description: "SQLAlchemy ORM model"
+
+  available_prompts:
+    path: "apps/api/src/app/schemas/profile.py"
+    constant: "AVAILABLE_PROMPTS"
+    description: "List of valid prompt questions"
+
+  service:
+    path: "apps/api/src/app/services/profile.py"
+    functions:
+      - "get_user_prompts"
+      - "create_prompt"
+      - "update_prompt"
+      - "delete_prompt"
+    description: "Prompt CRUD operations"
+
+  migration:
+    path: "apps/api/alembic/versions/0003_add_profile_tables.py"
+    description: "Migration creating prompts table"
+
+notes: |
+  Prompts serve multiple purposes in Delete:
+
+  1. Personality expression: Shows who the user is beyond photos
+  2. Conversation starters: Other users can comment on specific prompts
+  3. Compatibility signal: How users answer reveals values and humor
+
+  The liked_item field on Like can reference prompts (e.g., "prompt_2"),
+  enabling targeted compliments that show genuine profile engagement.
+
+  Prompt questions are curated to encourage meaningful responses rather
+  than generic dating app cliches.
+
+links:
+  - entity:user:v1
+  - entity:like:v1
+  - component:api.profile:v1

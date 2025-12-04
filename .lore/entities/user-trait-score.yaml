@@ -1,0 +1,143 @@
+# User Trait Score Entity
+# Derived personality scores for compatibility matching
+
+id: "entity:user-trait-score:v1"
+name: "UserTraitScore"
+description: "Derived personality trait scores computed from quiz responses, used for compatibility matching"
+status: implemented
+updated: "2025-12-04"
+
+fields:
+  - name: id
+    type: uuid
+    primary: true
+    description: "Unique record identifier"
+
+  - name: user_id
+    type: uuid
+    description: "User these scores belong to"
+    constraints:
+      - required
+      - foreign_key: users.id
+      - unique
+      - indexed
+
+  - name: introvert_extrovert
+    type: integer
+    description: "1=strong introvert, 5=strong extrovert"
+    constraints:
+      - required
+      - min: 1
+      - max: 5
+
+  - name: planner_spontaneous
+    type: integer
+    description: "1=strong planner, 5=very spontaneous"
+    constraints:
+      - required
+      - min: 1
+      - max: 5
+
+  - name: conflict_talk_space
+    type: integer
+    description: "1=talks immediately, 5=needs space to process"
+    constraints:
+      - required
+      - min: 1
+      - max: 5
+
+  - name: together_alone_time
+    type: integer
+    description: "1=loves togetherness, 5=needs lots of alone time"
+    constraints:
+      - required
+      - min: 1
+      - max: 5
+
+  - name: slow_quick_decisions
+    type: integer
+    description: "1=very deliberate, 5=instant decisions"
+    constraints:
+      - required
+      - min: 1
+      - max: 5
+
+  - name: routine_novelty
+    type: integer
+    description: "1=loves routine, 5=novelty seeker"
+    constraints:
+      - required
+      - min: 1
+      - max: 5
+
+  - name: updated_at
+    type: timestamp
+    description: "When scores were last recalculated"
+
+derivation:
+  source: "QuizResponse answers"
+  process: "derive_trait_scores() in compatibility service"
+  mapping:
+    introvert_extrovert: "quiz answer for 'introvert_extrovert' question"
+    planner_spontaneous: "quiz answer for 'planner_spontaneous' question"
+    conflict_talk_space: "quiz answer for 'conflict_style' question"
+    together_alone_time: "quiz answer for 'alone_time' question"
+    slow_quick_decisions: "quiz answer for 'decision_speed' question"
+    routine_novelty: "quiz answer for 'novelty_needs' question"
+  default: 3  # Neutral if quiz question not answered
+
+usage:
+  - purpose: "Compatibility scoring"
+    implementation: "calculate_compatibility() in compatibility service"
+    description: "Compute overall compatibility percentage between two users"
+
+  - purpose: "Discovery ranking"
+    implementation: "rank_profiles() in discovery service"
+    description: "Compatibility score is 50% of profile ranking weight"
+
+  - purpose: "Why you might click"
+    implementation: "calculate_compatibility() generates highlights"
+    description: "Human-readable explanations of compatibility"
+
+code_refs:
+  model:
+    path: "apps/api/src/app/models/matching.py"
+    class: "UserTraitScore"
+    description: "SQLAlchemy ORM model"
+
+  derivation:
+    path: "apps/api/src/app/services/compatibility.py"
+    function: "derive_trait_scores"
+    description: "Converts quiz responses to trait scores"
+
+  calculation:
+    path: "apps/api/src/app/services/compatibility.py"
+    function: "calculate_compatibility"
+    description: "Compares two users' trait scores"
+
+  labels:
+    path: "apps/api/src/app/services/compatibility.py"
+    constant: "TRAIT_LABELS"
+    description: "Human-readable labels for each score value"
+
+  migration:
+    path: "apps/api/alembic/versions/0004_add_matching_tables.py"
+    description: "Migration creating user_trait_scores table"
+
+notes: |
+  Trait scores are DERIVED, not raw user input. This separation allows:
+  1. Algorithm evolution without changing stored quiz responses
+  2. Re-derivation if scoring logic improves
+  3. Clean separation between input (quiz) and output (scores)
+
+  The unique constraint on user_id ensures exactly one score record per user.
+  derive_trait_scores() deletes existing scores before creating new ones.
+
+  Missing quiz answers default to 3 (neutral) - this allows partial quiz
+  completion while still enabling compatibility matching.
+
+links:
+  - decision:0011:v1
+  - entity:quiz-response:v1
+  - entity:user:v1
+  - component:api.compatibility:v1

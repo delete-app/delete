@@ -1,0 +1,164 @@
+# Badge Entity
+# Auto-generated personality badges from quiz
+
+id: "entity:badge:v1"
+name: "Badge"
+description: "Auto-generated personality badge based on quiz responses"
+status: implemented
+updated: "2025-12-04"
+
+fields:
+  - name: id
+    type: uuid
+    primary: true
+    description: "Unique badge identifier"
+
+  - name: user_id
+    type: uuid
+    description: "User who earned the badge"
+    constraints:
+      - required
+      - foreign_key: users.id
+
+  - name: badge_type
+    type: string
+    description: "Badge identifier (e.g., 'introvert', 'planner')"
+    constraints:
+      - required
+      - max_length: 50
+
+  - name: label
+    type: string
+    description: "Display text (e.g., 'Introvert')"
+    constraints:
+      - required
+      - max_length: 50
+
+  - name: description
+    type: string
+    description: "Explanation (e.g., 'Recharges with alone time')"
+    constraints:
+      - required
+      - max_length: 200
+
+  - name: created_at
+    type: timestamp
+    description: "When badge was generated"
+
+badge_definitions:
+  location: "apps/api/src/app/services/profile.py"
+  constant: "BADGE_DEFINITIONS"
+  generation_rule: "Only scores of 1-2 or 4-5 generate badges (not 3/neutral)"
+
+  badges:
+    introvert_extrovert:
+      - score: [1, 2]
+        type: "introvert"
+        label: "Introvert"
+        description: "Recharges with alone time"
+      - score: [4, 5]
+        type: "extrovert"
+        label: "Extrovert"
+        description: "Energized by social time"
+
+    planner_spontaneous:
+      - score: [1, 2]
+        type: "planner"
+        label: "Planner"
+        description: "Likes structure and schedules"
+      - score: [4, 5]
+        type: "spontaneous"
+        label: "Spontaneous"
+        description: "Goes with the flow"
+
+    conflict_style:
+      - score: [1, 2]
+        type: "talks_it_out"
+        label: "Talks through conflict"
+        description: "Prefers to discuss issues immediately"
+      - score: [4, 5]
+        type: "needs_space"
+        label: "Needs space first"
+        description: "Processes before discussing"
+
+    alone_time:
+      - score: [1, 2]
+        type: "low_alone_time"
+        label: "Together time"
+        description: "Prefers frequent togetherness"
+      - score: [4, 5]
+        type: "high_alone_time"
+        label: "Needs alone time"
+        description: "Values personal space"
+
+    decision_speed:
+      - score: [1, 2]
+        type: "slow_decisions"
+        label: "Thoughtful decider"
+        description: "Takes time to decide"
+      - score: [4, 5]
+        type: "quick_decisions"
+        label: "Quick decider"
+        description: "Decides fast and moves on"
+
+    novelty_needs:
+      - score: [1, 2]
+        type: "routine_lover"
+        label: "Routine lover"
+        description: "Finds comfort in consistency"
+      - score: [4, 5]
+        type: "novelty_seeker"
+        label: "Novelty seeker"
+        description: "Thrives on new experiences"
+
+display:
+  - context: "Profile view"
+    purpose: "Quick personality summary"
+    max_shown: "All earned badges"
+
+  - context: "Discovery card"
+    purpose: "Compatibility at a glance"
+    max_shown: "Top 3 badges"
+
+code_refs:
+  model:
+    path: "apps/api/src/app/models/profile.py"
+    class: "Badge"
+    description: "SQLAlchemy ORM model"
+
+  definitions:
+    path: "apps/api/src/app/services/profile.py"
+    constant: "BADGE_DEFINITIONS"
+    description: "Badge generation rules"
+
+  generation:
+    path: "apps/api/src/app/services/profile.py"
+    function: "submit_quiz"
+    description: "Generates badges during quiz submission"
+
+  retrieval:
+    path: "apps/api/src/app/services/profile.py"
+    function: "get_user_badges"
+    description: "Fetches user's badges"
+
+  migration:
+    path: "apps/api/alembic/versions/0003_add_profile_tables.py"
+    description: "Migration creating badges table"
+
+notes: |
+  Badges serve as a visual shorthand for personality traits:
+
+  1. At-a-glance compatibility: See traits without reading full profile
+  2. Conversation starters: "I see you're a planner too!"
+  3. Honest signaling: Badges are auto-generated, not user-selected
+
+  The neutral score (3) doesn't generate badges because it represents
+  ambivalence rather than a distinct trait.
+
+  Badges are regenerated whenever the quiz is re-submitted, ensuring
+  they stay in sync with current quiz answers.
+
+links:
+  - entity:quiz-response:v1
+  - entity:user:v1
+  - component:api.profile:v1

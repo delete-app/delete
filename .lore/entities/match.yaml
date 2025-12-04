@@ -1,0 +1,126 @@
+# Match Entity
+# Represents a mutual like between two users
+
+id: "entity:match:v1"
+name: "Match"
+description: "A mutual like between two users, enabling messaging and potential relationship"
+status: implemented
+updated: "2025-12-04"
+
+fields:
+  - name: id
+    type: uuid
+    primary: true
+    description: "Unique match identifier"
+
+  - name: user1_id
+    type: uuid
+    description: "First user (sorted by UUID for consistency)"
+    constraints:
+      - required
+      - foreign_key: users.id
+      - indexed
+
+  - name: user2_id
+    type: uuid
+    description: "Second user (sorted by UUID for consistency)"
+    constraints:
+      - required
+      - foreign_key: users.id
+      - indexed
+
+  - name: matched_at
+    type: timestamp
+    description: "When the match was created (second like timestamp)"
+
+  - name: status
+    type: enum
+    values: [active, unmatched, archived, dating, deleted]
+    description: "Current match lifecycle state"
+    constraints:
+      - indexed
+
+  - name: last_message_at
+    type: timestamp
+    description: "Timestamp of most recent message (for archival logic)"
+    constraints:
+      - nullable
+
+  - name: unmatched_by
+    type: uuid
+    description: "User who initiated unmatch (if applicable)"
+    constraints:
+      - nullable
+
+  - name: unmatch_reason
+    type: enum
+    values: [not_interested, no_response, inappropriate, met_offline, other]
+    description: "Why the match was ended"
+    constraints:
+      - nullable
+
+lifecycle_states:
+  active:
+    description: "Both users can message each other"
+    transitions_to: [unmatched, archived, dating, deleted]
+
+  unmatched:
+    description: "One user ended the match"
+    transitions_to: []  # Terminal state
+    records: [unmatched_by, unmatch_reason]
+
+  archived:
+    description: "No activity for 7+ days, hidden but restorable"
+    transitions_to: [active]  # Can be reactivated by new message
+
+  dating:
+    description: "Users confirmed they're dating (Delete success!)"
+    transitions_to: [archived]  # If it doesn't work out
+
+  deleted:
+    description: "Account deletion triggered this state"
+    transitions_to: []  # Terminal state
+
+code_refs:
+  model:
+    path: "apps/api/src/app/models/matching.py"
+    class: "Match"
+    description: "SQLAlchemy ORM model"
+
+  status_enum:
+    path: "apps/api/src/app/models/matching.py"
+    class: "MatchStatus"
+    description: "Match lifecycle state enum"
+
+  unmatch_reason_enum:
+    path: "apps/api/src/app/models/matching.py"
+    class: "UnmatchReason"
+    description: "Unmatch reason enum"
+
+  service:
+    path: "apps/api/src/app/services/matching.py"
+    functions:
+      - "get_user_matches"
+      - "unmatch"
+      - "archive_stale_matches"
+    description: "Match lifecycle operations"
+
+  migration:
+    path: "apps/api/alembic/versions/0004_add_matching_tables.py"
+    description: "Migration creating matches table"
+
+notes: |
+  Match creation happens automatically when the second user in a pair sends a like.
+  See the send_like() function in matching service.
+
+  User IDs are sorted (min/max by string) to ensure exactly one row per user pair,
+  regardless of who liked first.
+
+  The DATING state is key to Delete's philosophy - it's the celebration of the app's
+  purpose. Users who enter DATING state are the success metrics.
+
+links:
+  - decision:0014:v1
+  - entity:like:v1
+  - entity:user:v1
+  - component:api.matching:v1

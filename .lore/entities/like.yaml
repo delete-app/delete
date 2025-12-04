@@ -1,0 +1,105 @@
+# Like Entity
+# One-directional interest from one user to another
+
+id: "entity:like:v1"
+name: "Like"
+description: "A user expressing interest in another user's profile, optionally with a comment"
+status: implemented
+updated: "2025-12-04"
+
+fields:
+  - name: id
+    type: uuid
+    primary: true
+    description: "Unique like identifier"
+
+  - name: from_user_id
+    type: uuid
+    description: "User sending the like"
+    constraints:
+      - required
+      - foreign_key: users.id
+      - indexed
+
+  - name: to_user_id
+    type: uuid
+    description: "User receiving the like"
+    constraints:
+      - required
+      - foreign_key: users.id
+      - indexed
+
+  - name: message
+    type: text
+    description: "Comment sent with the like (required for first 5 likes)"
+    constraints:
+      - nullable
+
+  - name: liked_item
+    type: string
+    description: "What they liked: photo_1, prompt_2, bio, etc."
+    constraints:
+      - nullable
+      - max_length: 50
+
+  - name: created_at
+    type: timestamp
+    description: "When the like was sent"
+
+unique_constraints:
+  - name: "ix_likes_unique"
+    columns: [from_user_id, to_user_id]
+    description: "One like per user pair"
+
+business_rules:
+  - rule: "First 5 likes require a comment"
+    implementation: "requires_comment() in matching service"
+    rationale: "Forces genuine engagement, reduces spam"
+
+  - rule: "Maximum 10 likes per day"
+    implementation: "get_daily_likes_remaining() in matching service"
+    rationale: "Quality over quantity, prevents mass-liking"
+
+  - rule: "Same message 3+ times = spam flag"
+    implementation: "check_abuse_patterns() in matching service"
+    rationale: "Detects copy-paste openers"
+
+  - rule: "Mutual like creates a Match"
+    implementation: "send_like() checks for reciprocal like"
+    rationale: "Core matching mechanic"
+
+code_refs:
+  model:
+    path: "apps/api/src/app/models/matching.py"
+    class: "Like"
+    description: "SQLAlchemy ORM model"
+
+  service:
+    path: "apps/api/src/app/services/matching.py"
+    functions:
+      - "send_like"
+      - "get_pending_likes"
+      - "requires_comment"
+    description: "Like operations"
+
+  migration:
+    path: "apps/api/alembic/versions/0004_add_matching_tables.py"
+    description: "Migration creating likes table"
+
+notes: |
+  Likes are one-directional - User A liking User B does NOT mean User B sees a match.
+  User B only gets notified that someone liked them (with the message if provided).
+
+  If User B has already passed on User A, User A's like is still recorded but
+  will not create a match even if User B later likes User A (until pass expires).
+
+  The liked_item field enables "like specific content" feature - users can
+  indicate they liked a specific photo or prompt answer.
+
+links:
+  - decision:0013:v1
+  - decision:0014:v1
+  - entity:match:v1
+  - entity:user:v1
+  - entity:daily-like-count:v1
+  - component:api.matching:v1

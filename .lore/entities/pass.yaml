@@ -1,0 +1,107 @@
+# Pass Entity
+# Temporary rejection with 30-day cooldown
+
+id: "entity:pass:v1"
+name: "Pass"
+description: "A user passing on a profile, hiding it for 30 days (not permanent)"
+status: implemented
+updated: "2025-12-04"
+
+fields:
+  - name: id
+    type: uuid
+    primary: true
+    description: "Unique pass identifier"
+
+  - name: from_user_id
+    type: uuid
+    description: "User who passed"
+    constraints:
+      - required
+      - foreign_key: users.id
+      - indexed
+
+  - name: to_user_id
+    type: uuid
+    description: "User being passed on"
+    constraints:
+      - required
+      - foreign_key: users.id
+
+  - name: created_at
+    type: timestamp
+    description: "When the pass was made"
+
+  - name: expires_at
+    type: timestamp
+    description: "When the pass expires (created_at + 30 days)"
+    constraints:
+      - required
+      - indexed
+
+unique_constraints:
+  - name: "ix_passes_unique"
+    columns: [from_user_id, to_user_id]
+    description: "One pass per user pair (re-pass updates expires_at)"
+
+key_design_decisions:
+  - decision: "30-day cooldown, not permanent"
+    rationale: |
+      Permanent passes cause "regret churn" - users deleting accounts to see
+      profiles they previously rejected. 30 days allows preferences to evolve
+      and profiles to update while providing meaningful temporary hiding.
+    link: "decision:0012:v1"
+
+  - decision: "Bidirectional pass checking"
+    rationale: |
+      If User B passed on User A, and User A likes User B, the like is recorded
+      but no match is created. This prevents wasted effort and false hope.
+    implementation: "get_users_who_passed_me() in discovery service"
+
+  - decision: "Pass can be undone"
+    rationale: "Allows recovery from accidental passes"
+    implementation: "undo_pass() in matching service"
+
+code_refs:
+  model:
+    path: "apps/api/src/app/models/matching.py"
+    class: "Pass"
+    description: "SQLAlchemy ORM model"
+
+  service:
+    path: "apps/api/src/app/services/matching.py"
+    functions:
+      - "send_pass"
+      - "undo_pass"
+    description: "Pass operations"
+
+  discovery_filter:
+    path: "apps/api/src/app/services/discovery.py"
+    functions:
+      - "get_active_pass_ids"
+      - "get_users_who_passed_me"
+    description: "Pass filtering in discovery"
+
+  migration:
+    path: "apps/api/alembic/versions/0004_add_matching_tables.py"
+    description: "Migration creating passes table"
+
+constants:
+  - name: "PASS_COOLDOWN_DAYS"
+    value: 30
+    location: "services/matching.py"
+    description: "Duration before passed profile reappears"
+
+notes: |
+  Passes are fundamentally different from blocks:
+  - Pass: Temporary (30 days), one-directional hiding
+  - Block: Permanent, bidirectional hiding
+
+  The expires_at index is critical for efficient filtering in discovery queries.
+  Consider periodic cleanup job to delete old expired passes for GDPR compliance.
+
+links:
+  - decision:0012:v1
+  - entity:user:v1
+  - component:api.matching:v1
+  - component:api.discovery:v1

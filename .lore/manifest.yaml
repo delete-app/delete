@@ -1,8 +1,8 @@
 name: "Delete"
 description: "A dating app designed to be deleted - built for lasting relationships, not engagement"
-version: "lore-v0.4.0@7816112"
+version: "lore-v0.5.0@471238b"
 created: "2025-12-03"
-updated: "2025-12-03"
+updated: "2025-12-04"
 
 repository:
   url: "https://github.com/delete-app/landing"
@@ -27,6 +27,8 @@ config:
     - .astro
     - "*.test.*"
     - ".turbo"
+    - "__pycache__"
+    - ".venv"
 
   versioning: hybrid  # semantic + commit hash
   id_format: "{type}:{path}:v{version}"
@@ -37,3 +39,22 @@ monorepo:
   workspaces:
     - "apps/*"
     - "packages/*"
+
+architecture_summary:
+  containers: 4
+  components: 4
+  entities: 12
+  decisions: 14
+  glossary_terms: 32
+
+latest_changes:
+  version: "lore-v0.5.0@471238b"
+  date: "2025-12-04"
+  summary: "Comprehensive matching system with trait-based compatibility"
+  highlights:
+    - "Trait-based compatibility scoring (6 dimensions, 0-100 score)"
+    - "30-day pass cooldown to reduce regret churn"
+    - "Rate limiting and abuse prevention (10 likes/day, required comments)"
+    - "Match lifecycle state machine (5 states)"
+    - "Discovery queue with multi-factor ranking"
+    - "Profile system (photos, prompts, quiz, badges)"

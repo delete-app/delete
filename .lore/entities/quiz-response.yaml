@@ -1,0 +1,120 @@
+# Quiz Response Entity
+# Raw quiz answers before trait derivation
+
+id: "entity:quiz-response:v1"
+name: "QuizResponse"
+description: "Raw user responses to behavioral quiz questions, source data for trait score derivation"
+status: implemented
+updated: "2025-12-04"
+
+fields:
+  - name: id
+    type: uuid
+    primary: true
+    description: "Unique response identifier"
+
+  - name: user_id
+    type: uuid
+    description: "User who answered"
+    constraints:
+      - required
+      - foreign_key: users.id
+
+  - name: question_key
+    type: string
+    description: "Quiz question identifier (e.g., 'introvert_extrovert')"
+    constraints:
+      - required
+      - max_length: 50
+
+  - name: answer_value
+    type: integer
+    description: "User's answer on 1-5 scale"
+    constraints:
+      - required
+      - min: 1
+      - max: 5
+
+  - name: created_at
+    type: timestamp
+    description: "When the answer was submitted"
+
+quiz_questions:
+  - key: "introvert_extrovert"
+    question: "How do you recharge after a long week?"
+    scale:
+      1: "Alone time, quiet activities"
+      5: "Social events, being with friends"
+
+  - key: "planner_spontaneous"
+    question: "How do you prefer to spend weekends?"
+    scale:
+      1: "Plan ahead, know the schedule"
+      5: "Go with the flow, decide in the moment"
+
+  - key: "conflict_style"
+    question: "When there's tension, what's your instinct?"
+    scale:
+      1: "Talk it out immediately"
+      5: "Need space to process first"
+
+  - key: "alone_time"
+    question: "In a relationship, how much together time do you need?"
+    scale:
+      1: "As much as possible"
+      5: "Need significant alone time"
+
+  - key: "decision_speed"
+    question: "When making decisions, do you..."
+    scale:
+      1: "Take time, consider all options"
+      5: "Decide quickly, move on"
+
+  - key: "novelty_needs"
+    question: "What's your ideal lifestyle?"
+    scale:
+      1: "Comfortable routines, familiar places"
+      5: "New experiences, constant variety"
+
+processing:
+  - step: "User submits quiz"
+    function: "submit_quiz() in profile service"
+  - step: "Raw responses saved to quiz_responses table"
+  - step: "Badges generated from strong answers (1-2 or 4-5)"
+  - step: "Trait scores derived from responses"
+    function: "derive_trait_scores() in compatibility service"
+
+code_refs:
+  model:
+    path: "apps/api/src/app/models/profile.py"
+    class: "QuizResponse"
+    description: "SQLAlchemy ORM model"
+
+  submission:
+    path: "apps/api/src/app/services/profile.py"
+    function: "submit_quiz"
+    description: "Handles quiz submission, badge generation, and trait derivation"
+
+  migration:
+    path: "apps/api/alembic/versions/0003_add_profile_tables.py"
+    description: "Migration creating quiz_responses table"
+
+notes: |
+  Quiz responses are the RAW user input. They're kept separate from derived
+  trait scores to allow:
+  1. Algorithm improvements without losing original data
+  2. Different derivation strategies (future A/B testing)
+  3. Audit trail of what users actually answered
+
+  On quiz re-submission, existing responses are deleted and replaced
+  (not updated). This simplifies the logic and ensures consistency.
+
+  Scores of 3 (middle) don't generate badges - badges are only for
+  distinct tendencies (1-2 or 4-5).
+
+links:
+  - decision:0011:v1
+  - entity:user-trait-score:v1
+  - entity:badge:v1
+  - entity:user:v1
+  - component:api.profile:v1

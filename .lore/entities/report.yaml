@@ -1,0 +1,157 @@
+# Report Entity
+# User reports for safety moderation
+
+id: "entity:report:v1"
+name: "Report"
+description: "User report of another user for review by moderation team"
+status: implemented
+updated: "2025-12-04"
+
+fields:
+  - name: id
+    type: uuid
+    primary: true
+    description: "Unique report identifier"
+
+  - name: reporter_id
+    type: uuid
+    description: "User filing the report"
+    constraints:
+      - required
+      - foreign_key: users.id
+      - indexed
+
+  - name: reported_id
+    type: uuid
+    description: "User being reported"
+    constraints:
+      - required
+      - foreign_key: users.id
+      - indexed
+
+  - name: reason
+    type: enum
+    values: [fake_profile, inappropriate_content, harassment, spam, underage, other]
+    description: "Category of the report"
+    constraints:
+      - required
+
+  - name: details
+    type: text
+    description: "Free-text explanation from reporter"
+    constraints:
+      - nullable
+
+  - name: created_at
+    type: timestamp
+    description: "When report was filed"
+
+  - name: reviewed_at
+    type: timestamp
+    description: "When admin reviewed the report"
+    constraints:
+      - nullable
+      - indexed (for pending reports queue)
+
+  - name: reviewed_by
+    type: uuid
+    description: "Admin who reviewed"
+    constraints:
+      - nullable
+
+  - name: action_taken
+    type: string
+    description: "Outcome of review (e.g., 'warning_sent', 'account_suspended')"
+    constraints:
+      - nullable
+      - max_length: 50
+
+report_reasons:
+  fake_profile:
+    description: "Profile appears to be fake, catfish, or using someone else's photos"
+    severity: high
+
+  inappropriate_content:
+    description: "Profile contains explicit, offensive, or rule-violating content"
+    severity: high
+
+  harassment:
+    description: "User sent unwanted, persistent, or threatening messages"
+    severity: critical
+
+  spam:
+    description: "User is sending promotional content or scam attempts"
+    severity: medium
+
+  underage:
+    description: "User appears to be under 18 years old"
+    severity: critical
+
+  other:
+    description: "Issue not covered by other categories"
+    severity: varies
+
+auto_actions:
+  - action: "Auto-block"
+    trigger: "Any report filed"
+    rationale: "Reporter should not see reported user while review pending"
+
+  - action: "Priority queue"
+    trigger: "reason = underage OR reason = harassment"
+    rationale: "Safety-critical reports need immediate attention"
+
+code_refs:
+  model:
+    path: "apps/api/src/app/models/matching.py"
+    class: "Report"
+    description: "SQLAlchemy ORM model"
+
+  reason_enum:
+    path: "apps/api/src/app/models/matching.py"
+    class: "ReportReason"
+    description: "Report reason enum"
+
+  service:
+    path: "apps/api/src/app/services/matching.py"
+    function: "report_user"
+    description: "Creates report and auto-blocks"
+
+  migration:
+    path: "apps/api/alembic/versions/0004_add_matching_tables.py"
+    description: "Migration creating reports table"
+
+moderation_workflow:
+  pending: "reviewed_at IS NULL"
+  queue_query: |
+    SELECT * FROM reports
+    WHERE reviewed_at IS NULL
+    ORDER BY
+      CASE reason
+        WHEN 'underage' THEN 1
+        WHEN 'harassment' THEN 2
+        ELSE 3
+      END,
+      created_at ASC
+
+notes: |
+  Reports are a safety-critical feature. Key design decisions:
+
+  1. Auto-block on report: Reporter is immediately protected while review
+     is pending. This prevents ongoing harassment during moderation queue delay.
+
+  2. Unidirectional visibility: Reported user doesn't know they were reported
+     (to prevent retaliation). They may notice they can't see the reporter anymore.
+
+  3. Admin fields: reviewed_at, reviewed_by, action_taken support moderation
+     workflow and audit trail.
+
+  Future considerations:
+  - Reputation scoring: Multiple reports = lower trust score
+  - Appeal system: Reported users can contest unfair reports
+  - AI pre-screening: Auto-flag obvious violations
+
+links:
+  - decision:0013:v1
+  - entity:block:v1
+  - entity:user:v1
+  - component:api.matching:v1

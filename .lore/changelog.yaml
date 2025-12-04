@@ -2,6 +2,132 @@
 # Tracks significant architectural changes
 
 versions:
+  - version: "lore-v0.5.0@471238b"
+    date: "2025-12-04"
+    description: "Comprehensive matching system with trait-based compatibility"
+    changes:
+      - type: added
+        description: "Trait-based compatibility scoring system"
+        details: |
+          6-question behavioral quiz derives personality trait scores (1-5 scale):
+          - introvert_extrovert: Social energy preference
+          - planner_spontaneous: Planning vs spontaneity
+          - conflict_talk_space: Conflict handling style
+          - together_alone_time: Togetherness needs
+          - slow_quick_decisions: Decision making speed
+          - routine_novelty: Lifestyle preference
+
+          Compatibility calculated as inverse of trait differences (0-100 score).
+          "Why you might click" highlights generated for aligned traits.
+        links:
+          - decision:0011:v1
+          - entity:user-trait-score:v1
+          - component:api.compatibility:v1
+
+      - type: added
+        description: "30-day pass cooldown system"
+        details: |
+          Passes are temporary (30 days) instead of permanent.
+          Addresses "regret churn" - users deleting accounts to see rejected profiles.
+          Bidirectional pass checking prevents futile likes.
+        links:
+          - decision:0012:v1
+          - entity:pass:v1
+
+      - type: added
+        description: "Rate limiting and abuse prevention"
+        details: |
+          Multi-layer abuse prevention:
+          - 10 likes per day limit
+          - First 5 likes require personalized comment
+          - Velocity detection (5 likes in <60s = suspicious)
+          - Spam message detection (same message 3+ times)
+          - Report system with auto-blocking
+          - Permanent bidirectional blocks
+        links:
+          - decision:0013:v1
+          - entity:like:v1
+          - entity:daily-like-count:v1
+          - entity:report:v1
+          - entity:block:v1
+
+      - type: added
+        description: "Match lifecycle state machine"
+        details: |
+          5-state match lifecycle:
+          - ACTIVE: Both users can message
+          - UNMATCHED: One user ended it (records who/why)
+          - ARCHIVED: No messages in 7+ days
+          - DATING: Both confirmed they're dating (Delete success!)
+          - DELETED: Account deletion
+
+          Stale match archival job for automatic cleanup.
+        links:
+          - decision:0014:v1
+          - entity:match:v1
+
+      - type: added
+        description: "Discovery queue with multi-factor ranking"
+        details: |
+          Profile ranking factors:
+          - Compatibility score (50% weight)
+          - Profile completeness (20% weight)
+          - Activity recency (10% weight)
+          - New user boost (20 points for first 7 days)
+
+          Diversity rules prevent echo chamber matching.
+          Graceful scarcity handling with helpful suggestions.
+        links:
+          - component:api.discovery:v1
+
+      - type: added
+        description: "Profile system with photos, prompts, quiz, badges"
+        details: |
+          Complete profile model:
+          - Photos: 2-6 photos with ordering
+          - Prompts: Q&A from curated question list
+          - Quiz: 6 behavioral questions
+          - Badges: Auto-generated from quiz (strong answers only)
+
+          Profile completion calculation affects discovery ranking.
+        links:
+          - entity:photo:v1
+          - entity:prompt:v1
+          - entity:quiz-response:v1
+          - entity:badge:v1
+          - component:api.profile:v1
+
+      - type: added
+        description: "Database migrations for profile and matching tables"
+        details: |
+          - 0003_add_profile_tables.py: photos, prompts, quiz_responses, badges
+          - 0004_add_matching_tables.py: likes, passes, matches, blocks, reports, user_trait_scores, daily_like_counts
+
+      - type: documented
+        description: "Architecture Decision Records 0011-0014"
+        details: |
+          - ADR 0011: Trait-based compatibility scoring
+          - ADR 0012: 30-day pass cooldown (not permanent)
+          - ADR 0013: Rate limiting and abuse prevention
+          - ADR 0014: Match lifecycle states
+
+      - type: documented
+        description: "10 new entity definitions"
+        details: |
+          match, like, pass, block, report, user-trait-score,
+          quiz-response, daily-like-count, photo, prompt, badge
+
+      - type: documented
+        description: "4 new API component docs"
+        details: |
+          - component:api.compatibility - Trait derivation and scoring
+          - component:api.discovery - Profile ranking and filtering
+          - component:api.matching - Likes, passes, matches, safety
+          - component:api.profile - Photos, prompts, quiz, badges
+
+      - type: updated
+        description: "Glossary expanded with 18 matching system terms"
+
   - version: "lore-v0.4.0@7816112"
     date: "2025-12-03"
     description: "Typed API client with openapi-fetch and React Query"

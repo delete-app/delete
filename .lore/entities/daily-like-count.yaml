@@ -1,0 +1,110 @@
+# Daily Like Count Entity
+# Rate limiting tracking for abuse prevention
+
+id: "entity:daily-like-count:v1"
+name: "DailyLikeCount"
+description: "Tracks daily like counts per user for rate limiting and abuse detection"
+status: implemented
+updated: "2025-12-04"
+
+fields:
+  - name: id
+    type: uuid
+    primary: true
+    description: "Unique record identifier"
+
+  - name: user_id
+    type: uuid
+    description: "User being tracked"
+    constraints:
+      - required
+      - foreign_key: users.id
+
+  - name: date
+    type: timestamp
+    description: "Date being tracked (start of day UTC)"
+    constraints:
+      - required
+
+  - name: like_count
+    type: integer
+    description: "Number of likes sent today"
+    constraints:
+      - default: 0
+
+  - name: first_like_at
+    type: timestamp
+    description: "When first like was sent today"
+    constraints:
+      - nullable
+
+  - name: last_like_at
+    type: timestamp
+    description: "When most recent like was sent"
+    constraints:
+      - nullable
+
+unique_constraints:
+  - name: "ix_daily_likes_user_date"
+    columns: [user_id, date]
+    description: "One record per user per day"
+
+rate_limiting:
+  max_daily_likes: 10
+  constant: "MAX_DAILY_LIKES in services/matching.py"
+
+  check_function: "get_daily_likes_remaining()"
+  query: |
+    SELECT (10 - like_count) AS remaining
+    FROM daily_like_counts
+    WHERE user_id = ? AND date = TODAY
+
+  increment_function: "increment_daily_like_count()"
+  behavior: "Creates record if not exists, increments if exists"
+
+abuse_detection:
+  velocity_check:
+    description: "5+ likes in <60 seconds is suspicious"
+    constant: "RATE_LIMIT_WINDOW_SECONDS = 60"
+    check: |
+      IF like_count >= 5 AND (last_like_at - first_like_at) < 60 seconds
+      THEN suspicious = True
+
+  function: "check_abuse_patterns() in matching service"
+
+code_refs:
+  model:
+    path: "apps/api/src/app/models/matching.py"
+    class: "DailyLikeCount"
+    description: "SQLAlchemy ORM model"
+
+  service:
+    path: "apps/api/src/app/services/matching.py"
+    functions:
+      - "get_daily_likes_remaining"
+      - "increment_daily_like_count"
+      - "check_abuse_patterns"
+    description: "Rate limiting operations"
+
+  migration:
+    path: "apps/api/alembic/versions/0004_add_matching_tables.py"
+    description: "Migration creating daily_like_counts table"
+
+notes: |
+  This table serves dual purposes:
+  1. Rate limiting: Enforce 10 likes/day cap
+  2. Abuse detection: Track velocity of likes
+
+  The first_like_at and last_like_at timestamps enable velocity detection
+  without storing individual like timestamps.
+
+  Records accumulate over time. Consider periodic cleanup job to delete
+  records older than 30 days for storage efficiency.
+
+  Date comparison uses start-of-day UTC to handle timezone consistency.
+
+links:
+  - decision:0013:v1
+  - entity:like:v1
+  - entity:user:v1
+  - component:api.matching:v1

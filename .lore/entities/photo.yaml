@@ -1,0 +1,97 @@
+# Photo Entity
+# User profile photos
+
+id: "entity:photo:v1"
+name: "Photo"
+description: "User profile photo with ordering for display"
+status: implemented
+updated: "2025-12-04"
+
+fields:
+  - name: id
+    type: uuid
+    primary: true
+    description: "Unique photo identifier"
+
+  - name: user_id
+    type: uuid
+    description: "User who owns the photo"
+    constraints:
+      - required
+      - foreign_key: users.id
+
+  - name: url
+    type: string
+    description: "Photo URL (CDN or storage service)"
+    constraints:
+      - required
+      - max_length: 500
+
+  - name: order
+    type: integer
+    description: "Display order (0 = primary photo)"
+    constraints:
+      - default: 0
+
+  - name: created_at
+    type: timestamp
+    description: "When photo was uploaded"
+
+profile_requirements:
+  minimum: 2
+  maximum: 6
+  primary: "order = 0"
+  completion_check: "len(photos) >= 2 for profile_complete"
+
+operations:
+  - operation: "get_user_photos"
+    returns: "Photos ordered by order field"
+
+  - operation: "create_photo"
+    behavior: "Auto-assigns next order number"
+
+  - operation: "delete_photo"
+    behavior: "Removes photo, does not reorder others"
+
+  - operation: "reorder_photos"
+    input: "List of photo IDs in desired order"
+    behavior: "Updates order field for each photo"
+
+code_refs:
+  model:
+    path: "apps/api/src/app/models/profile.py"
+    class: "Photo"
+    description: "SQLAlchemy ORM model"
+
+  service:
+    path: "apps/api/src/app/services/profile.py"
+    functions:
+      - "get_user_photos"
+      - "create_photo"
+      - "delete_photo"
+      - "reorder_photos"
+    description: "Photo CRUD operations"
+
+  migration:
+    path: "apps/api/alembic/versions/0003_add_profile_tables.py"
+    description: "Migration creating photos table"
+
+notes: |
+  Photos are central to dating app profiles. Key considerations:
+
+  1. Ordering: The order field determines display priority. order=0 is the
+     primary photo shown in discovery.
+
+  2. Storage: URLs point to external storage (future: S3/Cloudflare).
+     The API does not store image data directly.
+
+  3. Moderation: Future work will add photo review workflow for
+     inappropriate content detection.
+
+  4. Discovery ranking: Photo count contributes to profile completeness
+     score, affecting discovery ranking (3 points per photo, max 6).
+
+links:
+  - entity:user:v1
+  - component:api.profile:v1
+  - component:api.discovery:v1

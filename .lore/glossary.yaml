@@ -14,10 +14,94 @@ terms:
       - container:landing:v1
 
   - term: "My App"
-    definition: "The authenticated user dashboard at my.trydelete.app where the actual dating features will live."
+    definition: "The authenticated user dashboard at my.trydelete.app where the actual dating features live."
     aliases: ["my", "dashboard", "user app"]
     links:
       - container:my:v1
+
+  # Matching System Terms
+  - term: "Like"
+    definition: "One-directional expression of interest from one user to another. Creates a match when reciprocated. First 5 likes require a comment."
+    aliases: ["send like", "super like"]
+    links:
+      - entity:like:v1
+      - decision:0013:v1
+
+  - term: "Pass"
+    definition: "Temporary rejection of a profile. Unlike traditional 'swipe left', passes expire after 30 days, allowing second chances."
+    aliases: ["skip", "not interested"]
+    links:
+      - entity:pass:v1
+      - decision:0012:v1
+
+  - term: "Match"
+    definition: "Mutual like between two users, enabling messaging. Has lifecycle states: active, unmatched, archived, dating, deleted."
+    aliases: ["mutual match"]
+    links:
+      - entity:match:v1
+      - decision:0014:v1
+
+  - term: "Block"
+    definition: "Permanent, bidirectional hiding between users. Unlike passes, blocks never expire and are used for safety."
+    links:
+      - entity:block:v1
+      - decision:0013:v1
+
+  - term: "Trait Score"
+    definition: "Personality dimension score (1-5) derived from quiz responses. Six traits: introvert/extrovert, planner/spontaneous, conflict style, together/alone time, decision speed, routine/novelty."
+    links:
+      - entity:user-trait-score:v1
+      - decision:0011:v1
+
+  - term: "Compatibility Score"
+    definition: "0-100 score indicating how well two users' trait scores align. Higher score = more similar traits."
+    links:
+      - decision:0011:v1
+      - component:api.compatibility:v1
+
+  - term: "Why You Might Click"
+    definition: "Human-readable highlights explaining compatibility, e.g., 'Both introverts', 'Similar planning style'. Maximum 3 shown per match."
+    links:
+      - decision:0011:v1
+
+  - term: "Discovery Queue"
+    definition: "The daily feed of profiles for a user to browse. Ranked by compatibility (50%), profile completeness, activity, and new user boost."
+    aliases: ["feed", "browse", "swipe stack"]
+    links:
+      - component:api.discovery:v1
+
+  - term: "Pass Cooldown"
+    definition: "30-day period after passing on a profile before they can reappear. Reduces 'regret churn' while respecting user preferences."
+    links:
+      - decision:0012:v1
+      - entity:pass:v1
+
+  - term: "Daily Like Limit"
+    definition: "Maximum 10 likes per day. Forces thoughtful engagement and prevents mass-liking spam."
+    links:
+      - decision:0013:v1
+      - entity:daily-like-count:v1
+
+  - term: "Required Comment"
+    definition: "First 5 likes must include a personalized comment. Reduces spam and bot activity by forcing genuine profile engagement."
+    links:
+      - decision:0013:v1
+
+  # Profile Terms
+  - term: "Prompt"
+    definition: "Profile question with user's answer, e.g., 'A perfect day for me looks like...'. Shows personality beyond photos."
+    links:
+      - entity:prompt:v1
+
+  - term: "Badge"
+    definition: "Auto-generated label from quiz responses showing personality traits, e.g., 'Introvert', 'Planner'. Only generated for strong answers (1-2 or 4-5)."
+    links:
+      - entity:badge:v1
+
+  - term: "Profile Completion"
+    definition: "Percentage indicating how complete a profile is. Requires: basic info, 2+ photos, 1+ prompt, completed quiz. Affects discovery ranking."
+    links:
+      - component:api.profile:v1
 
   # Domain Concepts (Relationship Psychology)
   - term: "Attachment Style"
@@ -75,3 +159,28 @@ terms:
   - term: "Neurodivergent"
     definition: "Umbrella term for ADHD, autism, and other neurological differences. Delete has dedicated content acknowledging that dating works differently for these groups."
     aliases: ["ND"]
+
+  # Match Lifecycle States
+  - term: "Active Match"
+    definition: "A match where both users can message each other. The default state when a match is created."
+    links:
+      - entity:match:v1
+      - decision:0014:v1
+
+  - term: "Unmatched"
+    definition: "Terminal match state when one user ends the match. Records who unmatched and why."
+    links:
+      - entity:match:v1
+      - decision:0014:v1
+
+  - term: "Archived Match"
+    definition: "Match with no messages for 7+ days. Hidden but can be reactivated by sending a message."
+    links:
+      - entity:match:v1
+      - decision:0014:v1
+
+  - term: "Dating State"
+    definition: "Match state when both users confirm they're dating. The ideal outcome - Delete's success metric!"
+    links:
+      - entity:match:v1
+      - decision:0014:v1

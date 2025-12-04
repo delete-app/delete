@@ -19,6 +19,10 @@ graph:
       - decision:0008:v1
       - decision:0009:v1
       - decision:0010:v1
+      - decision:0011:v1
+      - decision:0012:v1
+      - decision:0013:v1
+      - decision:0014:v1
     linked_by: []
 
   # Containers
@@ -53,9 +57,28 @@ graph:
       - decision:0007:v1
       - decision:0008:v1
       - decision:0009:v1
+      - decision:0011:v1
+      - decision:0012:v1
+      - decision:0013:v1
+      - decision:0014:v1
       - container:my:v1
       - container:shared:v1
       - entity:user:v1
+      - entity:match:v1
+      - entity:like:v1
+      - entity:pass:v1
+      - entity:block:v1
+      - entity:report:v1
+      - entity:user-trait-score:v1
+      - entity:quiz-response:v1
+      - entity:daily-like-count:v1
+      - entity:photo:v1
+      - entity:prompt:v1
+      - entity:badge:v1
+      - component:api.compatibility:v1
+      - component:api.discovery:v1
+      - component:api.matching:v1
+      - component:api.profile:v1
     linked_by:
       - context:system:v1
       - container:my:v1
@@ -74,6 +97,69 @@ graph:
       - container:my:v1
       - container:api:v1
       - decision:0001:v1
+
+  # Components
+  "component:api.compatibility:v1":
+    links_to:
+      - decision:0011:v1
+      - entity:user-trait-score:v1
+      - entity:quiz-response:v1
+    linked_by:
+      - container:api:v1
+      - component:api.discovery:v1
+      - component:api.profile:v1
+      - decision:0011:v1
+
+  "component:api.discovery:v1":
+    links_to:
+      - decision:0011:v1
+      - decision:0012:v1
+      - component:api.compatibility:v1
+      - entity:pass:v1
+      - entity:block:v1
+    linked_by:
+      - container:api:v1
+      - decision:0012:v1
+      - entity:pass:v1
+      - entity:photo:v1
+
+  "component:api.matching:v1":
+    links_to:
+      - decision:0012:v1
+      - decision:0013:v1
+      - decision:0014:v1
+      - entity:like:v1
+      - entity:pass:v1
+      - entity:match:v1
+      - entity:block:v1
+      - entity:report:v1
+      - entity:daily-like-count:v1
+    linked_by:
+      - container:api:v1
+      - decision:0011:v1
+      - decision:0012:v1
+      - decision:0013:v1
+      - decision:0014:v1
+      - entity:like:v1
+      - entity:pass:v1
+      - entity:match:v1
+      - entity:block:v1
+      - entity:report:v1
+      - entity:daily-like-count:v1
+
+  "component:api.profile:v1":
+    links_to:
+      - component:api.compatibility:v1
+      - entity:photo:v1
+      - entity:prompt:v1
+      - entity:quiz-response:v1
+      - entity:badge:v1
+    linked_by:
+      - container:api:v1
+      - entity:photo:v1
+      - entity:prompt:v1
+      - entity:quiz-response:v1
+      - entity:badge:v1
 
   # Decisions
   "decision:0001:v1":
@@ -113,12 +199,7 @@ graph:
       - container:my:v1
       - container:api:v1
       - decision:0003:v1
-
-  "entity:user:v1":
-    links_to:
-      - decision:0004:v1
-    linked_by:
-      - container:api:v1
+      - decision:0011:v1
 
   "decision:0005:v1":
     title: "Wikipedia-style superscript citations for credibility"
@@ -179,3 +260,212 @@ graph:
     linked_by:
       - context:system:v1
       - container:my:v1
+
+  "decision:0011:v1":
+    title: "Trait-based compatibility scoring from quiz responses"
+    links_to:
+      - entity:user-trait-score:v1
+      - entity:quiz-response:v1
+      - component:api.compatibility:v1
+      - component:api.discovery:v1
+      - decision:0004:v1
+    linked_by:
+      - context:system:v1
+      - container:api:v1
+      - component:api.compatibility:v1
+      - component:api.discovery:v1
+      - entity:user-trait-score:v1
+      - entity:quiz-response:v1
+
+  "decision:0012:v1":
+    title: "30-day pass cooldown instead of permanent rejection"
+    links_to:
+      - entity:pass:v1
+      - component:api.matching:v1
+      - component:api.discovery:v1
+    linked_by:
+      - context:system:v1
+      - container:api:v1
+      - component:api.matching:v1
+      - component:api.discovery:v1
+      - entity:pass:v1
+
+  "decision:0013:v1":
+    title: "Rate limiting and abuse prevention strategy"
+    links_to:
+      - entity:like:v1
+      - entity:daily-like-count:v1
+      - entity:report:v1
+      - entity:block:v1
+      - component:api.matching:v1
+    linked_by:
+      - context:system:v1
+      - container:api:v1
+      - component:api.matching:v1
+      - entity:like:v1
+      - entity:daily-like-count:v1
+      - entity:report:v1
+      - entity:block:v1
+
+  "decision:0014:v1":
+    title: "Match lifecycle states and transitions"
+    links_to:
+      - entity:match:v1
+      - entity:like:v1
+      - component:api.matching:v1
+    linked_by:
+      - context:system:v1
+      - container:api:v1
+      - component:api.matching:v1
+      - entity:match:v1
+      - entity:like:v1
+
+  # Entities
+  "entity:user:v1":
+    links_to:
+      - decision:0004:v1
+      - container:api:v1
+    linked_by:
+      - container:api:v1
+      - entity:match:v1
+      - entity:like:v1
+      - entity:pass:v1
+      - entity:block:v1
+      - entity:report:v1
+      - entity:user-trait-score:v1
+      - entity:quiz-response:v1
+      - entity:daily-like-count:v1
+      - entity:photo:v1
+      - entity:prompt:v1
+      - entity:badge:v1
+
+  "entity:match:v1":
+    links_to:
+      - decision:0014:v1
+      - entity:like:v1
+      - entity:user:v1
+      - component:api.matching:v1
+    linked_by:
+      - container:api:v1
+      - decision:0014:v1
+      - component:api.matching:v1
+      - entity:block:v1
+
+  "entity:like:v1":
+    links_to:
+      - decision:0013:v1
+      - decision:0014:v1
+      - entity:match:v1
+      - entity:user:v1
+      - entity:daily-like-count:v1
+      - component:api.matching:v1
+    linked_by:
+      - container:api:v1
+      - decision:0013:v1
+      - decision:0014:v1
+      - component:api.matching:v1
+      - entity:match:v1
+      - entity:prompt:v1
+
+  "entity:pass:v1":
+    links_to:
+      - decision:0012:v1
+      - entity:user:v1
+      - component:api.matching:v1
+      - component:api.discovery:v1
+    linked_by:
+      - container:api:v1
+      - decision:0012:v1
+      - component:api.matching:v1
+      - component:api.discovery:v1
+
+  "entity:block:v1":
+    links_to:
+      - decision:0013:v1
+      - entity:report:v1
+      - entity:match:v1
+      - entity:user:v1
+      - component:api.matching:v1
+    linked_by:
+      - container:api:v1
+      - decision:0013:v1
+      - component:api.matching:v1
+      - component:api.discovery:v1
+      - entity:report:v1
+
+  "entity:report:v1":
+    links_to:
+      - decision:0013:v1
+      - entity:block:v1
+      - entity:user:v1
+      - component:api.matching:v1
+    linked_by:
+      - container:api:v1
+      - decision:0013:v1
+      - component:api.matching:v1
+      - entity:block:v1
+
+  "entity:user-trait-score:v1":
+    links_to:
+      - decision:0011:v1
+      - entity:quiz-response:v1
+      - entity:user:v1
+      - component:api.compatibility:v1
+    linked_by:
+      - container:api:v1
+      - decision:0011:v1
+      - component:api.compatibility:v1
+
+  "entity:quiz-response:v1":
+    links_to:
+      - decision:0011:v1
+      - entity:user-trait-score:v1
+      - entity:badge:v1
+      - entity:user:v1
+      - component:api.profile:v1
+    linked_by:
+      - container:api:v1
+      - decision:0011:v1
+      - component:api.compatibility:v1
+      - component:api.profile:v1
+      - entity:user-trait-score:v1
+
+  "entity:daily-like-count:v1":
+    links_to:
+      - decision:0013:v1
+      - entity:like:v1
+      - entity:user:v1
+      - component:api.matching:v1
+    linked_by:
+      - container:api:v1
+      - decision:0013:v1
+      - component:api.matching:v1
+      - entity:like:v1
+
+  "entity:photo:v1":
+    links_to:
+      - entity:user:v1
+      - component:api.profile:v1
+      - component:api.discovery:v1
+    linked_by:
+      - container:api:v1
+      - component:api.profile:v1
+
+  "entity:prompt:v1":
+    links_to:
+      - entity:user:v1
+      - entity:like:v1
+      - component:api.profile:v1
+    linked_by:
+      - container:api:v1
+      - component:api.profile:v1
+
+  "entity:badge:v1":
+    links_to:
+      - entity:quiz-response:v1
+      - entity:user:v1
+      - component:api.profile:v1
+    linked_by:
+      - container:api:v1
+      - component:api.profile:v1
+      - entity:quiz-response:v1

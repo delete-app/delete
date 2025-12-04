@@ -1,0 +1,111 @@
+# Block Entity
+# Permanent bidirectional hiding between users
+
+id: "entity:block:v1"
+name: "Block"
+description: "Permanent, bidirectional hiding between two users for safety"
+status: implemented
+updated: "2025-12-04"
+
+fields:
+  - name: id
+    type: uuid
+    primary: true
+    description: "Unique block identifier"
+
+  - name: blocker_id
+    type: uuid
+    description: "User who initiated the block"
+    constraints:
+      - required
+      - foreign_key: users.id
+      - indexed
+
+  - name: blocked_id
+    type: uuid
+    description: "User being blocked"
+    constraints:
+      - required
+      - foreign_key: users.id
+      - indexed
+
+  - name: created_at
+    type: timestamp
+    description: "When the block was created"
+
+unique_constraints:
+  - name: "ix_blocks_unique"
+    columns: [blocker_id, blocked_id]
+    description: "One block record per direction"
+
+behavior:
+  bidirectional_hiding:
+    description: "Blocker and blocked user never see each other again"
+    implementation: "get_blocked_user_ids() returns both directions"
+    query: |
+      # Users I blocked
+      SELECT blocked_id FROM blocks WHERE blocker_id = ?
+      UNION
+      # Users who blocked me
+      SELECT blocker_id FROM blocks WHERE blocked_id = ?
+
+  ends_active_match:
+    description: "Blocking ends any active match between the users"
+    implementation: "block_user() also calls unmatch logic"
+    status_change: "Match status changed to UNMATCHED"
+
+  auto_block_on_report:
+    description: "Reporting a user automatically blocks them"
+    implementation: "report_user() calls block_user()"
+
+comparison_with_pass:
+  pass:
+    duration: "30 days"
+    direction: "One-way"
+    recoverable: "Yes (undo_pass)"
+    use_case: "Not interested right now"
+  block:
+    duration: "Permanent"
+    direction: "Bidirectional"
+    recoverable: "No (requires support)"
+    use_case: "Safety, harassment, never want contact"
+
+code_refs:
+  model:
+    path: "apps/api/src/app/models/matching.py"
+    class: "Block"
+    description: "SQLAlchemy ORM model"
+
+  service:
+    path: "apps/api/src/app/services/matching.py"
+    function: "block_user"
+    description: "Creates block and ends any active match"
+
+  discovery_filter:
+    path: "apps/api/src/app/services/discovery.py"
+    function: "get_blocked_user_ids"
+    description: "Returns all blocked/blocking user IDs"
+
+  migration:
+    path: "apps/api/alembic/versions/0004_add_matching_tables.py"
+    description: "Migration creating blocks table"
+
+notes: |
+  Blocks are one of Delete's safety features. Unlike passes which are temporary
+  and one-directional, blocks are permanent and bidirectional.
+
+  Important: The block is stored one-directionally (blocker -> blocked), but
+  the hiding is bidirectional. This means:
+  - blocker_id never sees blocked_id
+  - blocked_id never sees blocker_id
+  - The blocked user doesn't know they were blocked
+
+  Consider adding an admin interface to review blocks for abuse (users
+  mass-blocking to game the algorithm).
+
+links:
+  - decision:0013:v1
+  - entity:report:v1
+  - entity:match:v1
+  - entity:user:v1
+  - component:api.matching:v1
