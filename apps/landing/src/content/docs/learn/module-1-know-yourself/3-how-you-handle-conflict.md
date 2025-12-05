@@ -187,23 +187,23 @@ Over time, that pause between trigger and reaction gets longer. That's where cho
 
 ## References
 
-1. Buehlman, K. T., Gottman, J. M., & Katz, L. F. (1992). How a couple views their past predicts their future: Predicting divorce from an oral history interview. *Journal of Family Psychology, 5*(3-4), 295-318. [Gottman Institute PDF](https://www.johngottman.net/wp-content/uploads/2011/05/How-a-couple-views-their-past-predicts-their-future-predicting-divorce-from-an-oral-history-interview.pdf)
+1. Buehlman, K. T., Gottman, J. M., & Katz, L. F. (1992). How a couple views their past predicts their future: Predicting divorce from an oral history interview. *Journal of Family Psychology, 5*(3-4), 295-318. <a href="https://www.johngottman.net/wp-content/uploads/2011/05/How-a-couple-views-their-past-predicts-their-future-predicting-divorce-from-an-oral-history-interview.pdf" target="_blank" rel="noopener noreferrer">Gottman Institute PDF</a>
 
-2. Walker, P. (2013). *Complex PTSD: From Surviving to Thriving*. CreateSpace. [Pete Walker's Website](https://www.pete-walker.com/codependencyFawnResponse.htm)
+2. Walker, P. (2013). *Complex PTSD: From Surviving to Thriving*. CreateSpace. <a href="https://www.pete-walker.com/codependencyFawnResponse.htm" target="_blank" rel="noopener noreferrer">Pete Walker's Website</a>
 
-3. Gottman, J. M. (1994). *What Predicts Divorce? The Relationship Between Marital Processes and Marital Outcomes*. Lawrence Erlbaum Associates. [Taylor & Francis](https://www.taylorfrancis.com/books/mono/10.4324/9781315806808/)
+3. Gottman, J. M. (1994). *What Predicts Divorce? The Relationship Between Marital Processes and Marital Outcomes*. Lawrence Erlbaum Associates. <a href="https://www.taylorfrancis.com/books/mono/10.4324/9781315806808/" target="_blank" rel="noopener noreferrer">Taylor & Francis</a>
 
-4. Gottman, J. M., Coan, J., Carrère, S., & Swanson, C. (1998). Predicting marital happiness and stability from newlywed interactions. *Journal of Marriage and the Family, 60*(1), 5-22. [doi:10.2307/353438](https://doi.org/10.2307/353438)
+4. Gottman, J. M., Coan, J., Carrère, S., & Swanson, C. (1998). Predicting marital happiness and stability from newlywed interactions. *Journal of Marriage and the Family, 60*(1), 5-22. <a href="https://doi.org/10.2307/353438" target="_blank" rel="noopener noreferrer">doi:10.2307/353438</a>
 
-5. Christensen, A., & Heavey, C. L. (1990). Gender and social structure in the demand/withdraw pattern of marital conflict. *Journal of Personality and Social Psychology, 59*(1), 73-81. [UCLA Research](http://christensenresearch.psych.ucla.edu/research_dw.htm)
+5. Christensen, A., & Heavey, C. L. (1990). Gender and social structure in the demand/withdraw pattern of marital conflict. *Journal of Personality and Social Psychology, 59*(1), 73-81. <a href="http://christensenresearch.psych.ucla.edu/research_dw.htm" target="_blank" rel="noopener noreferrer">UCLA Research</a>
 
-6. Papp, L. M., Kouros, C. D., & Cummings, E. M. (2009). Demand-withdraw patterns in marital conflict in the home. *Personal Relationships, 16*(2), 285-300. [PMC3218801](https://pmc.ncbi.nlm.nih.gov/articles/PMC3218801/)
+6. Papp, L. M., Kouros, C. D., & Cummings, E. M. (2009). Demand-withdraw patterns in marital conflict in the home. *Personal Relationships, 16*(2), 285-300. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3218801/" target="_blank" rel="noopener noreferrer">PMC3218801</a>
 
-7. Holley, S. R., Haase, C. M., Chui, I., & Bloch, L. (2018). Depression, emotion regulation, and the demand/withdraw pattern during intimate relationship conflict. *Journal of Social and Personal Relationships, 35*(3), 408-430. [doi:10.1177/0265407517733334](https://doi.org/10.1177/0265407517733334)
+7. Holley, S. R., Haase, C. M., Chui, I., & Bloch, L. (2018). Depression, emotion regulation, and the demand/withdraw pattern during intimate relationship conflict. *Journal of Social and Personal Relationships, 35*(3), 408-430. <a href="https://doi.org/10.1177/0265407517733334" target="_blank" rel="noopener noreferrer">doi:10.1177/0265407517733334</a>
 
-8. Heffner, K. L., Kiecolt-Glaser, J. K., Loving, T. J., Glaser, R., & Malarkey, W. B. (2004). Wives' and husbands' cortisol reactivity to proximal and distal dimensions of couple conflict. *Psychosomatic Medicine, 66*(6), 924-932. [PMC3775283](https://pmc.ncbi.nlm.nih.gov/articles/PMC3775283/)
+8. Heffner, K. L., Kiecolt-Glaser, J. K., Loving, T. J., Glaser, R., & Malarkey, W. B. (2004). Wives' and husbands' cortisol reactivity to proximal and distal dimensions of couple conflict. *Psychosomatic Medicine, 66*(6), 924-932. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3775283/" target="_blank" rel="noopener noreferrer">PMC3775283</a>
 
-9. Attachment dimensions and the Four Horsemen of the Apocalypse. (2011). *Communication Research Reports, 28*(1), 16-26. [doi:10.1080/08824096.2010.518910](https://doi.org/10.1080/08824096.2010.518910)
+9. Attachment dimensions and the Four Horsemen of the Apocalypse. (2011). *Communication Research Reports, 28*(1), 16-26. <a href="https://doi.org/10.1080/08824096.2010.518910" target="_blank" rel="noopener noreferrer">doi:10.1080/08824096.2010.518910</a>
 
 ---
 

@@ -232,27 +232,27 @@ This is actually good news. You don't need to find your clone. You don't need to
 
 ## References
 
-1. Luo, S., & Klohnen, E. C. (2005). Assortative mating and marital quality in newlyweds: A couple-centered approach. *Journal of Personality and Social Psychology, 88*(2), 304-326. [doi:10.1037/0022-3514.88.2.304](https://doi.org/10.1037/0022-3514.88.2.304)
+1. Luo, S., & Klohnen, E. C. (2005). Assortative mating and marital quality in newlyweds: A couple-centered approach. *Journal of Personality and Social Psychology, 88*(2), 304-326. <a href="https://doi.org/10.1037/0022-3514.88.2.304" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.88.2.304</a>
 
-2. Joel, S., Eastwick, P. W., et al. (2020). Machine learning uncovers the most robust self-report predictors of relationship quality across 43 longitudinal couples studies. *Proceedings of the National Academy of Sciences, 117*(32), 19061-19071. [doi:10.1073/pnas.1917036117](https://doi.org/10.1073/pnas.1917036117)
+2. Joel, S., Eastwick, P. W., et al. (2020). Machine learning uncovers the most robust self-report predictors of relationship quality across 43 longitudinal couples studies. *Proceedings of the National Academy of Sciences, 117*(32), 19061-19071. <a href="https://doi.org/10.1073/pnas.1917036117" target="_blank" rel="noopener noreferrer">doi:10.1073/pnas.1917036117</a>
 
-3. Montoya, R. M., Horton, R. S., & Kirchner, J. (2008). Is actual similarity necessary for attraction? A meta-analysis of actual and perceived similarity. *Journal of Social and Personal Relationships, 25*(6), 889-922. [doi:10.1177/0265407508096700](https://doi.org/10.1177/0265407508096700)
+3. Montoya, R. M., Horton, R. S., & Kirchner, J. (2008). Is actual similarity necessary for attraction? A meta-analysis of actual and perceived similarity. *Journal of Social and Personal Relationships, 25*(6), 889-922. <a href="https://doi.org/10.1177/0265407508096700" target="_blank" rel="noopener noreferrer">doi:10.1177/0265407508096700</a>
 
-4. Dyrenforth, P. S., Kashy, D. A., Donnellan, M. B., & Lucas, R. E. (2010). Predicting relationship and life satisfaction from personality in nationally representative samples from three countries. *Journal of Personality and Social Psychology, 99*(4), 690-702. [doi:10.1037/a0020385](https://doi.org/10.1037/a0020385)
+4. Dyrenforth, P. S., Kashy, D. A., Donnellan, M. B., & Lucas, R. E. (2010). Predicting relationship and life satisfaction from personality in nationally representative samples from three countries. *Journal of Personality and Social Psychology, 99*(4), 690-702. <a href="https://doi.org/10.1037/a0020385" target="_blank" rel="noopener noreferrer">doi:10.1037/a0020385</a>
 
-5. Heller, D., Watson, D., & Ilies, R. (2004). The role of person versus situation in life satisfaction: A critical examination. *Psychological Bulletin, 130*(4), 574-600. [doi:10.1037/0033-2909.130.4.574](https://doi.org/10.1037/0033-2909.130.4.574)
+5. Heller, D., Watson, D., & Ilies, R. (2004). The role of person versus situation in life satisfaction: A critical examination. *Psychological Bulletin, 130*(4), 574-600. <a href="https://doi.org/10.1037/0033-2909.130.4.574" target="_blank" rel="noopener noreferrer">doi:10.1037/0033-2909.130.4.574</a>
 
-6. Karney, B. R., & Bradbury, T. N. (1995). The longitudinal course of marital quality and stability: A review of theory, method, and research. *Psychological Bulletin, 118*(1), 3-34. [doi:10.1037/0033-2909.118.1.3](https://doi.org/10.1037/0033-2909.118.1.3)
+6. Karney, B. R., & Bradbury, T. N. (1995). The longitudinal course of marital quality and stability: A review of theory, method, and research. *Psychological Bulletin, 118*(1), 3-34. <a href="https://doi.org/10.1037/0033-2909.118.1.3" target="_blank" rel="noopener noreferrer">doi:10.1037/0033-2909.118.1.3</a>
 
-7. Li, T., & Chan, D. K. S. (2012). How anxious and avoidant attachment affect romantic relationship quality differently: A meta-analytic review. *European Journal of Social Psychology, 42*(4), 406-419. [doi:10.1002/ejsp.1842](https://doi.org/10.1002/ejsp.1842)
+7. Li, T., & Chan, D. K. S. (2012). How anxious and avoidant attachment affect romantic relationship quality differently: A meta-analytic review. *European Journal of Social Psychology, 42*(4), 406-419. <a href="https://doi.org/10.1002/ejsp.1842" target="_blank" rel="noopener noreferrer">doi:10.1002/ejsp.1842</a>
 
-8. Mikulincer, M., Shaver, P. R., & Pereg, D. (2003). Attachment theory and affect regulation: The dynamics, development, and cognitive consequences of attachment-related strategies. *Motivation and Emotion, 27*, 77-102. [doi:10.1023/A:1024515519160](https://doi.org/10.1023/A:1024515519160)
+8. Mikulincer, M., Shaver, P. R., & Pereg, D. (2003). Attachment theory and affect regulation: The dynamics, development, and cognitive consequences of attachment-related strategies. *Motivation and Emotion, 27*, 77-102. <a href="https://doi.org/10.1023/A:1024515519160" target="_blank" rel="noopener noreferrer">doi:10.1023/A:1024515519160</a>
 
-9. Neff, L. A., & Karney, B. R. (2009). Stress and reactivity to daily relationship experiences: How stress hinders adaptive processes in marriage. *Journal of Personality and Social Psychology, 97*(3), 435-450. [doi:10.1037/a0015663](https://doi.org/10.1037/a0015663)
+9. Neff, L. A., & Karney, B. R. (2009). Stress and reactivity to daily relationship experiences: How stress hinders adaptive processes in marriage. *Journal of Personality and Social Psychology, 97*(3), 435-450. <a href="https://doi.org/10.1037/a0015663" target="_blank" rel="noopener noreferrer">doi:10.1037/a0015663</a>
 
-10. Sprecher, S. (2001). Equity and social exchange in dating couples: Associations with satisfaction, commitment, and stability. *Journal of Marriage and Family, 63*(3), 599-613. [doi:10.1111/j.1741-3737.2001.00599.x](https://doi.org/10.1111/j.1741-3737.2001.00599.x)
+10. Sprecher, S. (2001). Equity and social exchange in dating couples: Associations with satisfaction, commitment, and stability. *Journal of Marriage and Family, 63*(3), 599-613. <a href="https://doi.org/10.1111/j.1741-3737.2001.00599.x" target="_blank" rel="noopener noreferrer">doi:10.1111/j.1741-3737.2001.00599.x</a>
 
-11. Bühler, J. L., Krauss, S., & Orth, U. (2021). Development of relationship satisfaction across the life span: A systematic review and meta-analysis. *Psychological Bulletin, 148*(5-6), 401-426. [doi:10.1037/bul0000342](https://doi.org/10.1037/bul0000342)
+11. Bühler, J. L., Krauss, S., & Orth, U. (2021). Development of relationship satisfaction across the life span: A systematic review and meta-analysis. *Psychological Bulletin, 148*(5-6), 401-426. <a href="https://doi.org/10.1037/bul0000342" target="_blank" rel="noopener noreferrer">doi:10.1037/bul0000342</a>
 
 ---
 

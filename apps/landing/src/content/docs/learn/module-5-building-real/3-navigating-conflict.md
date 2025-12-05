@@ -256,27 +256,27 @@ Conflict is inevitable. Destruction is optional. The skills can be learned.
 
 ## References
 
-1. Karney, B. R., & Bradbury, T. N. (1995). The longitudinal course of marital quality and stability: A review of theory, method, and research. *Psychological Bulletin, 118*(1), 3-34. [doi:10.1037/0033-2909.118.1.3](https://doi.org/10.1037/0033-2909.118.1.3)
+1. Karney, B. R., & Bradbury, T. N. (1995). The longitudinal course of marital quality and stability: A review of theory, method, and research. *Psychological Bulletin, 118*(1), 3-34. <a href="https://doi.org/10.1037/0033-2909.118.1.3" target="_blank" rel="noopener noreferrer">doi:10.1037/0033-2909.118.1.3</a>
 
-2. Levenson, R. W., & Gottman, J. M. (1983). Marital interaction: Physiological linkage and affective exchange. *Journal of Personality and Social Psychology, 45*(3), 587-597. [doi:10.1037/0022-3514.45.3.587](https://doi.org/10.1037/0022-3514.45.3.587)
+2. Levenson, R. W., & Gottman, J. M. (1983). Marital interaction: Physiological linkage and affective exchange. *Journal of Personality and Social Psychology, 45*(3), 587-597. <a href="https://doi.org/10.1037/0022-3514.45.3.587" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.45.3.587</a>
 
-3. Levenson, R. W., & Gottman, J. M. (1985). Physiological and affective predictors of change in relationship satisfaction. *Journal of Personality and Social Psychology, 49*(1), 85-94. [doi:10.1037/0022-3514.49.1.85](https://doi.org/10.1037/0022-3514.49.1.85)
+3. Levenson, R. W., & Gottman, J. M. (1985). Physiological and affective predictors of change in relationship satisfaction. *Journal of Personality and Social Psychology, 49*(1), 85-94. <a href="https://doi.org/10.1037/0022-3514.49.1.85" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.49.1.85</a>
 
 4. Gottman, J. M. (1999). *The Marriage Clinic: A Scientifically-Based Marital Therapy.* W.W. Norton.
 
-5. Gottman, J. M., Coan, J., Carrère, S., & Swanson, C. (1998). Predicting marital happiness and stability from newlywed interactions. *Journal of Marriage and the Family, 60*(1), 5-22. [doi:10.2307/353438](https://doi.org/10.2307/353438)
+5. Gottman, J. M., Coan, J., Carrère, S., & Swanson, C. (1998). Predicting marital happiness and stability from newlywed interactions. *Journal of Marriage and the Family, 60*(1), 5-22. <a href="https://doi.org/10.2307/353438" target="_blank" rel="noopener noreferrer">doi:10.2307/353438</a>
 
-6. Fehr, R., Gelfand, M. J., & Nag, M. (2010). The road to forgiveness: A meta-analytic synthesis of its situational and dispositional correlates. *Psychological Bulletin, 136*(5), 894-914. [doi:10.1037/a0019993](https://doi.org/10.1037/a0019993)
+6. Fehr, R., Gelfand, M. J., & Nag, M. (2010). The road to forgiveness: A meta-analytic synthesis of its situational and dispositional correlates. *Psychological Bulletin, 136*(5), 894-914. <a href="https://doi.org/10.1037/a0019993" target="_blank" rel="noopener noreferrer">doi:10.1037/a0019993</a>
 
-7. Fincham, F. D., Beach, S. R. H., & Davila, J. (2007). Longitudinal relations between forgiveness and conflict resolution in marriage. *Journal of Family Psychology, 21*(3), 542-545. [doi:10.1037/0893-3200.21.3.542](https://doi.org/10.1037/0893-3200.21.3.542)
+7. Fincham, F. D., Beach, S. R. H., & Davila, J. (2007). Longitudinal relations between forgiveness and conflict resolution in marriage. *Journal of Family Psychology, 21*(3), 542-545. <a href="https://doi.org/10.1037/0893-3200.21.3.542" target="_blank" rel="noopener noreferrer">doi:10.1037/0893-3200.21.3.542</a>
 
-8. Hall, J. A. (2017). Humor in romantic relationships: A meta-analysis. *Personal Relationships, 24*(2), 306-322. [doi:10.1111/pere.12183](https://doi.org/10.1111/pere.12183)
+8. Hall, J. A. (2017). Humor in romantic relationships: A meta-analysis. *Personal Relationships, 24*(2), 306-322. <a href="https://doi.org/10.1111/pere.12183" target="_blank" rel="noopener noreferrer">doi:10.1111/pere.12183</a>
 
-9. Campbell, L., Martin, R. A., & Ward, J. R. (2008). An observational study of humor use while resolving conflict in dating couples. *Personal Relationships, 15*(1), 41-55. [doi:10.1111/j.1475-6811.2007.00183.x](https://doi.org/10.1111/j.1475-6811.2007.00183.x)
+9. Campbell, L., Martin, R. A., & Ward, J. R. (2008). An observational study of humor use while resolving conflict in dating couples. *Personal Relationships, 15*(1), 41-55. <a href="https://doi.org/10.1111/j.1475-6811.2007.00183.x" target="_blank" rel="noopener noreferrer">doi:10.1111/j.1475-6811.2007.00183.x</a>
 
-10. Eldridge, K. A., Sevier, M., Jones, J., Atkins, D. C., & Christensen, A. (2007). Demand-withdraw communication in severely distressed, moderately distressed, and nondistressed couples. *Journal of Family Psychology, 21*(2), 218-226. [doi:10.1037/0893-3200.21.2.218](https://doi.org/10.1037/0893-3200.21.2.218)
+10. Eldridge, K. A., Sevier, M., Jones, J., Atkins, D. C., & Christensen, A. (2007). Demand-withdraw communication in severely distressed, moderately distressed, and nondistressed couples. *Journal of Family Psychology, 21*(2), 218-226. <a href="https://doi.org/10.1037/0893-3200.21.2.218" target="_blank" rel="noopener noreferrer">doi:10.1037/0893-3200.21.2.218</a>
 
-11. Ditzen, B., Hoppmann, C., & Klumb, P. (2008). Positive couple interactions and daily cortisol: On the stress-protecting role of intimacy. *Psychosomatic Medicine, 70*(8), 883-889. [doi:10.1097/PSY.0b013e318185c4fc](https://doi.org/10.1097/PSY.0b013e318185c4fc)
+11. Ditzen, B., Hoppmann, C., & Klumb, P. (2008). Positive couple interactions and daily cortisol: On the stress-protecting role of intimacy. *Psychosomatic Medicine, 70*(8), 883-889. <a href="https://doi.org/10.1097/PSY.0b013e318185c4fc" target="_blank" rel="noopener noreferrer">doi:10.1097/PSY.0b013e318185c4fc</a>
 
 ---
 

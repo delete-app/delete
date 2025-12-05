@@ -199,19 +199,19 @@ The goal isn't to never feel limerence. It's to recognize it for what it is: a t
 
 ## References
 
-1. Tennov, D. (1979). *Love and Limerence: The Experience of Being in Love*. Stein and Day. [Archive.org](https://archive.org/details/lovelimerenceexp00tenn)
+1. Tennov, D. (1979). *Love and Limerence: The Experience of Being in Love*. Stein and Day. <a href="https://archive.org/details/lovelimerenceexp00tenn" target="_blank" rel="noopener noreferrer">Archive.org</a>
 
-2. Aron, A., Fisher, H., Mashek, D.J., Strong, G., Li, H., & Brown, L.L. (2005). Reward, motivation, and emotion systems associated with early-stage intense romantic love. *Journal of Neurophysiology, 94*, 327-337. [doi:10.1152/jn.00838.2004](https://doi.org/10.1152/jn.00838.2004)
+2. Aron, A., Fisher, H., Mashek, D.J., Strong, G., Li, H., & Brown, L.L. (2005). Reward, motivation, and emotion systems associated with early-stage intense romantic love. *Journal of Neurophysiology, 94*, 327-337. <a href="https://doi.org/10.1152/jn.00838.2004" target="_blank" rel="noopener noreferrer">doi:10.1152/jn.00838.2004</a>
 
-3. Marazziti, D., Akiskal, H.S., Rossi, A., & Cassano, G.B. (1999). Alteration of the platelet serotonin transporter in romantic love. *Psychological Medicine, 29*(3), 741-745. [doi:10.1017/S0033291798008022](https://doi.org/10.1017/S0033291798008022)
+3. Marazziti, D., Akiskal, H.S., Rossi, A., & Cassano, G.B. (1999). Alteration of the platelet serotonin transporter in romantic love. *Psychological Medicine, 29*(3), 741-745. <a href="https://doi.org/10.1017/S0033291798008022" target="_blank" rel="noopener noreferrer">doi:10.1017/S0033291798008022</a>
 
-4. Acevedo, B.P., Aron, A., Fisher, H.E., & Brown, L.L. (2012). Neural correlates of long-term intense romantic love. *Social Cognitive and Affective Neuroscience, 7*(2), 145-159. [doi:10.1093/scan/nsq092](https://doi.org/10.1093/scan/nsq092)
+4. Acevedo, B.P., Aron, A., Fisher, H.E., & Brown, L.L. (2012). Neural correlates of long-term intense romantic love. *Social Cognitive and Affective Neuroscience, 7*(2), 145-159. <a href="https://doi.org/10.1093/scan/nsq092" target="_blank" rel="noopener noreferrer">doi:10.1093/scan/nsq092</a>
 
-5. Wakin, A.H. & Vo, D.B. (2008). Love-Variant: The Wakin-Vo I.D.R. Model of Limerence. Presented at Inter-Disciplinary Net 2nd Global Conference. [Sacred Heart University](https://digitalcommons.sacredheart.edu/psych_fac/134/)
+5. Wakin, A.H. & Vo, D.B. (2008). Love-Variant: The Wakin-Vo I.D.R. Model of Limerence. Presented at Inter-Disciplinary Net 2nd Global Conference. <a href="https://digitalcommons.sacredheart.edu/psych_fac/134/" target="_blank" rel="noopener noreferrer">Sacred Heart University</a>
 
-6. Wyant, B.E. (2021). Treatment of Limerence Using a Cognitive Behavioral Approach: A Case Study. *Journal of Patient Experience, 8*. [doi:10.1177/23743735211060812](https://doi.org/10.1177/23743735211060812)
+6. Wyant, B.E. (2021). Treatment of Limerence Using a Cognitive Behavioral Approach: A Case Study. *Journal of Patient Experience, 8*. <a href="https://doi.org/10.1177/23743735211060812" target="_blank" rel="noopener noreferrer">doi:10.1177/23743735211060812</a>
 
-7. Eastwick, P.W., & Finkel, E.J. (2008). Sex differences in mate preferences revisited: Do people know what they initially desire in a romantic partner? *Journal of Personality and Social Psychology, 94*(2), 245-264. [doi:10.1037/0022-3514.94.2.245](https://doi.org/10.1037/0022-3514.94.2.245)
+7. Eastwick, P.W., & Finkel, E.J. (2008). Sex differences in mate preferences revisited: Do people know what they initially desire in a romantic partner? *Journal of Personality and Social Psychology, 94*(2), 245-264. <a href="https://doi.org/10.1037/0022-3514.94.2.245" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.94.2.245</a>
 
 ---
 

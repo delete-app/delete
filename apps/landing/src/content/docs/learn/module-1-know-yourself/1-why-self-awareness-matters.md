@@ -153,23 +153,23 @@ The goal isn't perfect self-knowledge. It's *enough* self-knowledge to make bett
 
 ## References
 
-1. Lewandowski, G. W., Jr., Nardone, N., & Raines, A. J. (2010). The role of self-concept clarity in relationship quality. *Self and Identity, 9*(4), 416-433. [doi:10.1080/15298860903332191](https://doi.org/10.1080/15298860903332191)
+1. Lewandowski, G. W., Jr., Nardone, N., & Raines, A. J. (2010). The role of self-concept clarity in relationship quality. *Self and Identity, 9*(4), 416-433. <a href="https://doi.org/10.1080/15298860903332191" target="_blank" rel="noopener noreferrer">doi:10.1080/15298860903332191</a>
 
-2. Parise, M., Pagani, A. F., Donato, S., & Sedikides, C. (2019). Self-concept clarity and relationship satisfaction at the dyadic level. *Personal Relationships, 26*(1), 1-21. [doi:10.1111/pere.12265](https://doi.org/10.1111/pere.12265)
+2. Parise, M., Pagani, A. F., Donato, S., & Sedikides, C. (2019). Self-concept clarity and relationship satisfaction at the dyadic level. *Personal Relationships, 26*(1), 1-21. <a href="https://doi.org/10.1111/pere.12265" target="_blank" rel="noopener noreferrer">doi:10.1111/pere.12265</a>
 
-3. Barnes, S., Brown, K. W., Krusemark, E., Campbell, W. K., & Rogge, R. D. (2007). The role of mindfulness in romantic relationship satisfaction and responses to relationship stress. *Journal of Marital and Family Therapy, 33*(4), 482-500. [doi:10.1111/j.1752-0606.2007.00033.x](https://doi.org/10.1111/j.1752-0606.2007.00033.x)
+3. Barnes, S., Brown, K. W., Krusemark, E., Campbell, W. K., & Rogge, R. D. (2007). The role of mindfulness in romantic relationship satisfaction and responses to relationship stress. *Journal of Marital and Family Therapy, 33*(4), 482-500. <a href="https://doi.org/10.1111/j.1752-0606.2007.00033.x" target="_blank" rel="noopener noreferrer">doi:10.1111/j.1752-0606.2007.00033.x</a>
 
-4. Carson, J. W., Carson, K. M., Gil, K. M., & Baucom, D. H. (2004). Mindfulness-based relationship enhancement. *Behavior Therapy, 35*(3), 471-494. [doi:10.1016/S0005-7894(04)80028-5](https://doi.org/10.1016/S0005-7894(04)80028-5)
+4. Carson, J. W., Carson, K. M., Gil, K. M., & Baucom, D. H. (2004). Mindfulness-based relationship enhancement. *Behavior Therapy, 35*(3), 471-494. <a href="https://doi.org/10.1016/S0005-7894(04" target="_blank" rel="noopener noreferrer">doi:10.1016/S0005-7894(04)80028-5</a>80028-5)
 
-5. Winter, L., Rupp, H., & Sander, L. B. (2021). Mindfulness-based couple interventions: A systematic literature review. *Family Process, 60*(4), 1138-1156. [doi:10.1111/famp.12683](https://doi.org/10.1111/famp.12683)
+5. Winter, L., Rupp, H., & Sander, L. B. (2021). Mindfulness-based couple interventions: A systematic literature review. *Family Process, 60*(4), 1138-1156. <a href="https://doi.org/10.1111/famp.12683" target="_blank" rel="noopener noreferrer">doi:10.1111/famp.12683</a>
 
-6. Neff, K. D., & Beretvas, S. N. (2013). The role of self-compassion in romantic relationships. *Self and Identity, 12*(1), 78-98. [doi:10.1080/15298868.2011.639548](https://doi.org/10.1080/15298868.2011.639548)
+6. Neff, K. D., & Beretvas, S. N. (2013). The role of self-compassion in romantic relationships. *Self and Identity, 12*(1), 78-98. <a href="https://doi.org/10.1080/15298868.2011.639548" target="_blank" rel="noopener noreferrer">doi:10.1080/15298868.2011.639548</a>
 
-7. Choi, S. W., & Murdock, N. L. (2022). Differentiation of self: A scoping review of Bowen Family Systems Theory's core construct. *Clinical Psychology Review, 91*, 102101. [doi:10.1016/j.cpr.2021.102101](https://doi.org/10.1016/j.cpr.2021.102101)
+7. Choi, S. W., & Murdock, N. L. (2022). Differentiation of self: A scoping review of Bowen Family Systems Theory's core construct. *Clinical Psychology Review, 91*, 102101. <a href="https://doi.org/10.1016/j.cpr.2021.102101" target="_blank" rel="noopener noreferrer">doi:10.1016/j.cpr.2021.102101</a>
 
-8. Kealy, D., Joyce, A. S., Weber, R., & Ogrodniczuk, J. S. (2014). Psychological mindedness as a protective factor against revictimization in intimate relationships. *Journal of Clinical Psychology, 70*(9), 861-872. [doi:10.1002/jclp.22061](https://doi.org/10.1002/jclp.22061)
+8. Kealy, D., Joyce, A. S., Weber, R., & Ogrodniczuk, J. S. (2014). Psychological mindedness as a protective factor against revictimization in intimate relationships. *Journal of Clinical Psychology, 70*(9), 861-872. <a href="https://doi.org/10.1002/jclp.22061" target="_blank" rel="noopener noreferrer">doi:10.1002/jclp.22061</a>
 
-9. Harris, M. A., & Orth, U. (2020). The link between self-esteem and social relationships: A meta-analysis of longitudinal studies. *Journal of Personality and Social Psychology, 119*(6), 1459-1477. [doi:10.1037/pspp0000265](https://doi.org/10.1037/pspp0000265)
+9. Harris, M. A., & Orth, U. (2020). The link between self-esteem and social relationships: A meta-analysis of longitudinal studies. *Journal of Personality and Social Psychology, 119*(6), 1459-1477. <a href="https://doi.org/10.1037/pspp0000265" target="_blank" rel="noopener noreferrer">doi:10.1037/pspp0000265</a>
 
 ---
 

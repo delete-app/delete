@@ -228,25 +228,25 @@ Know these *before* your next relationship. Communicate them *early*. If they ca
 
 ## References
 
-1. Bunt, S., & Hazelwood, Z. J. (2023). Revisiting the languages of love: An empirical test of the validity assumptions underlying Chapman's (2015) Five Love Languages typology. *Communication Reports, 36*(1), 13-25. [doi:10.1080/08934215.2022.2113549](https://doi.org/10.1080/08934215.2022.2113549)
+1. Bunt, S., & Hazelwood, Z. J. (2023). Revisiting the languages of love: An empirical test of the validity assumptions underlying Chapman's (2015) Five Love Languages typology. *Communication Reports, 36*(1), 13-25. <a href="https://doi.org/10.1080/08934215.2022.2113549" target="_blank" rel="noopener noreferrer">doi:10.1080/08934215.2022.2113549</a>
 
-2. Impett, E. A., et al. (2022). Review of empirical research on Chapman's Five Love Languages. University of Toronto. Summary available at [The Early Years](https://www.earlyyears.tv/love-languages-research/)
+2. Impett, E. A., et al. (2022). Review of empirical research on Chapman's Five Love Languages. University of Toronto. Summary available at <a href="https://www.earlyyears.tv/love-languages-research/" target="_blank" rel="noopener noreferrer">The Early Years</a>
 
-3. Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. *Psychological Inquiry, 11*(4), 227-268. [doi:10.1207/S15327965PLI1104_01](https://doi.org/10.1207/S15327965PLI1104_01)
+3. Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. *Psychological Inquiry, 11*(4), 227-268. <a href="https://doi.org/10.1207/S15327965PLI1104_01" target="_blank" rel="noopener noreferrer">doi:10.1207/S15327965PLI1104_01</a>
 
-4. Patrick, H., Knee, C. R., Canevello, A., & Lonsbary, C. (2007). The role of need fulfillment in relationship functioning and well-being: A self-determination theory perspective. *Journal of Personality and Social Psychology, 92*(3), 434-457. [doi:10.1037/0022-3514.92.3.434](https://doi.org/10.1037/0022-3514.92.3.434)
+4. Patrick, H., Knee, C. R., Canevello, A., & Lonsbary, C. (2007). The role of need fulfillment in relationship functioning and well-being: A self-determination theory perspective. *Journal of Personality and Social Psychology, 92*(3), 434-457. <a href="https://doi.org/10.1037/0022-3514.92.3.434" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.92.3.434</a>
 
-5. Reis, H. T., & Gable, S. L. (2015). Responsiveness. *Current Opinion in Psychology, 1*, 67-71. [doi:10.1016/j.copsyc.2015.01.001](https://doi.org/10.1016/j.copsyc.2015.01.001)
+5. Reis, H. T., & Gable, S. L. (2015). Responsiveness. *Current Opinion in Psychology, 1*, 67-71. <a href="https://doi.org/10.1016/j.copsyc.2015.01.001" target="_blank" rel="noopener noreferrer">doi:10.1016/j.copsyc.2015.01.001</a>
 
-6. Laurenceau, J. P., Barrett, L. F., & Pietromonaco, P. R. (1998). Intimacy as an interpersonal process: The importance of self-disclosure, partner disclosure, and perceived partner responsiveness in interpersonal exchanges. *Journal of Personality and Social Psychology, 74*(5), 1238-1251. [doi:10.1037/0022-3514.74.5.1238](https://doi.org/10.1037/0022-3514.74.5.1238)
+6. Laurenceau, J. P., Barrett, L. F., & Pietromonaco, P. R. (1998). Intimacy as an interpersonal process: The importance of self-disclosure, partner disclosure, and perceived partner responsiveness in interpersonal exchanges. *Journal of Personality and Social Psychology, 74*(5), 1238-1251. <a href="https://doi.org/10.1037/0022-3514.74.5.1238" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.74.5.1238</a>
 
-7. Gable, S. L., Reis, H. T., Impett, E. A., & Asher, E. R. (2004). What do you do when things go right? The intrapersonal and interpersonal benefits of sharing positive events. *Journal of Personality and Social Psychology, 87*(2), 228-245. [doi:10.1037/0022-3514.87.2.228](https://doi.org/10.1037/0022-3514.87.2.228)
+7. Gable, S. L., Reis, H. T., Impett, E. A., & Asher, E. R. (2004). What do you do when things go right? The intrapersonal and interpersonal benefits of sharing positive events. *Journal of Personality and Social Psychology, 87*(2), 228-245. <a href="https://doi.org/10.1037/0022-3514.87.2.228" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.87.2.228</a>
 
 8. Mikulincer, M., & Shaver, P. R. (2007). *Attachment in adulthood: Structure, dynamics, and change*. Guilford Press.
 
-9. La Guardia, J. G., Ryan, R. M., Couchman, C. E., & Deci, E. L. (2000). Within-person variation in security of attachment: A self-determination theory perspective on attachment, need fulfillment, and well-being. *Journal of Personality and Social Psychology, 79*(3), 367-384. [doi:10.1037/0022-3514.79.3.367](https://doi.org/10.1037/0022-3514.79.3.367)
+9. La Guardia, J. G., Ryan, R. M., Couchman, C. E., & Deci, E. L. (2000). Within-person variation in security of attachment: A self-determination theory perspective on attachment, need fulfillment, and well-being. *Journal of Personality and Social Psychology, 79*(3), 367-384. <a href="https://doi.org/10.1037/0022-3514.79.3.367" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.79.3.367</a>
 
-10. Fincham, F. D., & Beach, S. R. H. (2010). Marriage in the new millennium: A decade in review. *Journal of Marriage and Family, 72*(3), 630-649. [doi:10.1111/j.1741-3737.2010.00722.x](https://doi.org/10.1111/j.1741-3737.2010.00722.x)
+10. Fincham, F. D., & Beach, S. R. H. (2010). Marriage in the new millennium: A decade in review. *Journal of Marriage and Family, 72*(3), 630-649. <a href="https://doi.org/10.1111/j.1741-3737.2010.00722.x" target="_blank" rel="noopener noreferrer">doi:10.1111/j.1741-3737.2010.00722.x</a>
 
 ---
 

@@ -219,23 +219,23 @@ The people who sustain long-term love aren't the ones who maintain limerence for
 
 ## References
 
-1. Fisher, H., Aron, A., & Brown, L. L. (2005). Romantic love: An fMRI study of a neural mechanism for mate choice. *Journal of Comparative Neurology, 493*(1), 58-62. [doi:10.1002/cne.20772](https://doi.org/10.1002/cne.20772)
+1. Fisher, H., Aron, A., & Brown, L. L. (2005). Romantic love: An fMRI study of a neural mechanism for mate choice. *Journal of Comparative Neurology, 493*(1), 58-62. <a href="https://doi.org/10.1002/cne.20772" target="_blank" rel="noopener noreferrer">doi:10.1002/cne.20772</a>
 
-2. Fisher, H. E., Aron, A., Mashek, D., Li, H., & Brown, L. L. (2002). Defining the brain systems of lust, romantic attraction, and attachment. *Archives of Sexual Behavior, 31*(5), 413-419. [doi:10.1023/A:1019888024255](https://doi.org/10.1023/A:1019888024255)
+2. Fisher, H. E., Aron, A., Mashek, D., Li, H., & Brown, L. L. (2002). Defining the brain systems of lust, romantic attraction, and attachment. *Archives of Sexual Behavior, 31*(5), 413-419. <a href="https://doi.org/10.1023/A:1019888024255" target="_blank" rel="noopener noreferrer">doi:10.1023/A:1019888024255</a>
 
-3. Marazziti, D., Akiskal, H. S., Rossi, A., & Cassano, G. B. (1999). Alteration of the platelet serotonin transporter in romantic love. *Psychological Medicine, 29*(3), 741-745. [doi:10.1017/s0033291798007946](https://doi.org/10.1017/s0033291798007946)
+3. Marazziti, D., Akiskal, H. S., Rossi, A., & Cassano, G. B. (1999). Alteration of the platelet serotonin transporter in romantic love. *Psychological Medicine, 29*(3), 741-745. <a href="https://doi.org/10.1017/s0033291798007946" target="_blank" rel="noopener noreferrer">doi:10.1017/s0033291798007946</a>
 
-4. Bartels, A., & Zeki, S. (2000). The neural basis of romantic love. *NeuroReport, 11*(17), 3829-3834. [doi:10.1097/00001756-200011270-00046](https://doi.org/10.1097/00001756-200011270-00046)
+4. Bartels, A., & Zeki, S. (2000). The neural basis of romantic love. *NeuroReport, 11*(17), 3829-3834. <a href="https://doi.org/10.1097/00001756-200011270-00046" target="_blank" rel="noopener noreferrer">doi:10.1097/00001756-200011270-00046</a>
 
-5. Xu, X., Aron, A., Brown, L., Cao, G., Feng, T., & Weng, X. (2011). Reward and motivation systems: A brain mapping study of early-stage intense romantic love in Chinese participants. *Human Brain Mapping, 32*(2), 249-257. [doi:10.1002/hbm.21017](https://doi.org/10.1002/hbm.21017)
+5. Xu, X., Aron, A., Brown, L., Cao, G., Feng, T., & Weng, X. (2011). Reward and motivation systems: A brain mapping study of early-stage intense romantic love in Chinese participants. *Human Brain Mapping, 32*(2), 249-257. <a href="https://doi.org/10.1002/hbm.21017" target="_blank" rel="noopener noreferrer">doi:10.1002/hbm.21017</a>
 
-6. Acevedo, B. P., Aron, A., Fisher, H. E., & Brown, L. L. (2012). Neural correlates of long-term intense romantic love. *Social Cognitive and Affective Neuroscience, 7*(2), 145-159. [doi:10.1093/scan/nsq092](https://doi.org/10.1093/scan/nsq092)
+6. Acevedo, B. P., Aron, A., Fisher, H. E., & Brown, L. L. (2012). Neural correlates of long-term intense romantic love. *Social Cognitive and Affective Neuroscience, 7*(2), 145-159. <a href="https://doi.org/10.1093/scan/nsq092" target="_blank" rel="noopener noreferrer">doi:10.1093/scan/nsq092</a>
 
-7. Young, L. J., & Wang, Z. (2004). The neurobiology of pair bond formation. *Nature Neuroscience, 7*, 1048-1054. [doi:10.1038/nn1327](https://doi.org/10.1038/nn1327)
+7. Young, L. J., & Wang, Z. (2004). The neurobiology of pair bond formation. *Nature Neuroscience, 7*, 1048-1054. <a href="https://doi.org/10.1038/nn1327" target="_blank" rel="noopener noreferrer">doi:10.1038/nn1327</a>
 
-8. Esch, T., & Stefano, G. B. (2005). Love promotes health. *Neuroendocrinology Letters, 26*(3), 264-267. [PMID:15990734](https://pubmed.ncbi.nlm.nih.gov/15990734/)
+8. Esch, T., & Stefano, G. B. (2005). Love promotes health. *Neuroendocrinology Letters, 26*(3), 264-267. <a href="https://pubmed.ncbi.nlm.nih.gov/15990734/" target="_blank" rel="noopener noreferrer">PMID:15990734</a>
 
-9. Xu, X., Brown, L. L., Aron, A., Cao, G., Feng, T., Acevedo, B., & Weng, X. (2012). Regional brain activity during early-stage intense romantic love predicted relationship outcomes after 40 months. *Neuroscience Letters, 526*(1), 33-38. [doi:10.1016/j.neulet.2012.08.004](https://doi.org/10.1016/j.neulet.2012.08.004)
+9. Xu, X., Brown, L. L., Aron, A., Cao, G., Feng, T., Acevedo, B., & Weng, X. (2012). Regional brain activity during early-stage intense romantic love predicted relationship outcomes after 40 months. *Neuroscience Letters, 526*(1), 33-38. <a href="https://doi.org/10.1016/j.neulet.2012.08.004" target="_blank" rel="noopener noreferrer">doi:10.1016/j.neulet.2012.08.004</a>
 
 ---
 

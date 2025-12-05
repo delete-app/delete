@@ -189,31 +189,31 @@ You didn't choose your attachment style. You can choose what you do with it.
 
 2. Ainsworth, M. D. S., Blehar, M. C., Waters, E., & Wall, S. (1978). *Patterns of Attachment: A Psychological Study of the Strange Situation*. Hillsdale, NJ: Erlbaum.
 
-3. Hazan, C., & Shaver, P. (1987). Romantic love conceptualized as an attachment process. *Journal of Personality and Social Psychology, 52*(3), 511-524. [doi:10.1037/0022-3514.52.3.511](https://doi.org/10.1037/0022-3514.52.3.511)
+3. Hazan, C., & Shaver, P. (1987). Romantic love conceptualized as an attachment process. *Journal of Personality and Social Psychology, 52*(3), 511-524. <a href="https://doi.org/10.1037/0022-3514.52.3.511" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.52.3.511</a>
 
 4. Mikulincer, M., & Shaver, P. R. (2003). The attachment behavioral system in adulthood: Activation, psychodynamics, and interpersonal processes. *Advances in Experimental Social Psychology, 35*, 53-152.
 
-5. Neurobiology of Disorganized Attachment: A Review. (2023). *Neuroscience Insights*. [PMC9947683](https://pmc.ncbi.nlm.nih.gov/articles/PMC9947683/)
+5. Neurobiology of Disorganized Attachment: A Review. (2023). *Neuroscience Insights*. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9947683/" target="_blank" rel="noopener noreferrer">PMC9947683</a>
 
-6. U.S. National Comorbidity Survey Replication (NCS-R). Attachment prevalence data from 5,645 adults. [PubMed](https://pubmed.ncbi.nlm.nih.gov/26213376/)
+6. U.S. National Comorbidity Survey Replication (NCS-R). Attachment prevalence data from 5,645 adults. <a href="https://pubmed.ncbi.nlm.nih.gov/26213376/" target="_blank" rel="noopener noreferrer">PubMed</a>
 
-7. Feldman, R. (2017). The neurobiology of human attachments. *Trends in Cognitive Sciences, 21*(2), 80-99. [Full PDF](https://ruthfeldmanlab.com/wp-content/uploads/2019/05/TiCS.Neurobiology-of-attachment.2017.pdf)
+7. Feldman, R. (2017). The neurobiology of human attachments. *Trends in Cognitive Sciences, 21*(2), 80-99. <a href="https://ruthfeldmanlab.com/wp-content/uploads/2019/05/TiCS.Neurobiology-of-attachment.2017.pdf" target="_blank" rel="noopener noreferrer">Full PDF</a>
 
-8. The Attachment Dynamic: Dyadic Patterns of Anxiety and Avoidance. (2021). *Personal Relationships*. [PMC8336265](https://pmc.ncbi.nlm.nih.gov/articles/PMC8336265/)
+8. The Attachment Dynamic: Dyadic Patterns of Anxiety and Avoidance. (2021). *Personal Relationships*. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8336265/" target="_blank" rel="noopener noreferrer">PMC8336265</a>
 
-9. Stability and Fluctuation in Adult Attachment Style Over a 6-Year Period. (2005). *Journal of Research in Personality*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/15764127/)
+9. Stability and Fluctuation in Adult Attachment Style Over a 6-Year Period. (2005). *Journal of Research in Personality*. <a href="https://pubmed.ncbi.nlm.nih.gov/15764127/" target="_blank" rel="noopener noreferrer">PubMed</a>
 
-10. Fraley, R. C., & Roisman, G. I. (2019). The development of adult attachment styles: Four lessons. *Current Opinion in Psychology, 25*, 26-30. [doi:10.1016/j.copsyc.2018.02.005](https://doi.org/10.1016/j.copsyc.2018.02.005)
+10. Fraley, R. C., & Roisman, G. I. (2019). The development of adult attachment styles: Four lessons. *Current Opinion in Psychology, 25*, 26-30. <a href="https://doi.org/10.1016/j.copsyc.2018.02.005" target="_blank" rel="noopener noreferrer">doi:10.1016/j.copsyc.2018.02.005</a>
 
-11. Candel, O. S., & Turliuc, M. N. (2019). Insecure attachment and relationship satisfaction: A meta-analysis. *Personality and Individual Differences, 147*, 190-199. [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0191886919302673)
+11. Candel, O. S., & Turliuc, M. N. (2019). Insecure attachment and relationship satisfaction: A meta-analysis. *Personality and Individual Differences, 147*, 190-199. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0191886919302673" target="_blank" rel="noopener noreferrer">ScienceDirect</a>
 
-12. Hadden, B. W., Smith, C. V., & Webster, G. D. (2014). Temporal Adult Romantic Attachment (TARA) Model. *Personality and Social Psychology Review, 18*(1), 42-58. [PubMed](https://pubmed.ncbi.nlm.nih.gov/24026179/)
+12. Hadden, B. W., Smith, C. V., & Webster, G. D. (2014). Temporal Adult Romantic Attachment (TARA) Model. *Personality and Social Psychology Review, 18*(1), 42-58. <a href="https://pubmed.ncbi.nlm.nih.gov/24026179/" target="_blank" rel="noopener noreferrer">PubMed</a>
 
-13. Attachment, Marital Satisfaction, and Divorce During the First Fifteen Years of Parenthood. (2011). *Personal Relationships*. [PMC3061469](https://pmc.ncbi.nlm.nih.gov/articles/PMC3061469/)
+13. Attachment, Marital Satisfaction, and Divorce During the First Fifteen Years of Parenthood. (2011). *Personal Relationships*. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3061469/" target="_blank" rel="noopener noreferrer">PMC3061469</a>
 
-14. Brennan, K. A., Clark, C. L., & Shaver, P. R. (1998). Self-report measurement of adult romantic attachment: An integrative overview. In J. A. Simpson & W. S. Rholes (Eds.), *Attachment theory and close relationships* (pp. 46-76). New York: Guilford Press. [ECR Scale](https://labs.psychology.illinois.edu/~rcfraley/measures/brennan.html)
+14. Brennan, K. A., Clark, C. L., & Shaver, P. R. (1998). Self-report measurement of adult romantic attachment: An integrative overview. In J. A. Simpson & W. S. Rholes (Eds.), *Attachment theory and close relationships* (pp. 46-76). New York: Guilford Press. <a href="https://labs.psychology.illinois.edu/~rcfraley/measures/brennan.html" target="_blank" rel="noopener noreferrer">ECR Scale</a>
 
-15. Agishtein, P., & Brumbaugh, C. (2013). Cultural variation in adult attachment. *Journal of Social, Evolutionary, and Cultural Psychology, 7*(4), 384-405. [ResearchGate](https://www.researchgate.net/publication/263921725)
+15. Agishtein, P., & Brumbaugh, C. (2013). Cultural variation in adult attachment. *Journal of Social, Evolutionary, and Cultural Psychology, 7*(4), 384-405. <a href="https://www.researchgate.net/publication/263921725" target="_blank" rel="noopener noreferrer">ResearchGate</a>
 
 ---
 

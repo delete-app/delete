@@ -257,25 +257,25 @@ That's not an autism problem. That's just what good relationships require.
 
 ## References
 
-1. Dating and Sexual Experiences of Autistic Young Adults: "It Takes a Village to Plan a First Date." (2025). *Autism in Adulthood*. [Liebert Publishers](https://www.liebertpub.com/doi/abs/10.1177/25739581251369235)
+1. Dating and Sexual Experiences of Autistic Young Adults: "It Takes a Village to Plan a First Date." (2025). *Autism in Adulthood*. <a href="https://www.liebertpub.com/doi/abs/10.1177/25739581251369235" target="_blank" rel="noopener noreferrer">Liebert Publishers</a>
 
-2. Crompton, C. J., Ropar, D., Evans-Williams, C. V., Flynn, E. G., & Fletcher-Watson, S. (2020). Neurotype-matching, but not being autistic, influences self and observer ratings of interpersonal rapport. *Frontiers in Psychology, 11*, 586171. [doi:10.3389/fpsyg.2020.586171](https://doi.org/10.3389/fpsyg.2020.586171)
+2. Crompton, C. J., Ropar, D., Evans-Williams, C. V., Flynn, E. G., & Fletcher-Watson, S. (2020). Neurotype-matching, but not being autistic, influences self and observer ratings of interpersonal rapport. *Frontiers in Psychology, 11*, 586171. <a href="https://doi.org/10.3389/fpsyg.2020.586171" target="_blank" rel="noopener noreferrer">doi:10.3389/fpsyg.2020.586171</a>
 
-3. Yew, R. Y., Samuel, P., Hooley, M., Mesibov, G. B., & Stokes, M. A. (2021). A systematic review of romantic relationship initiation and maintenance factors in autism. *Personal Relationships, 28*, 777-802. [doi:10.1111/pere.12397](https://doi.org/10.1111/pere.12397)
+3. Yew, R. Y., Samuel, P., Hooley, M., Mesibov, G. B., & Stokes, M. A. (2021). A systematic review of romantic relationship initiation and maintenance factors in autism. *Personal Relationships, 28*, 777-802. <a href="https://doi.org/10.1111/pere.12397" target="_blank" rel="noopener noreferrer">doi:10.1111/pere.12397</a>
 
-4. Neu, B. K. W. (2025). Autism in romantic relationships: A content analysis of challenges and strengths (2013–2024). *Journal of Family Theory & Review*. [doi:10.1111/jftr.70001](https://doi.org/10.1111/jftr.70001)
+4. Neu, B. K. W. (2025). Autism in romantic relationships: A content analysis of challenges and strengths (2013–2024). *Journal of Family Theory & Review*. <a href="https://doi.org/10.1111/jftr.70001" target="_blank" rel="noopener noreferrer">doi:10.1111/jftr.70001</a>
 
-5. Sala, G., Hooley, J., Hooley, M., & Stokes, M. A. (2023). Comparing physical intimacy and romantic relationships of autistic and non-autistic adults: A qualitative analysis. *Journal of Autism and Developmental Disorders, 54*(10), 3942-3951. [doi:10.1007/s10803-023-06109-0](https://doi.org/10.1007/s10803-023-06109-0)
+5. Sala, G., Hooley, J., Hooley, M., & Stokes, M. A. (2023). Comparing physical intimacy and romantic relationships of autistic and non-autistic adults: A qualitative analysis. *Journal of Autism and Developmental Disorders, 54*(10), 3942-3951. <a href="https://doi.org/10.1007/s10803-023-06109-0" target="_blank" rel="noopener noreferrer">doi:10.1007/s10803-023-06109-0</a>
 
-6. Gray, S., Kirby, A. V., & Holmes, L. G. (2021). Autistic narratives of sensory features, sexuality, and relationships. *Autism in Adulthood, 3*(3), 238-246. [doi:10.1089/aut.2020.0049](https://doi.org/10.1089/aut.2020.0049)
+6. Gray, S., Kirby, A. V., & Holmes, L. G. (2021). Autistic narratives of sensory features, sexuality, and relationships. *Autism in Adulthood, 3*(3), 238-246. <a href="https://doi.org/10.1089/aut.2020.0049" target="_blank" rel="noopener noreferrer">doi:10.1089/aut.2020.0049</a>
 
-7. Hull, L., Petrides, K. V., Allison, C., Smith, P., Baron-Cohen, S., Lai, M.-C., & Mandy, W. (2017). "Putting on my best normal": Social camouflaging in adults with autism spectrum conditions. *Journal of Autism and Developmental Disorders, 47*(8), 2519-2534. [doi:10.1007/s10803-017-3166-5](https://doi.org/10.1007/s10803-017-3166-5)
+7. Hull, L., Petrides, K. V., Allison, C., Smith, P., Baron-Cohen, S., Lai, M.-C., & Mandy, W. (2017). "Putting on my best normal": Social camouflaging in adults with autism spectrum conditions. *Journal of Autism and Developmental Disorders, 47*(8), 2519-2534. <a href="https://doi.org/10.1007/s10803-017-3166-5" target="_blank" rel="noopener noreferrer">doi:10.1007/s10803-017-3166-5</a>
 
-8. Ridgway, J., et al. (2024). Camouflaging autism in pursuit of friendship and intimate relationships: A systematic review. *Autism in Adulthood*. [doi:10.1089/aut.2023.0160](https://doi.org/10.1089/aut.2023.0160)
+8. Ridgway, J., et al. (2024). Camouflaging autism in pursuit of friendship and intimate relationships: A systematic review. *Autism in Adulthood*. <a href="https://doi.org/10.1089/aut.2023.0160" target="_blank" rel="noopener noreferrer">doi:10.1089/aut.2023.0160</a>
 
-9. Yew, R. Y., Hooley, M., & Stokes, M. A. (2023). Factors of relationship satisfaction for autistic and non-autistic partners in long-term relationships. *Autism, 27*(8), 2348-2360. [doi:10.1177/13623613231160244](https://doi.org/10.1177/13623613231160244)
+9. Yew, R. Y., Hooley, M., & Stokes, M. A. (2023). Factors of relationship satisfaction for autistic and non-autistic partners in long-term relationships. *Autism, 27*(8), 2348-2360. <a href="https://doi.org/10.1177/13623613231160244" target="_blank" rel="noopener noreferrer">doi:10.1177/13623613231160244</a>
 
-10. Dewinter, J., De Graaf, H., & Begeer, S. (2017). Sexual orientation, gender identity, and romantic relationships in adolescents and adults with autism spectrum disorder. *Journal of Autism and Developmental Disorders, 47*(9), 2927-2934. [doi:10.1007/s10803-017-3199-9](https://doi.org/10.1007/s10803-017-3199-9)
+10. Dewinter, J., De Graaf, H., & Begeer, S. (2017). Sexual orientation, gender identity, and romantic relationships in adolescents and adults with autism spectrum disorder. *Journal of Autism and Developmental Disorders, 47*(9), 2927-2934. <a href="https://doi.org/10.1007/s10803-017-3199-9" target="_blank" rel="noopener noreferrer">doi:10.1007/s10803-017-3199-9</a>
 
 ---
 

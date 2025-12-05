@@ -219,29 +219,29 @@ If you're dating someone with ADHD: It's not personal. But it is real. And love 
 
 ## References
 
-1. Wymbs, B. T., Pelham, W. E., Molina, B. S., Gnagy, E. M., Wilson, T. K., & Greenhouse, J. B. (2008). Rate and predictors of divorce among parents of youth with ADHD. *Journal of Consulting and Clinical Psychology, 76*(5), 735-744. [doi:10.1037/0022-006X.76.5.735](https://doi.org/10.1037/0022-006X.76.5.735)
+1. Wymbs, B. T., Pelham, W. E., Molina, B. S., Gnagy, E. M., Wilson, T. K., & Greenhouse, J. B. (2008). Rate and predictors of divorce among parents of youth with ADHD. *Journal of Consulting and Clinical Psychology, 76*(5), 735-744. <a href="https://doi.org/10.1037/0022-006X.76.5.735" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-006X.76.5.735</a>
 
-2. Beheshti, A., Chavanon, M. L., & Christiansen, H. (2020). Emotion dysregulation in adults with attention deficit hyperactivity disorder: a meta-analysis. *BMC Psychiatry, 20*, 120. [doi:10.1186/s12888-020-2442-7](https://doi.org/10.1186/s12888-020-2442-7)
+2. Beheshti, A., Chavanon, M. L., & Christiansen, H. (2020). Emotion dysregulation in adults with attention deficit hyperactivity disorder: a meta-analysis. *BMC Psychiatry, 20*, 120. <a href="https://doi.org/10.1186/s12888-020-2442-7" target="_blank" rel="noopener noreferrer">doi:10.1186/s12888-020-2442-7</a>
 
-3. Hirsch, O., Chavanon, M. L., & Christiansen, H. (2023). Evidence of emotion dysregulation as a core symptom of adult ADHD: A systematic review. *PLOS One, 18*(1), e0280131. [doi:10.1371/journal.pone.0280131](https://doi.org/10.1371/journal.pone.0280131)
+3. Hirsch, O., Chavanon, M. L., & Christiansen, H. (2023). Evidence of emotion dysregulation as a core symptom of adult ADHD: A systematic review. *PLOS One, 18*(1), e0280131. <a href="https://doi.org/10.1371/journal.pone.0280131" target="_blank" rel="noopener noreferrer">doi:10.1371/journal.pone.0280131</a>
 
-4. Li, Y., Chen, Y., & Huang, Z. (2024). The dopamine hypothesis for ADHD: An evaluation of evidence accumulated from human studies and animal models. *Molecular Psychiatry*. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC11604610/)
+4. Li, Y., Chen, Y., & Huang, Z. (2024). The dopamine hypothesis for ADHD: An evaluation of evidence accumulated from human studies and animal models. *Molecular Psychiatry*. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11604610/" target="_blank" rel="noopener noreferrer">PMC</a>
 
-5. Blum, K., Chen, A. L., Braverman, E. R., et al. (2008). Attention-deficit-hyperactivity disorder and reward deficiency syndrome. *Neuropsychiatric Disease and Treatment, 4*(5), 893-918. [PMC2626918](https://pmc.ncbi.nlm.nih.gov/articles/PMC2626918/)
+5. Blum, K., Chen, A. L., Braverman, E. R., et al. (2008). Attention-deficit-hyperactivity disorder and reward deficiency syndrome. *Neuropsychiatric Disease and Treatment, 4*(5), 893-918. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2626918/" target="_blank" rel="noopener noreferrer">PMC2626918</a>
 
-6. Schouw, M. L., Verstraaten, S., Mol, M. F., et al. (2023). "Dysregulated not deficit": A qualitative study on symptomatology of ADHD in young adults. *ADHD Attention Deficit and Hyperactivity Disorders*. [PMC10569543](https://pmc.ncbi.nlm.nih.gov/articles/PMC10569543/)
+6. Schouw, M. L., Verstraaten, S., Mol, M. F., et al. (2023). "Dysregulated not deficit": A qualitative study on symptomatology of ADHD in young adults. *ADHD Attention Deficit and Hyperactivity Disorders*. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10569543/" target="_blank" rel="noopener noreferrer">PMC10569543</a>
 
-7. Barkley, R. A., Koplowitz, S., Anderson, T., & McMurray, M. B. (2023). Time Perception in Adult ADHD: Findings from a Decade—A Review. *International Journal of Environmental Research and Public Health, 20*(4), 3098. [doi:10.3390/ijerph20043098](https://doi.org/10.3390/ijerph20043098)
+7. Barkley, R. A., Koplowitz, S., Anderson, T., & McMurray, M. B. (2023). Time Perception in Adult ADHD: Findings from a Decade—A Review. *International Journal of Environmental Research and Public Health, 20*(4), 3098. <a href="https://doi.org/10.3390/ijerph20043098" target="_blank" rel="noopener noreferrer">doi:10.3390/ijerph20043098</a>
 
-8. Ptacek, R., Weissenberger, S., Braaten, E., et al. (2019). Clinical Implications of the Perception of Time in Attention Deficit Hyperactivity Disorder (ADHD): A Review. *Medical Science Monitor, 25*, 3918-3924. [doi:10.12659/MSM.914225](https://doi.org/10.12659/MSM.914225)
+8. Ptacek, R., Weissenberger, S., Braaten, E., et al. (2019). Clinical Implications of the Perception of Time in Attention Deficit Hyperactivity Disorder (ADHD): A Review. *Medical Science Monitor, 25*, 3918-3924. <a href="https://doi.org/10.12659/MSM.914225" target="_blank" rel="noopener noreferrer">doi:10.12659/MSM.914225</a>
 
-9. Schouw, M. L. J., Verstraaten, S., Mol, M. F., et al. (2023). The experiences of adults with ADHD in interpersonal relationships and online communities: A qualitative study. *Healthcare, 11*(15), 2192. [doi:10.3390/healthcare11152192](https://doi.org/10.3390/healthcare11152192)
+9. Schouw, M. L. J., Verstraaten, S., Mol, M. F., et al. (2023). The experiences of adults with ADHD in interpersonal relationships and online communities: A qualitative study. *Healthcare, 11*(15), 2192. <a href="https://doi.org/10.3390/healthcare11152192" target="_blank" rel="noopener noreferrer">doi:10.3390/healthcare11152192</a>
 
-10. Çelik, C., İnözü, M., & Erten, E. (2022). Marital Adjustment and Marital Conflict in Individuals Diagnosed with ADHD and Their Spouses. *Turkish Journal of Psychiatry*. [PMC9142016](https://pmc.ncbi.nlm.nih.gov/articles/PMC9142016/)
+10. Çelik, C., İnözü, M., & Erten, E. (2022). Marital Adjustment and Marital Conflict in Individuals Diagnosed with ADHD and Their Spouses. *Turkish Journal of Psychiatry*. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9142016/" target="_blank" rel="noopener noreferrer">PMC9142016</a>
 
-11. Knies, K. L., Bodalski, E. A., & Flory, K. (2021). Romantic relationships in adults with ADHD: The effect of partner attachment style on relationship quality. *Personal Relationships, 28*(1), 171-189. [doi:10.1177/0265407520953898](https://doi.org/10.1177/0265407520953898)
+11. Knies, K. L., Bodalski, E. A., & Flory, K. (2021). Romantic relationships in adults with ADHD: The effect of partner attachment style on relationship quality. *Personal Relationships, 28*(1), 171-189. <a href="https://doi.org/10.1177/0265407520953898" target="_blank" rel="noopener noreferrer">doi:10.1177/0265407520953898</a>
 
-12. Hallowell, E. M., & Jensen, P. S. (2005). ADHD couple and family relationships: enhancing communication and understanding through Imago Relationship Therapy. *Journal of Clinical Psychology, 61*(5), 565-577. [doi:10.1002/jclp.20102](https://doi.org/10.1002/jclp.20102)
+12. Hallowell, E. M., & Jensen, P. S. (2005). ADHD couple and family relationships: enhancing communication and understanding through Imago Relationship Therapy. *Journal of Clinical Psychology, 61*(5), 565-577. <a href="https://doi.org/10.1002/jclp.20102" target="_blank" rel="noopener noreferrer">doi:10.1002/jclp.20102</a>
 
 ---
 

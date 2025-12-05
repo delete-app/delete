@@ -184,30 +184,30 @@ Dating with anxiety is hard. But the goal isn't to eliminate anxiety—it's to b
 
 ## References
 
-1. Shechter Strulov, T., & Aderka, I. M. (2024). Dating in social anxiety disorder: A daily diary study. *Journal of Anxiety Disorders*, 107, 102927. [doi:10.1016/j.janxdis.2024.102927](https://doi.org/10.1016/j.janxdis.2024.102927)
+1. Shechter Strulov, T., & Aderka, I. M. (2024). Dating in social anxiety disorder: A daily diary study. *Journal of Anxiety Disorders*, 107, 102927. <a href="https://doi.org/10.1016/j.janxdis.2024.102927" target="_blank" rel="noopener noreferrer">doi:10.1016/j.janxdis.2024.102927</a>
 
-2. Mikulincer, M., & Shaver, P. R. (2012). Adult attachment orientations and relationship processes. *Journal of Family Theory & Review*, 4(4), 259-274. [doi:10.1111/j.1756-2589.2012.00142.x](https://doi.org/10.1111/j.1756-2589.2012.00142.x)
+2. Mikulincer, M., & Shaver, P. R. (2012). Adult attachment orientations and relationship processes. *Journal of Family Theory & Review*, 4(4), 259-274. <a href="https://doi.org/10.1111/j.1756-2589.2012.00142.x" target="_blank" rel="noopener noreferrer">doi:10.1111/j.1756-2589.2012.00142.x</a>
 
-3. Rector, N. A., Kamkar, K., Cassin, S. E., Ayearst, L. E., & Laposa, J. M. (2011). Assessing excessive reassurance seeking in the anxiety disorders. *Journal of Anxiety Disorders*, 25(7), 911-917. [doi:10.1016/j.janxdis.2011.05.003](https://doi.org/10.1016/j.janxdis.2011.05.003)
+3. Rector, N. A., Kamkar, K., Cassin, S. E., Ayearst, L. E., & Laposa, J. M. (2011). Assessing excessive reassurance seeking in the anxiety disorders. *Journal of Anxiety Disorders*, 25(7), 911-917. <a href="https://doi.org/10.1016/j.janxdis.2011.05.003" target="_blank" rel="noopener noreferrer">doi:10.1016/j.janxdis.2011.05.003</a>
 
-4. Shaver, P. R., Schachner, D. A., & Mikulincer, M. (2005). Attachment style, excessive reassurance seeking, relationship processes, and depression. *Personality and Social Psychology Bulletin*, 31(3), 343-359. [doi:10.1177/0146167204271709](https://doi.org/10.1177/0146167204271709)
+4. Shaver, P. R., Schachner, D. A., & Mikulincer, M. (2005). Attachment style, excessive reassurance seeking, relationship processes, and depression. *Personality and Social Psychology Bulletin*, 31(3), 343-359. <a href="https://doi.org/10.1177/0146167204271709" target="_blank" rel="noopener noreferrer">doi:10.1177/0146167204271709</a>
 
-5. Mishra, M., & Allen, M. S. (2023). Rejection sensitivity and romantic relationships: A systematic review and meta-analysis. *Personality and Individual Differences*, 208, 112186. 60 studies, 147 effect sizes, 16,955 participants. [doi:10.1016/j.paid.2023.112186](https://doi.org/10.1016/j.paid.2023.112186)
+5. Mishra, M., & Allen, M. S. (2023). Rejection sensitivity and romantic relationships: A systematic review and meta-analysis. *Personality and Individual Differences*, 208, 112186. 60 studies, 147 effect sizes, 16,955 participants. <a href="https://doi.org/10.1016/j.paid.2023.112186" target="_blank" rel="noopener noreferrer">doi:10.1016/j.paid.2023.112186</a>
 
-6. Hafen, C. A., Spilker, A., Chango, J., Marston, E. S., & Allen, J. P. (2014). To accept or reject? The impact of adolescent rejection sensitivity on early adult romantic relationships. *Journal of Research on Adolescence*, 24(1), 55-64. [doi:10.1111/jora.12051](https://doi.org/10.1111/jora.12051)
+6. Hafen, C. A., Spilker, A., Chango, J., Marston, E. S., & Allen, J. P. (2014). To accept or reject? The impact of adolescent rejection sensitivity on early adult romantic relationships. *Journal of Research on Adolescence*, 24(1), 55-64. <a href="https://doi.org/10.1111/jora.12051" target="_blank" rel="noopener noreferrer">doi:10.1111/jora.12051</a>
 
-7. Mishra, M., Reis, S., & Allen, M. S. (2024). Predicting relationship outcomes from rejection sensitivity in romantic couples: Testing actor and partner effects. *Current Psychology*, 43(36), 29095-29107. [doi:10.1007/s12144-024-06431-5](https://doi.org/10.1007/s12144-024-06431-5)
+7. Mishra, M., Reis, S., & Allen, M. S. (2024). Predicting relationship outcomes from rejection sensitivity in romantic couples: Testing actor and partner effects. *Current Psychology*, 43(36), 29095-29107. <a href="https://doi.org/10.1007/s12144-024-06431-5" target="_blank" rel="noopener noreferrer">doi:10.1007/s12144-024-06431-5</a>
 
-8. Zaider, T. I., Heimberg, R. G., & Iida, M. (2010). Anxiety disorders and intimate relationships: A study of daily processes in couples. *Journal of Abnormal Psychology*, 119(1), 163-173. [doi:10.1037/a0018473](https://doi.org/10.1037/a0018473)
+8. Zaider, T. I., Heimberg, R. G., & Iida, M. (2010). Anxiety disorders and intimate relationships: A study of daily processes in couples. *Journal of Abnormal Psychology*, 119(1), 163-173. <a href="https://doi.org/10.1037/a0018473" target="_blank" rel="noopener noreferrer">doi:10.1037/a0018473</a>
 
-9. Hahn, C. M., Hahn, I. G., & Campbell, L. J. (2021). Social anxiety and depression in romantic relationships: A three-sample exploration. *Journal of Social and Clinical Psychology*, 40(3), 175-200. [doi:10.1521/jscp.2021.40.3.175](https://doi.org/10.1521/jscp.2021.40.3.175)
+9. Hahn, C. M., Hahn, I. G., & Campbell, L. J. (2021). Social anxiety and depression in romantic relationships: A three-sample exploration. *Journal of Social and Clinical Psychology*, 40(3), 175-200. <a href="https://doi.org/10.1521/jscp.2021.40.3.175" target="_blank" rel="noopener noreferrer">doi:10.1521/jscp.2021.40.3.175</a>
 
-10. Otte, C. (2011). Cognitive behavioral therapy in anxiety disorders: Current state of the evidence. *Dialogues in Clinical Neuroscience*, 13(4), 413-421. [doi:10.31887/DCNS.2011.13.4/cotte](https://doi.org/10.31887/DCNS.2011.13.4/cotte)
+10. Otte, C. (2011). Cognitive behavioral therapy in anxiety disorders: Current state of the evidence. *Dialogues in Clinical Neuroscience*, 13(4), 413-421. <a href="https://doi.org/10.31887/DCNS.2011.13.4/cotte" target="_blank" rel="noopener noreferrer">doi:10.31887/DCNS.2011.13.4/cotte</a>
 
-11. Ougrin, D. (2011). Efficacy of exposure versus cognitive therapy in anxiety disorders: Systematic review and meta-analysis. *BMC Psychiatry*, 11, 200. [doi:10.1186/1471-244X-11-200](https://doi.org/10.1186/1471-244X-11-200)
+11. Ougrin, D. (2011). Efficacy of exposure versus cognitive therapy in anxiety disorders: Systematic review and meta-analysis. *BMC Psychiatry*, 11, 200. <a href="https://doi.org/10.1186/1471-244X-11-200" target="_blank" rel="noopener noreferrer">doi:10.1186/1471-244X-11-200</a>
 
-12. Horigome, T., Kurokawa, S., Sawada, K., et al. (2020). Virtual reality exposure therapy for social anxiety disorder: A systematic review and meta-analysis. *Psychological Medicine*, 50(15), 2487-2497. 22 studies, n = 703. [doi:10.1017/S0033291720003785](https://doi.org/10.1017/S0033291720003785)
+12. Horigome, T., Kurokawa, S., Sawada, K., et al. (2020). Virtual reality exposure therapy for social anxiety disorder: A systematic review and meta-analysis. *Psychological Medicine*, 50(15), 2487-2497. 22 studies, n = 703. <a href="https://doi.org/10.1017/S0033291720003785" target="_blank" rel="noopener noreferrer">doi:10.1017/S0033291720003785</a>
 
-13. Durães, R. S. S., Khafif, T. C., Lotufo-Neto, F., & Serafim, A. d. P. (2020). Effectiveness of cognitive behavioral couple therapy on reducing depression and anxiety symptoms. *The Family Journal*, 28(4), 344-355. [doi:10.1177/1066480720902410](https://doi.org/10.1177/1066480720902410)
+13. Durães, R. S. S., Khafif, T. C., Lotufo-Neto, F., & Serafim, A. d. P. (2020). Effectiveness of cognitive behavioral couple therapy on reducing depression and anxiety symptoms. *The Family Journal*, 28(4), 344-355. <a href="https://doi.org/10.1177/1066480720902410" target="_blank" rel="noopener noreferrer">doi:10.1177/1066480720902410</a>
 
-14. Paprocki, C. M., & Baucom, D. H. (2017). Worried about us: Evaluating an intervention for relationship-based anxiety. *Family Process*, 56(1), 45-58. [doi:10.1111/famp.12175](https://doi.org/10.1111/famp.12175)
+14. Paprocki, C. M., & Baucom, D. H. (2017). Worried about us: Evaluating an intervention for relationship-based anxiety. *Family Process*, 56(1), 45-58. <a href="https://doi.org/10.1111/famp.12175" target="_blank" rel="noopener noreferrer">doi:10.1111/famp.12175</a>

@@ -215,28 +215,28 @@ Neurodivergent partners require specific kinds of adaptation. If you can't or do
 
 ## References
 
-1. Milton, D. E. (2012). On the ontological status of autism: The 'double empathy problem'. *Disability & Society*, 27(6), 883-887. [doi:10.1080/09687599.2012.710008](https://doi.org/10.1080/09687599.2012.710008)
+1. Milton, D. E. (2012). On the ontological status of autism: The 'double empathy problem'. *Disability & Society*, 27(6), 883-887. <a href="https://doi.org/10.1080/09687599.2012.710008" target="_blank" rel="noopener noreferrer">doi:10.1080/09687599.2012.710008</a>
 
-2. Crompton, C. J., Ropar, D., Evans-Williams, C. V., Flynn, E. G., & Fletcher-Watson, S. (2020). Autistic peer-to-peer information transfer is highly effective. *Autism*, 24(7), 1704-1712. [doi:10.1177/1362361320919286](https://doi.org/10.1177/1362361320919286)
+2. Crompton, C. J., Ropar, D., Evans-Williams, C. V., Flynn, E. G., & Fletcher-Watson, S. (2020). Autistic peer-to-peer information transfer is highly effective. *Autism*, 24(7), 1704-1712. <a href="https://doi.org/10.1177/1362361320919286" target="_blank" rel="noopener noreferrer">doi:10.1177/1362361320919286</a>
 
-3. Morrison, K. E., DeBrabander, K. M., Jones, D. R., Faso, D. J., Ackerman, R. A., & Sasson, N. J. (2020). Outcomes of real-world social interaction for autistic adults paired with autistic compared to typically developing partners. *Autism*, 24(5), 1067-1080. [doi:10.1177/1362361319892701](https://doi.org/10.1177/1362361319892701)
+3. Morrison, K. E., DeBrabander, K. M., Jones, D. R., Faso, D. J., Ackerman, R. A., & Sasson, N. J. (2020). Outcomes of real-world social interaction for autistic adults paired with autistic compared to typically developing partners. *Autism*, 24(5), 1067-1080. <a href="https://doi.org/10.1177/1362361319892701" target="_blank" rel="noopener noreferrer">doi:10.1177/1362361319892701</a>
 
-4. *Autism in Adulthood* (2024). Relationship satisfaction among autistic populations: How partner neurotype influences relationship satisfaction factors for autistic adults. [doi:10.1089/aut.2024.0124](https://doi.org/10.1089/aut.2024.0124)
+4. *Autism in Adulthood* (2024). Relationship satisfaction among autistic populations: How partner neurotype influences relationship satisfaction factors for autistic adults. <a href="https://doi.org/10.1089/aut.2024.0124" target="_blank" rel="noopener noreferrer">doi:10.1089/aut.2024.0124</a>
 
-5. Yew, R. Y., Hooley, M., & Stokes, M. A. (2023). Factors of relationship satisfaction for autistic and non-autistic partners in long-term relationships. *Autism*, 27(6), 1614-1628. [doi:10.1177/13623613231160244](https://doi.org/10.1177/13623613231160244)
+5. Yew, R. Y., Hooley, M., & Stokes, M. A. (2023). Factors of relationship satisfaction for autistic and non-autistic partners in long-term relationships. *Autism*, 27(6), 1614-1628. <a href="https://doi.org/10.1177/13623613231160244" target="_blank" rel="noopener noreferrer">doi:10.1177/13623613231160244</a>
 
-6. Wymbs, B. T., Canu, W. H., Sacchetti, G. M., & Ranson, L. M. (2021). Adult ADHD and romantic relationships: What we know and what we can do to help. *Journal of Marital and Family Therapy*, 47(3), 664-681. [doi:10.1111/jmft.12475](https://doi.org/10.1111/jmft.12475)
+6. Wymbs, B. T., Canu, W. H., Sacchetti, G. M., & Ranson, L. M. (2021). Adult ADHD and romantic relationships: What we know and what we can do to help. *Journal of Marital and Family Therapy*, 47(3), 664-681. <a href="https://doi.org/10.1111/jmft.12475" target="_blank" rel="noopener noreferrer">doi:10.1111/jmft.12475</a>
 
-7. Knies, K., Bodalski, E. A., & Flory, K. (2021). Romantic relationships in adults with ADHD: The effect of partner attachment style on relationship quality. *Journal of Social and Personal Relationships*, 38(1), 42-64. [doi:10.1177/0265407520953898](https://doi.org/10.1177/0265407520953898)
+7. Knies, K., Bodalski, E. A., & Flory, K. (2021). Romantic relationships in adults with ADHD: The effect of partner attachment style on relationship quality. *Journal of Social and Personal Relationships*, 38(1), 42-64. <a href="https://doi.org/10.1177/0265407520953898" target="_blank" rel="noopener noreferrer">doi:10.1177/0265407520953898</a>
 
-8. Margherio, S. M., et al. (2021). Romantic relationships and sexual behavior among adolescents with ADHD. *Journal of Attention Disorders*, 25(10), 1466-1478. [doi:10.1177/1087054720914371](https://doi.org/10.1177/1087054720914371)
+8. Margherio, S. M., et al. (2021). Romantic relationships and sexual behavior among adolescents with ADHD. *Journal of Attention Disorders*, 25(10), 1466-1478. <a href="https://doi.org/10.1177/1087054720914371" target="_blank" rel="noopener noreferrer">doi:10.1177/1087054720914371</a>
 
-9. Canu, W. H., Tabor, L. S., Michael, K. D., Bazzini, D. G., & Elmore, A. L. (2014). Young adult romantic couples' conflict resolution and satisfaction varies with partner's attention-deficit/hyperactivity disorder type. *Journal of Marital and Family Therapy*, 40(4), 509-524. [doi:10.1111/jmft.12018](https://doi.org/10.1111/jmft.12018)
+9. Canu, W. H., Tabor, L. S., Michael, K. D., Bazzini, D. G., & Elmore, A. L. (2014). Young adult romantic couples' conflict resolution and satisfaction varies with partner's attention-deficit/hyperactivity disorder type. *Journal of Marital and Family Therapy*, 40(4), 509-524. <a href="https://doi.org/10.1111/jmft.12018" target="_blank" rel="noopener noreferrer">doi:10.1111/jmft.12018</a>
 
-10. Zeides Taubin, D., & Maeir, A. (2024). "I wish it wasn't all on me": Women's experiences living with a partner with ADHD. *Disability and Rehabilitation*, 46(14), 3017-3025. [doi:10.1080/09638288.2023.2239158](https://doi.org/10.1080/09638288.2023.2239158)
+10. Zeides Taubin, D., & Maeir, A. (2024). "I wish it wasn't all on me": Women's experiences living with a partner with ADHD. *Disability and Rehabilitation*, 46(14), 3017-3025. <a href="https://doi.org/10.1080/09638288.2023.2239158" target="_blank" rel="noopener noreferrer">doi:10.1080/09638288.2023.2239158</a>
 
-11. Zaider, T. I., Heimberg, R. G., & Iida, M. (2010). Anxiety disorders and intimate relationships: A study of daily processes in couples. *Journal of Abnormal Psychology*, 119(1), 163-173. [doi:10.1037/a0018473](https://doi.org/10.1037/a0018473)
+11. Zaider, T. I., Heimberg, R. G., & Iida, M. (2010). Anxiety disorders and intimate relationships: A study of daily processes in couples. *Journal of Abnormal Psychology*, 119(1), 163-173. <a href="https://doi.org/10.1037/a0018473" target="_blank" rel="noopener noreferrer">doi:10.1037/a0018473</a>
 
-12. Parker, M. L., & Mosley, M. A. (2021). Therapy outcomes for neurodiverse couples: Exploring a solution-focused approach. *Journal of Marital and Family Therapy*, 47(4), 962-981. [doi:10.1111/jmft.12526](https://doi.org/10.1111/jmft.12526)
+12. Parker, M. L., & Mosley, M. A. (2021). Therapy outcomes for neurodiverse couples: Exploring a solution-focused approach. *Journal of Marital and Family Therapy*, 47(4), 962-981. <a href="https://doi.org/10.1111/jmft.12526" target="_blank" rel="noopener noreferrer">doi:10.1111/jmft.12526</a>
 
 13. Clinical observations on autism-ADHD pairings in romantic relationships. While peer-reviewed prevalence data is limited, clinicians note complementary dynamics in some neurodivergent-neurodivergent partnerships.

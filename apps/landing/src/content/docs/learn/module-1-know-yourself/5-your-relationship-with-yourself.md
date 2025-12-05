@@ -221,25 +221,25 @@ You didn't choose your early experiences. You can choose what you do with them n
 
 ## References
 
-1. Harris, M. A., & Orth, U. (2020). The link between self-esteem and social relationships: A meta-analysis of longitudinal studies. *Journal of Personality and Social Psychology, 119*(6), 1459-1477. [doi:10.1037/pspp0000265](https://doi.org/10.1037/pspp0000265)
+1. Harris, M. A., & Orth, U. (2020). The link between self-esteem and social relationships: A meta-analysis of longitudinal studies. *Journal of Personality and Social Psychology, 119*(6), 1459-1477. <a href="https://doi.org/10.1037/pspp0000265" target="_blank" rel="noopener noreferrer">doi:10.1037/pspp0000265</a>
 
-2. Orth, U., Robins, R. W., & Widaman, K. F. (2012). Life-span development of self-esteem and its effects on important life outcomes. *Journal of Personality and Social Psychology, 102*(6), 1271-1288. [doi:10.1037/a0025558](https://doi.org/10.1037/a0025558)
+2. Orth, U., Robins, R. W., & Widaman, K. F. (2012). Life-span development of self-esteem and its effects on important life outcomes. *Journal of Personality and Social Psychology, 102*(6), 1271-1288. <a href="https://doi.org/10.1037/a0025558" target="_blank" rel="noopener noreferrer">doi:10.1037/a0025558</a>
 
-3. Erol, R. Y., & Orth, U. (2014). Development of self-esteem and relationship satisfaction in couples: Two longitudinal studies. *Personal Relationships, 21*(2), 223-238. [PMC4107258](https://pmc.ncbi.nlm.nih.gov/articles/PMC4107258/)
+3. Erol, R. Y., & Orth, U. (2014). Development of self-esteem and relationship satisfaction in couples: Two longitudinal studies. *Personal Relationships, 21*(2), 223-238. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4107258/" target="_blank" rel="noopener noreferrer">PMC4107258</a>
 
-4. Leary, M. R. (2005). Sociometer theory and the pursuit of relational value: Getting to the root of self-esteem. *European Review of Social Psychology, 16*(1), 75-111. [doi:10.1080/10463280540000007](https://doi.org/10.1080/10463280540000007)
+4. Leary, M. R. (2005). Sociometer theory and the pursuit of relational value: Getting to the root of self-esteem. *European Review of Social Psychology, 16*(1), 75-111. <a href="https://doi.org/10.1080/10463280540000007" target="_blank" rel="noopener noreferrer">doi:10.1080/10463280540000007</a>
 
 5. Leary, M. R., Tambor, E. S., Terdal, S. K., & Downs, D. L. (1995). Self-esteem as an interpersonal monitor: The sociometer hypothesis. *Journal of Personality and Social Psychology, 68*(3), 518-530.
 
-6. Murray, S. L., Rose, P., Bellavia, G., Holmes, J. G., & Kusche, A. (2002). When rejection stings: How self-esteem constrains relationship-enhancement processes. *Journal of Personality and Social Psychology, 83*(3), 556-573. [doi:10.1037/0022-3514.83.3.556](https://doi.org/10.1037/0022-3514.83.3.556)
+6. Murray, S. L., Rose, P., Bellavia, G., Holmes, J. G., & Kusche, A. (2002). When rejection stings: How self-esteem constrains relationship-enhancement processes. *Journal of Personality and Social Psychology, 83*(3), 556-573. <a href="https://doi.org/10.1037/0022-3514.83.3.556" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.83.3.556</a>
 
 7. Murray, S. L., Holmes, J. G., MacDonald, G., & Ellsworth, P. C. (1998). Through the looking glass darkly? When self-doubts turn into relationship insecurities. *Journal of Personality and Social Psychology, 75*(6), 1459-1480.
 
-8. Gilbert, P., & Procter, S. (2006). Compassionate mind training for people with high shame and self-criticism: Overview and pilot study of a group therapy approach. *Clinical Psychology & Psychotherapy, 13*(6), 353-379. [PDF](https://self-compassion.org/wp-content/uploads/publications/Gilbert.Procter.pdf)
+8. Gilbert, P., & Procter, S. (2006). Compassionate mind training for people with high shame and self-criticism: Overview and pilot study of a group therapy approach. *Clinical Psychology & Psychotherapy, 13*(6), 353-379. <a href="https://self-compassion.org/wp-content/uploads/publications/Gilbert.Procter.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
 
-9. Knee, C. R., Canevello, A., Bush, A. L., & Cook, A. (2008). Relationship-contingent self-esteem and the ups and downs of romantic relationships. *Journal of Personality and Social Psychology, 95*(3), 608-627. [doi:10.1037/0022-3514.95.3.608](https://doi.org/10.1037/0022-3514.95.3.608)
+9. Knee, C. R., Canevello, A., Bush, A. L., & Cook, A. (2008). Relationship-contingent self-esteem and the ups and downs of romantic relationships. *Journal of Personality and Social Psychology, 95*(3), 608-627. <a href="https://doi.org/10.1037/0022-3514.95.3.608" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.95.3.608</a>
 
-10. Neff, K. D., & Beretvas, S. N. (2013). The role of self-compassion in romantic relationships. *Self and Identity, 12*(1), 78-98. [doi:10.1080/15298868.2011.639548](https://doi.org/10.1080/15298868.2011.639548)
+10. Neff, K. D., & Beretvas, S. N. (2013). The role of self-compassion in romantic relationships. *Self and Identity, 12*(1), 78-98. <a href="https://doi.org/10.1080/15298868.2011.639548" target="_blank" rel="noopener noreferrer">doi:10.1080/15298868.2011.639548</a>
 
 11. Yarnell, L. M., & Neff, K. D. (2013). Self-compassion, interpersonal conflict resolutions, and well-being. *Self and Identity, 12*(2), 146-159.
 

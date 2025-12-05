@@ -248,23 +248,23 @@ The research is clear: how you respond to good news matters as much or more than
 
 ## References
 
-1. Gottman, J. M., Coan, J., Carrère, S., & Swanson, C. (1998). Predicting marital happiness and stability from newlywed interactions. *Journal of Marriage and the Family, 60*(1), 5-22. [doi:10.2307/353438](https://doi.org/10.2307/353438)
+1. Gottman, J. M., Coan, J., Carrère, S., & Swanson, C. (1998). Predicting marital happiness and stability from newlywed interactions. *Journal of Marriage and the Family, 60*(1), 5-22. <a href="https://doi.org/10.2307/353438" target="_blank" rel="noopener noreferrer">doi:10.2307/353438</a>
 
-2. Rogers, S. L., Howieson, J., & Neame, C. (2018). I understand you feel that way, but I feel this way: The benefits of I-language and communicating perspective during conflict. *PeerJ, 6*, e4831. [doi:10.7717/peerj.4831](https://doi.org/10.7717/peerj.4831)
+2. Rogers, S. L., Howieson, J., & Neame, C. (2018). I understand you feel that way, but I feel this way: The benefits of I-language and communicating perspective during conflict. *PeerJ, 6*, e4831. <a href="https://doi.org/10.7717/peerj.4831" target="_blank" rel="noopener noreferrer">doi:10.7717/peerj.4831</a>
 
-3. Gable, S. L., Gonzaga, G. C., & Strachman, A. (2006). Will you be there for me when things go right? Supportive responses to positive event disclosures. *Journal of Personality and Social Psychology, 91*(5), 904-917. [doi:10.1037/0022-3514.91.5.904](https://doi.org/10.1037/0022-3514.91.5.904)
+3. Gable, S. L., Gonzaga, G. C., & Strachman, A. (2006). Will you be there for me when things go right? Supportive responses to positive event disclosures. *Journal of Personality and Social Psychology, 91*(5), 904-917. <a href="https://doi.org/10.1037/0022-3514.91.5.904" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.91.5.904</a>
 
-4. Christensen, A., & Heavey, C. L. (1990). Gender and social structure in the demand/withdraw pattern of marital conflict. *Journal of Personality and Social Psychology, 59*(1), 73-81. [doi:10.1037/0022-3514.59.1.73](https://doi.org/10.1037/0022-3514.59.1.73)
+4. Christensen, A., & Heavey, C. L. (1990). Gender and social structure in the demand/withdraw pattern of marital conflict. *Journal of Personality and Social Psychology, 59*(1), 73-81. <a href="https://doi.org/10.1037/0022-3514.59.1.73" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.59.1.73</a>
 
-5. Schrodt, P., Witt, P. L., & Shimkowski, J. R. (2014). A meta-analytical review of the demand/withdraw pattern of interaction and its associations with individual, relational, and communicative outcomes. *Communication Monographs, 81*(1), 28-58. [doi:10.1080/03637751.2013.813632](https://doi.org/10.1080/03637751.2013.813632)
+5. Schrodt, P., Witt, P. L., & Shimkowski, J. R. (2014). A meta-analytical review of the demand/withdraw pattern of interaction and its associations with individual, relational, and communicative outcomes. *Communication Monographs, 81*(1), 28-58. <a href="https://doi.org/10.1080/03637751.2013.813632" target="_blank" rel="noopener noreferrer">doi:10.1080/03637751.2013.813632</a>
 
-6. Heavey, C. L., Christensen, A., & Malamuth, N. M. (1995). The longitudinal impact of demand and withdrawal during marital conflict. *Journal of Consulting and Clinical Psychology, 63*(5), 797-801. [doi:10.1037/0022-006X.63.5.797](https://doi.org/10.1037/0022-006X.63.5.797)
+6. Heavey, C. L., Christensen, A., & Malamuth, N. M. (1995). The longitudinal impact of demand and withdrawal during marital conflict. *Journal of Consulting and Clinical Psychology, 63*(5), 797-801. <a href="https://doi.org/10.1037/0022-006X.63.5.797" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-006X.63.5.797</a>
 
 7. Reis, H. T., & Shaver, P. (1988). Intimacy as an interpersonal process. In S. Duck (Ed.), *Handbook of Personal Relationships* (pp. 367-389). Chichester, UK: Wiley.
 
-8. Laurenceau, J. P., Barrett, L. F., & Rovine, M. J. (2005). The interpersonal process model of intimacy in marriage: A daily-diary and multilevel modeling approach. *Journal of Family Psychology, 19*(2), 314-323. [doi:10.1037/0893-3200.19.2.314](https://doi.org/10.1037/0893-3200.19.2.314)
+8. Laurenceau, J. P., Barrett, L. F., & Rovine, M. J. (2005). The interpersonal process model of intimacy in marriage: A daily-diary and multilevel modeling approach. *Journal of Family Psychology, 19*(2), 314-323. <a href="https://doi.org/10.1037/0893-3200.19.2.314" target="_blank" rel="noopener noreferrer">doi:10.1037/0893-3200.19.2.314</a>
 
-9. Collins, N. L., & Feeney, B. C. (2000). A safe haven: An attachment theory perspective on support seeking and caregiving in intimate relationships. *Journal of Personality and Social Psychology, 78*(6), 1053-1073. [doi:10.1037/0022-3514.78.6.1053](https://doi.org/10.1037/0022-3514.78.6.1053)
+9. Collins, N. L., & Feeney, B. C. (2000). A safe haven: An attachment theory perspective on support seeking and caregiving in intimate relationships. *Journal of Personality and Social Psychology, 78*(6), 1053-1073. <a href="https://doi.org/10.1037/0022-3514.78.6.1053" target="_blank" rel="noopener noreferrer">doi:10.1037/0022-3514.78.6.1053</a>
 
 ---
 

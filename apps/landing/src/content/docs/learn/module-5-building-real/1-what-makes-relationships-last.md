@@ -252,21 +252,21 @@ That's learnable. Start today.
 
 ## References
 
-1. Buehlman, K. T., Gottman, J. M., & Katz, L. F. (1992). How a couple views their past predicts their future: Predicting divorce from an oral history interview. *Journal of Family Psychology, 5*(3-4), 295-318. [Gottman Institute](https://www.gottman.com/blog/the-magic-relationship-ratio-according-science/)
+1. Buehlman, K. T., Gottman, J. M., & Katz, L. F. (1992). How a couple views their past predicts their future: Predicting divorce from an oral history interview. *Journal of Family Psychology, 5*(3-4), 295-318. <a href="https://www.gottman.com/blog/the-magic-relationship-ratio-according-science/" target="_blank" rel="noopener noreferrer">Gottman Institute</a>
 
-2. Gottman, J. M. (1994). *What Predicts Divorce? The Relationship Between Marital Processes and Marital Outcomes*. Lawrence Erlbaum Associates. [Taylor & Francis](https://www.taylorfrancis.com/books/mono/10.4324/9781315806808/)
+2. Gottman, J. M. (1994). *What Predicts Divorce? The Relationship Between Marital Processes and Marital Outcomes*. Lawrence Erlbaum Associates. <a href="https://www.taylorfrancis.com/books/mono/10.4324/9781315806808/" target="_blank" rel="noopener noreferrer">Taylor & Francis</a>
 
-3. Gottman, J. M., Coan, J., Carrère, S., & Swanson, C. (1998). Predicting marital happiness and stability from newlywed interactions. *Journal of Marriage and the Family, 60*(1), 5-22. [doi:10.2307/353438](https://doi.org/10.2307/353438)
+3. Gottman, J. M., Coan, J., Carrère, S., & Swanson, C. (1998). Predicting marital happiness and stability from newlywed interactions. *Journal of Marriage and the Family, 60*(1), 5-22. <a href="https://doi.org/10.2307/353438" target="_blank" rel="noopener noreferrer">doi:10.2307/353438</a>
 
-4. Driver, J. L., & Gottman, J. M. (2004). Daily marital interactions and positive affect during marital conflict among newlywed couples. *Family Process, 43*(3), 301-314. [doi:10.1111/j.1545-5300.2004.00024.x](https://doi.org/10.1111/j.1545-5300.2004.00024.x)
+4. Driver, J. L., & Gottman, J. M. (2004). Daily marital interactions and positive affect during marital conflict among newlywed couples. *Family Process, 43*(3), 301-314. <a href="https://doi.org/10.1111/j.1545-5300.2004.00024.x" target="_blank" rel="noopener noreferrer">doi:10.1111/j.1545-5300.2004.00024.x</a>
 
-5. Rusbult, C. E., Martz, J. M., & Agnew, C. R. (1998). The investment model scale: Measuring commitment level, satisfaction level, quality of alternatives, and investment size. *Personal Relationships, 5*(4), 357-387. [doi:10.1111/j.1475-6811.1998.tb00177.x](https://doi.org/10.1111/j.1475-6811.1998.tb00177.x)
+5. Rusbult, C. E., Martz, J. M., & Agnew, C. R. (1998). The investment model scale: Measuring commitment level, satisfaction level, quality of alternatives, and investment size. *Personal Relationships, 5*(4), 357-387. <a href="https://doi.org/10.1111/j.1475-6811.1998.tb00177.x" target="_blank" rel="noopener noreferrer">doi:10.1111/j.1475-6811.1998.tb00177.x</a>
 
-6. Ogolsky, B. G., Monk, J. K., Rice, T. M., Theisen, J. C., & Maniotes, C. R. (2017). Relationship maintenance: A review of research on romantic relationships. *Journal of Family Theory & Review, 9*(3), 275-306. [doi:10.1111/jftr.12205](https://doi.org/10.1111/jftr.12205)
+6. Ogolsky, B. G., Monk, J. K., Rice, T. M., Theisen, J. C., & Maniotes, C. R. (2017). Relationship maintenance: A review of research on romantic relationships. *Journal of Family Theory & Review, 9*(3), 275-306. <a href="https://doi.org/10.1111/jftr.12205" target="_blank" rel="noopener noreferrer">doi:10.1111/jftr.12205</a>
 
-7. Acevedo, B. P., Aron, A., Fisher, H. E., & Brown, L. L. (2012). Neural correlates of long-term intense romantic love. *Social Cognitive and Affective Neuroscience, 7*(2), 145-159. [doi:10.1093/scan/nsq092](https://doi.org/10.1093/scan/nsq092)
+7. Acevedo, B. P., Aron, A., Fisher, H. E., & Brown, L. L. (2012). Neural correlates of long-term intense romantic love. *Social Cognitive and Affective Neuroscience, 7*(2), 145-159. <a href="https://doi.org/10.1093/scan/nsq092" target="_blank" rel="noopener noreferrer">doi:10.1093/scan/nsq092</a>
 
-8. Bühler, J. L., Krauss, S., & Orth, U. (2021). Development of relationship satisfaction across the life span: A systematic review and meta-analysis. *Psychological Bulletin, 148*(5-6), 401-426. [doi:10.1037/bul0000342](https://doi.org/10.1037/bul0000342)
+8. Bühler, J. L., Krauss, S., & Orth, U. (2021). Development of relationship satisfaction across the life span: A systematic review and meta-analysis. *Psychological Bulletin, 148*(5-6), 401-426. <a href="https://doi.org/10.1037/bul0000342" target="_blank" rel="noopener noreferrer">doi:10.1037/bul0000342</a>
 
 ---
 
