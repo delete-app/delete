@@ -13,7 +13,7 @@ Here's what the research says about anxiety in romantic relationships—and how 
 
 ## How Anxiety Changes Dating Behavior
 
-A 2024 study tracked 108 people over 21 days, comparing those with social anxiety disorder (SAD) to those without.¹ The findings were revealing:
+A 2024 study tracked 108 people over 21 days, comparing those with social anxiety disorder (SAD) to those without.<sup>[[1]](#references)</sup> The findings were revealing:
 
 People with social anxiety **used dating apps just as much** as everyone else. They went on dates at similar rates. Externally, their dating behavior looked the same.
 
@@ -29,18 +29,18 @@ This is the core challenge of anxiety and dating: **the behavior can look normal
 
 One of the most researched patterns in anxious attachment is **excessive reassurance seeking** (ERS).
 
-People with attachment anxiety hold positive views of others but struggle with low self-esteem and fear of abandonment.² So they seek reassurance: "Do you still like me?" "Are we okay?" "You're not mad, right?"
+People with attachment anxiety hold positive views of others but struggle with low self-esteem and fear of abandonment.<sup>[[2]](#references)</sup> So they seek reassurance: "Do you still like me?" "Are we okay?" "You're not mad, right?"
 
 The problem: reassurance seeking is a hyperactivating attachment strategy that often backfires.
 
-Research on couples found that excessive reassurance seeking is linked to:³
+Research on couples found that excessive reassurance seeking is linked to:<sup>[[3]](#references)</sup>
 - Reduced self-worth
 - Interpersonal rejection
 - Deteriorating relationship quality
 
 The cruel irony is that the behavior meant to reduce anxiety often creates the very outcome you fear. Partners can feel exhausted or controlled by constant reassurance needs, which creates distance, which triggers more anxiety, which drives more reassurance seeking.
 
-A study of 72 couples found that **attachment anxiety was positively correlated with excessive reassurance seeking**—but this seeking behavior was related to depression precisely because of its connection to anxiety.⁴
+A study of 72 couples found that **attachment anxiety was positively correlated with excessive reassurance seeking**—but this seeking behavior was related to depression precisely because of its connection to anxiety.<sup>[[4]](#references)</sup>
 
 Breaking the cycle requires understanding that reassurance is a short-term fix that makes the long-term problem worse.
 
@@ -48,7 +48,7 @@ Breaking the cycle requires understanding that reassurance is a short-term fix t
 
 If you feel like rejection hits you harder than it should, research confirms you're not imagining it.
 
-A meta-analysis of 60 studies with nearly 17,000 participants found that rejection-sensitive individuals report:⁵
+A meta-analysis of 60 studies with nearly 17,000 participants found that rejection-sensitive individuals report:<sup>[[5]](#references)</sup>
 
 - Lower relationship satisfaction and closeness
 - Lower perceived partner satisfaction
@@ -56,7 +56,7 @@ A meta-analysis of 60 studies with nearly 17,000 participants found that rejecti
 - Higher jealousy
 - More self-silencing behavior
 
-Rejection sensitivity also predicts relationship trajectory. A longitudinal study found that adolescents with elevated rejection sensitivity at age 16 were:⁶
+Rejection sensitivity also predicts relationship trajectory. A longitudinal study found that adolescents with elevated rejection sensitivity at age 16 were:<sup>[[6]](#references)</sup>
 
 - **Less likely to have a romantic partner at age 22**
 - More anxious and avoidant in relationships
@@ -64,11 +64,11 @@ Rejection sensitivity also predicts relationship trajectory. A longitudinal stud
 
 For women specifically, increasing rejection sensitivity during late adolescence predicted adopting a more submissive pattern in adult relationships.
 
-The key finding from 2024 research: **your own rejection sensitivity—not your partner's—predicts your relationship outcomes**.⁷ This matters because it means addressing your own sensitivity is more impactful than finding a partner who never triggers it.
+The key finding from 2024 research: **your own rejection sensitivity—not your partner's—predicts your relationship outcomes**.<sup>[[7]](#references)</sup> This matters because it means addressing your own sensitivity is more impactful than finding a partner who never triggers it.
 
 ## Anxiety Impacts Both Partners
 
-Anxiety isn't just your problem in a relationship. A study of 33 couples where wives had anxiety disorders found:⁸
+Anxiety isn't just your problem in a relationship. A study of 33 couples where wives had anxiety disorders found:<sup>[[8]](#references)</sup>
 
 - Significant associations between wives' daily anxiety and **both partners'** perceptions of relationship quality
 - Significant concordance between wives' anxiety and husbands' distress
@@ -82,11 +82,11 @@ This doesn't mean your partner should ignore your anxiety. It means both of you 
 
 The long-term data is sobering but important to understand:
 
-Research in the Journal of Social and Clinical Psychology found that **socially anxious adults are less likely to marry and more likely to divorce**.⁹
+Research in the Journal of Social and Clinical Psychology found that **socially anxious adults are less likely to marry and more likely to divorce**.<sup>[[9]](#references)</sup>
 
 Social anxiety robustly predicts lower perceived social support and lower commitment in relationships.
 
-But here's important context: depression—which often co-occurs with anxiety—is the stronger predictor of relationship satisfaction, trust, and support.⁹ Treating the depression can significantly improve relationship outcomes.
+But here's important context: depression—which often co-occurs with anxiety—is the stronger predictor of relationship satisfaction, trust, and support.<sup>[[9]](#references)</sup> Treating the depression can significantly improve relationship outcomes.
 
 The data isn't destiny. It's information about what needs attention.
 
@@ -96,9 +96,9 @@ The good news: anxiety is one of the most treatable mental health conditions. Mu
 
 ### Cognitive Behavioral Therapy (CBT)
 
-CBT is the **gold standard treatment for anxiety disorders**, with effect sizes in the moderate-to-large range.¹⁰
+CBT is the **gold standard treatment for anxiety disorders**, with effect sizes in the moderate-to-large range.<sup>[[10]](#references)</sup>
 
-For social anxiety specifically, cognitive therapy shows superior efficacy compared to exposure alone.¹¹ The core strategies:
+For social anxiety specifically, cognitive therapy shows superior efficacy compared to exposure alone.<sup>[[11]](#references)</sup> The core strategies:
 
 - **Identifying cognitive distortions** — Catastrophizing, mind-reading, fortune-telling
 - **Behavioral experiments** — Testing whether feared outcomes actually happen
@@ -111,9 +111,9 @@ A CBT approach to dating might involve:
 
 ### Exposure Works
 
-Exposure therapy—participating in feared situations without avoidance or safety behaviors—is a central behavioral intervention.¹⁰
+Exposure therapy—participating in feared situations without avoidance or safety behaviors—is a central behavioral intervention.<sup>[[10]](#references)</sup>
 
-Even virtual reality exposure therapy shows equal effectiveness to in-vivo exposure for social anxiety.¹² This means practice helps, even in simulated environments.
+Even virtual reality exposure therapy shows equal effectiveness to in-vivo exposure for social anxiety.<sup>[[12]](#references)</sup> This means practice helps, even in simulated environments.
 
 For dating, exposure might mean:
 - Staying on a date even when anxiety spikes
@@ -124,7 +124,7 @@ For dating, exposure might mean:
 
 When anxiety affects a relationship, individual therapy isn't always enough.
 
-Both cognitive behavioral couple therapy (CBCT) and emotion-focused couple therapy (EFCT) effectively reduce distress.¹³ A psychoeducational session for couples dealing with relationship-based anxiety significantly decreased reassurance-seeking and maladaptive accommodation.¹⁴
+Both cognitive behavioral couple therapy (CBCT) and emotion-focused couple therapy (EFCT) effectively reduce distress.<sup>[[13]](#references)</sup> A psychoeducational session for couples dealing with relationship-based anxiety significantly decreased reassurance-seeking and maladaptive accommodation.<sup>[[14]](#references)</sup>
 
 If you're in a relationship, consider involving your partner in treatment—not to "fix" you, but to build shared strategies.
 
@@ -184,30 +184,30 @@ Dating with anxiety is hard. But the goal isn't to eliminate anxiety—it's to b
 
 ## References
 
-1. Asher, M., Kahn, J. H., & Aderka, I. M. (2024). Dating in social anxiety disorder: A daily diary study. *Journal of Anxiety Disorders*.
+1. Shechter Strulov, T., & Aderka, I. M. (2024). Dating in social anxiety disorder: A daily diary study. *Journal of Anxiety Disorders*, 107, 102927. [doi:10.1016/j.janxdis.2024.102927](https://doi.org/10.1016/j.janxdis.2024.102927)
 
-2. Mikulincer, M., & Shaver, P. R. (2012). Adult attachment orientations and relationship processes. *Journal of Family Theory & Review*, 4(4).
+2. Mikulincer, M., & Shaver, P. R. (2012). Adult attachment orientations and relationship processes. *Journal of Family Theory & Review*, 4(4), 259-274. [doi:10.1111/j.1756-2589.2012.00142.x](https://doi.org/10.1111/j.1756-2589.2012.00142.x)
 
-3. Parrish, C. L., & Radomsky, A. S. (2011). Assessing excessive reassurance seeking in the anxiety disorders. *Journal of Anxiety Disorders*.
+3. Rector, N. A., Kamkar, K., Cassin, S. E., Ayearst, L. E., & Laposa, J. M. (2011). Assessing excessive reassurance seeking in the anxiety disorders. *Journal of Anxiety Disorders*, 25(7), 911-917. [doi:10.1016/j.janxdis.2011.05.003](https://doi.org/10.1016/j.janxdis.2011.05.003)
 
-4. Shaver, P. R., Schachner, D. A., & Mikulincer, M. (2005). Attachment style, excessive reassurance seeking, relationship processes, and depression. *Personality and Social Psychology Bulletin*.
+4. Shaver, P. R., Schachner, D. A., & Mikulincer, M. (2005). Attachment style, excessive reassurance seeking, relationship processes, and depression. *Personality and Social Psychology Bulletin*, 31(3), 343-359. [doi:10.1177/0146167204271709](https://doi.org/10.1177/0146167204271709)
 
-5. Gao, S., Assink, M., Liu, T., Chan, K. L., & Ip, P. (2023). Rejection sensitivity and romantic relationships: A systematic review and meta-analysis. *Personality and Individual Differences*. 60 studies, 147 effect sizes, 16,955 participants.
+5. Mishra, M., & Allen, M. S. (2023). Rejection sensitivity and romantic relationships: A systematic review and meta-analysis. *Personality and Individual Differences*, 208, 112186. 60 studies, 147 effect sizes, 16,955 participants. [doi:10.1016/j.paid.2023.112186](https://doi.org/10.1016/j.paid.2023.112186)
 
-6. Marston, E. G., Hare, A., & Allen, J. P. (2010). To accept or reject? The impact of adolescent rejection sensitivity on early adult romantic relationships. *Journal of Research on Adolescence*.
+6. Hafen, C. A., Spilker, A., Chango, J., Marston, E. S., & Allen, J. P. (2014). To accept or reject? The impact of adolescent rejection sensitivity on early adult romantic relationships. *Journal of Research on Adolescence*, 24(1), 55-64. [doi:10.1111/jora.12051](https://doi.org/10.1111/jora.12051)
 
-7. Bowman et al. (2024). Predicting relationship outcomes from rejection sensitivity in romantic couples: Testing actor and partner effects. *Current Psychology*.
+7. Mishra, M., Reis, S., & Allen, M. S. (2024). Predicting relationship outcomes from rejection sensitivity in romantic couples: Testing actor and partner effects. *Current Psychology*, 43(36), 29095-29107. [doi:10.1007/s12144-024-06431-5](https://doi.org/10.1007/s12144-024-06431-5)
 
-8. Zaider, T. I., Heimberg, R. G., & Iida, M. (2010). Anxiety disorders and intimate relationships: A study of daily processes in couples. *Journal of Abnormal Psychology*.
+8. Zaider, T. I., Heimberg, R. G., & Iida, M. (2010). Anxiety disorders and intimate relationships: A study of daily processes in couples. *Journal of Abnormal Psychology*, 119(1), 163-173. [doi:10.1037/a0018473](https://doi.org/10.1037/a0018473)
 
-9. Lampe, L., et al. (2021). Social anxiety and depression in romantic relationships: A three-sample exploration. *Journal of Social and Clinical Psychology*, 40(3).
+9. Hahn, C. M., Hahn, I. G., & Campbell, L. J. (2021). Social anxiety and depression in romantic relationships: A three-sample exploration. *Journal of Social and Clinical Psychology*, 40(3), 175-200. [doi:10.1521/jscp.2021.40.3.175](https://doi.org/10.1521/jscp.2021.40.3.175)
 
-10. Otte, C. (2011). Cognitive-behavioral treatments for anxiety and stress-related disorders. *Dialogues in Clinical Neuroscience*.
+10. Otte, C. (2011). Cognitive behavioral therapy in anxiety disorders: Current state of the evidence. *Dialogues in Clinical Neuroscience*, 13(4), 413-421. [doi:10.31887/DCNS.2011.13.4/cotte](https://doi.org/10.31887/DCNS.2011.13.4/cotte)
 
-11. BMC Psychiatry (2011). Efficacy of exposure versus cognitive therapy in anxiety disorders: Systematic review and meta-analysis.
+11. Ougrin, D. (2011). Efficacy of exposure versus cognitive therapy in anxiety disorders: Systematic review and meta-analysis. *BMC Psychiatry*, 11, 200. [doi:10.1186/1471-244X-11-200](https://doi.org/10.1186/1471-244X-11-200)
 
-12. Horigome et al. (2020). Virtual reality exposure therapy for social anxiety disorder: A systematic review and meta-analysis. *Psychological Medicine*. 22 studies, n = 703.
+12. Horigome, T., Kurokawa, S., Sawada, K., et al. (2020). Virtual reality exposure therapy for social anxiety disorder: A systematic review and meta-analysis. *Psychological Medicine*, 50(15), 2487-2497. 22 studies, n = 703. [doi:10.1017/S0033291720003785](https://doi.org/10.1017/S0033291720003785)
 
-13. Durães, R. S. S., et al. (2020). Effectiveness of cognitive behavioral couple therapy on reducing depression and anxiety symptoms. *The Family Journal*.
+13. Durães, R. S. S., Khafif, T. C., Lotufo-Neto, F., & Serafim, A. d. P. (2020). Effectiveness of cognitive behavioral couple therapy on reducing depression and anxiety symptoms. *The Family Journal*, 28(4), 344-355. [doi:10.1177/1066480720902410](https://doi.org/10.1177/1066480720902410)
 
-14. Christensen et al. (2015). Worried about us: Evaluating an intervention for relationship-based anxiety. *Family Process*.
+14. Paprocki, C. M., & Baucom, D. H. (2017). Worried about us: Evaluating an intervention for relationship-based anxiety. *Family Process*, 56(1), 45-58. [doi:10.1111/famp.12175](https://doi.org/10.1111/famp.12175)
