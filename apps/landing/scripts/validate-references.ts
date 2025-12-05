@@ -27,7 +27,7 @@ const REFERENCE_NUMBER_PATTERN = /^(\d+)\.\s+/gm;
 
 interface Reference {
   number: number;
-  doi: string;
+  doi: string | null;
   displayText: string;
   line: number;
 }
@@ -81,7 +81,6 @@ function parseReferences(content: string, filePath: string): Reference[] {
 
   // Find the References section
   let inReferencesSection = false;
-  let currentRefNumber = 0;
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
@@ -100,18 +99,20 @@ function parseReferences(content: string, filePath: string): Reference[] {
       // Check for reference number at start of line
       const refMatch = line.match(/^(\d+)\.\s+/);
       if (refMatch) {
-        currentRefNumber = parseInt(refMatch[1], 10);
-      }
+        const refNumber = parseInt(refMatch[1], 10);
 
-      // Find DOI links in the line
-      let doiMatch;
-      const doiRegex =
-        /<a\s+href="(https:\/\/doi\.org\/[^"]+)"[^>]*>([^<]+)<\/a>/g;
-      while ((doiMatch = doiRegex.exec(line)) !== null) {
+        // Find DOI link in the line
+        const doiRegex =
+          /<a\s+href="(https:\/\/doi\.org\/[^"]+)"[^>]*>([^<]+)<\/a>/;
+        const doiMatch = doiRegex.exec(line);
+
+        // Extract a snippet of the reference text for display
+        const refText = line.replace(/^(\d+)\.\s+/, "").substring(0, 60);
+
         references.push({
-          number: currentRefNumber,
-          doi: doiMatch[1],
-          displayText: doiMatch[2],
+          number: refNumber,
+          doi: doiMatch ? doiMatch[1] : null,
+          displayText: doiMatch ? doiMatch[2] : refText + "...",
           line: i + 1,
         });
       }
@@ -236,9 +237,13 @@ function validateFile(filePath: string): ValidationResult {
     }
   }
 
-  // Check DOI format
+  // Check for missing DOI links
   for (const ref of references) {
-    if (!ref.doi.startsWith("https://doi.org/10.")) {
+    if (!ref.doi) {
+      errors.push(
+        `Reference ${ref.number} has no DOI link: "${ref.displayText}"`
+      );
+    } else if (!ref.doi.startsWith("https://doi.org/10.")) {
       warnings.push(
         `Reference ${ref.number}: DOI format may be invalid: ${ref.doi}`
       );
@@ -314,7 +319,7 @@ async function main() {
     // Collect DOIs for link checking
     if (checkLinks) {
       for (const ref of result.references) {
-        if (!allLinkResults.has(ref.doi)) {
+        if (ref.doi && !allLinkResults.has(ref.doi)) {
           allLinkResults.set(ref.doi, { doi: ref.doi, status: "ok" });
         }
       }
