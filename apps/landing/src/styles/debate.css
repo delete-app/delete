@@ -781,19 +781,30 @@
   border-radius: 50%;
 }
 
-.citation-text {
+a.citation-text {
   font-size: 0.875rem;
   color: var(--color-text-secondary);
   line-height: 1.5;
-}
-
-.citation-text a {
-  color: var(--color-accent);
   text-decoration: none;
+  transition: color 0.2s var(--ease-in-out);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.citation-text a:hover {
-  text-decoration: underline;
+a.citation-text:hover {
+  color: var(--color-accent);
+}
+
+a.citation-text::after {
+  content: '↗';
+  font-size: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.2s var(--ease-in-out);
+}
+
+a.citation-text:hover::after {
+  opacity: 1;
 }
 
 /* Hide citations when toggle is off */

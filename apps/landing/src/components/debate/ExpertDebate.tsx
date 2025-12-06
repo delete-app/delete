@@ -2,31 +2,49 @@
 
 import { motion, useScroll, useTransform, useInView, AnimatePresence } from 'framer-motion'
 import { useRef, useState, useEffect } from 'react'
+import { ExternalLink } from '../ExternalLink'
 
-// Research citations for credibility (validated sources)
+// Research citations for credibility (validated sources with links)
 const citations = [
-  { id: 1, text: 'Tinder swipe behavior data as reported by The New York Times (2014).' },
+  {
+    id: 1,
+    text: 'Tinder swipe behavior data as reported by TIME (2014).',
+    url: 'https://time.com/3547890/tinder-men-women-swipe-right/',
+  },
   {
     id: 2,
-    text: 'OkCupid OkTrends Blog (2009). "Your Looks and Your Inbox." Analysis of user rating patterns.',
+    text: 'OkCupid OkTrends Blog (2009). "Your Looks and Your Inbox."',
+    url: 'https://gwern.net/doc/psychology/okcupid/yourlooksandyourinbox.html',
   },
   {
     id: 3,
-    text: 'Berridge, K. C. (2007). "The debate over dopamine\'s role in reward: the case for incentive salience." Psychopharmacology, 191(3), 391-431.',
+    text: 'Berridge, K. C. (2007). "The debate over dopamine\'s role in reward." Psychopharmacology.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/17072591/',
   },
   {
     id: 4,
-    text: 'Forbes Health/OnePoll Survey (2024). "Dating App Burnout Study" - Survey of Gen Z dating habits.',
+    text: 'Forbes Health/OnePoll Survey (2024). "Dating App Burnout Study."',
+    url: 'https://studyfinds.org/dating-app-burnout/',
   },
   {
     id: 5,
-    text: 'Iyengar, S. S. & Lepper, M. R. (2000). "When choice is demotivating." Journal of Personality and Social Psychology, 79(6), 995-1006.',
+    text: 'Iyengar & Lepper (2000). "When choice is demotivating." J. Personality & Social Psychology.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/11138768/',
   },
-  { id: 6, text: 'Badoo Survey (2018). Dating app usage patterns among 18-30 year olds.' },
-  { id: 7, text: 'Statista (2023). "U.S. online dating users by gender."' },
+  {
+    id: 6,
+    text: 'Badoo Survey (2018). Dating app usage patterns among 18-30 year olds.',
+    url: 'https://www.bustle.com/p/millennials-spend-average-of-10-hours-a-week-on-dating-apps-survey-finds-but-heres-what-experts-actually-recommend-8066805',
+  },
+  {
+    id: 7,
+    text: 'Statista (2023). "U.S. online dating users by gender."',
+    url: 'https://www.statista.com/forecasts/1358191/us-online-dating-users-by-gender',
+  },
   {
     id: 8,
-    text: 'Class Action Lawsuit against Match Group, U.S. District Court, N.D. California (Filed Feb. 14, 2024).',
+    text: 'Class Action Lawsuit against Match Group (Feb. 14, 2024).',
+    url: 'https://www.npr.org/2024/02/14/1231513991/tinder-hinge-match-group-lawsuit',
   },
 ]
 
@@ -454,7 +472,9 @@ function CitationsPanel({ isOpen, onClose }: { isOpen: boolean; onClose: () => v
             {citations.map((citation) => (
               <div key={citation.id} className="citation-item">
                 <span className="citation-number">{citation.id}</span>
-                <span className="citation-text">{citation.text}</span>
+                <ExternalLink href={citation.url} className="citation-text">
+                  {citation.text}
+                </ExternalLink>
               </div>
             ))}
           </div>
