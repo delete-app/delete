@@ -1,47 +1,94 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { ProfileCard } from '../components/discovery/ProfileCard'
 import { ActionButtons } from '../components/discovery/ActionButtons'
 import { DailyProgress } from '../components/discovery/DailyProgress'
 import { ViewTimer } from '../components/discovery/ViewTimer'
-import { useDiscovery } from '../hooks/useDiscovery'
+import { useDailyDiscovery } from '../hooks/useDailyDiscovery'
 import { Button } from '../components/ui/button'
 
-const MINIMUM_VIEW_TIME = 20 // seconds
+const MINIMUM_VIEW_TIME = 20 // seconds (cosmetic - server validates actual time)
 
 export default function Dashboard() {
   const {
     currentProfile,
+    activeViewId,
     isComplete,
     isFreePick,
     viewedCount,
     totalProfiles,
     interestedCount,
+    isLoading,
+    error,
+    startView,
     expressInterest,
     pass,
     resetForTesting,
-  } = useDiscovery()
+    isExpressingInterest,
+    isPassing,
+  } = useDailyDiscovery()
 
-  const [isUnlocked, setIsUnlocked] = useState(false)
-  const [secondsRemaining, setSecondsRemaining] = useState(MINIMUM_VIEW_TIME)
+  // Track timer completion per profile using a map to avoid useEffect setState
+  const [completedProfiles, setCompletedProfiles] = useState<Set<string>>(new Set())
+
+  // Derive timer completion from the set
+  const isTimerComplete = currentProfile ? completedProfiles.has(currentProfile.id) : false
+
+  // Start view when profile changes
+  useEffect(() => {
+    if (currentProfile && !activeViewId) {
+      startView()
+    }
+  }, [currentProfile, activeViewId, startView])
 
   const handleTimerComplete = useCallback(() => {
-    setIsUnlocked(true)
-  }, [])
+    if (currentProfile) {
+      setCompletedProfiles((prev) => new Set(prev).add(currentProfile.id))
+    }
+  }, [currentProfile])
 
-  const handleInterest = useCallback(() => {
-    if (!isUnlocked) return
-    expressInterest(isFreePick ? 'free_pick' : 'earned')
-    // Reset for next profile
-    setIsUnlocked(false)
-    setSecondsRemaining(MINIMUM_VIEW_TIME)
-  }, [isUnlocked, expressInterest, isFreePick])
+  const handleInterest = useCallback(async () => {
+    const result = await expressInterest()
+    if (!result.success && result.error) {
+      // Server rejected - likely didn't meet minimum time
+      console.error('Interest failed:', result.error)
+    }
+  }, [expressInterest])
 
-  const handlePass = useCallback(() => {
-    pass()
-    // Reset for next profile
-    setIsUnlocked(false)
-    setSecondsRemaining(MINIMUM_VIEW_TIME)
+  const handlePass = useCallback(async () => {
+    const result = await pass()
+    if (!result.success && result.error) {
+      console.error('Pass failed:', result.error)
+    }
   }, [pass])
+
+  // Loading state
+  if (isLoading) {
+    return (
+      <div className="max-w-md mx-auto px-4 py-8">
+        <div className="text-center py-16">
+          <div className="animate-pulse">
+            <div className="h-8 bg-surface-dim rounded w-48 mx-auto mb-4" />
+            <div className="h-96 bg-surface-dim rounded mb-4" />
+            <div className="h-12 bg-surface-dim rounded w-32 mx-auto" />
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <div className="max-w-md mx-auto px-4 py-8">
+        <div className="text-center py-16">
+          <div className="text-4xl mb-4">⚠️</div>
+          <h2 className="text-xl font-medium mb-2">Something went wrong</h2>
+          <p className="text-text-muted mb-4">{error}</p>
+          <Button onClick={() => window.location.reload()}>Try again</Button>
+        </div>
+      </div>
+    )
+  }
 
   // All profiles viewed for today
   if (isComplete) {
@@ -88,6 +135,11 @@ export default function Dashboard() {
     )
   }
 
+  // Determine if interest button should be unlocked
+  // Free pick: always unlocked after timer (no server validation needed)
+  // Earned: timer is cosmetic, server validates actual time
+  const isUnlocked = isFreePick || isTimerComplete
+
   return (
     <div className="max-w-md mx-auto px-4 py-6">
       {/* Daily progress header */}
@@ -112,10 +164,12 @@ export default function Dashboard() {
       {/* Action buttons */}
       <ActionButtons
         isLocked={!isUnlocked}
-        remainingTime={secondsRemaining}
+        remainingTime={0}
         isFreePick={isFreePick}
         onPass={handlePass}
         onInterest={handleInterest}
+        isPassLoading={isPassing}
+        isInterestLoading={isExpressingInterest}
       />
 
       {/* Free pick explanation */}

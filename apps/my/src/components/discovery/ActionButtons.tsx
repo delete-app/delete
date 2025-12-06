@@ -11,8 +11,10 @@ interface ActionButtonsProps {
   onPass: () => void
   /** Called when user expresses interest */
   onInterest: () => void
-  /** Whether an action is in progress */
-  isLoading?: boolean
+  /** Whether pass action is in progress */
+  isPassLoading?: boolean
+  /** Whether interest action is in progress */
+  isInterestLoading?: boolean
 }
 
 export function ActionButtons({
@@ -21,8 +23,10 @@ export function ActionButtons({
   isFreePick,
   onPass,
   onInterest,
-  isLoading = false,
+  isPassLoading = false,
+  isInterestLoading = false,
 }: ActionButtonsProps) {
+  const isLoading = isPassLoading || isInterestLoading
   return (
     <div className="flex gap-4 justify-center items-center">
       {/* Pass button - always available */}
