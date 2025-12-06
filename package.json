@@ -28,6 +28,7 @@
     "format:check": "prettier --check 'apps/*/src/**/*.{ts,tsx,js,jsx,json,css}'",
     "check:contradictions": "cd apps/landing && npx tsx scripts/check-contradictions.ts",
     "lint:content": "pnpm --filter @delete/landing validate:refs && pnpm check:contradictions",
+    "capture:design": "npx playwright test --project=design-capture",
     "prepare": "husky"
   },
   "lint-staged": {
