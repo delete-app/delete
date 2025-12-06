@@ -16,6 +16,8 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          {/* Dev-only route to test discovery UI without auth */}
+          {import.meta.env.DEV && <Route path="/dev/discovery" element={<Dashboard />} />}
           <Route
             path="/dashboard"
             element={
