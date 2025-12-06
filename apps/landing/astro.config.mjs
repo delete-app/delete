@@ -51,6 +51,14 @@ export default defineConfig({
 					label: 'Module 5: Building Something Real',
 					autogenerate: { directory: 'learn/module-5-building-real' },
 				},
+				{
+					label: 'Module 6: Staying Together',
+					autogenerate: { directory: 'learn/module-6-staying-together' },
+				},
+				{
+					label: 'Module 7: Communication Mastery',
+					autogenerate: { directory: 'learn/module-7-communication' },
+				},
 			],
 			head: [
 				// Favicon
