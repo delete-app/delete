@@ -1,0 +1,8 @@
+package.json
+.turbo
+.venv
+.ruff_cache
+__pycache__
+*.pyc
+.env*
+!.env.example
