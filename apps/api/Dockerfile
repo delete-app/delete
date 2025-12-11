@@ -12,4 +12,5 @@ COPY . .
 
 WORKDIR /app/src
 
-CMD ["python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Use PORT env var from Railway (defaults to 8000)
+CMD python -m uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}
