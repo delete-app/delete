@@ -1,4 +1,5 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic import field_validator
 
 
 class Settings(BaseSettings):
@@ -14,6 +15,14 @@ class Settings(BaseSettings):
 
     # Database
     database_url: str = "postgresql+asyncpg://delete:delete@localhost:5432/delete"
+
+    @field_validator("database_url", mode="after")
+    @classmethod
+    def fix_db_url(cls, v: str) -> str:
+        # Railway uses postgresql://, we need postgresql+asyncpg://
+        if v.startswith("postgresql://"):
+            return v.replace("postgresql://", "postgresql+asyncpg://", 1)
+        return v
 
     # CORS
     cors_origins: str = "http://localhost:3000,http://localhost:5173,http://localhost:5174"
