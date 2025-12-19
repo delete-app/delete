@@ -65,6 +65,9 @@ export default defineConfig({
 			includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'favicon-32x32.png', 'favicon-16x16.png'],
 			registerType: 'autoUpdate',
 			injectRegister: 'auto',
+			experimental: {
+				directoryAndTrailingSlashHandler: true,
+			},
 			manifest: {
 				name: 'Delete Learn',
 				short_name: 'Delete Learn',
@@ -98,7 +101,7 @@ export default defineConfig({
 				navigateFallback: null,
 				runtimeCaching: [
 					{
-						urlPattern: /^http:\/\/localhost.*\/learn\/.*/,
+						urlPattern: /^https?:\/\/(www\.)?trydelete\.app\/learn\/.*/,
 						handler: 'CacheFirst',
 						options: {
 							cacheName: 'learn-pages',
@@ -109,7 +112,7 @@ export default defineConfig({
 						},
 					},
 					{
-						urlPattern: /^https:\/\/trydelete\.app\/learn\/.*/,
+						urlPattern: /^http:\/\/localhost.*\/learn\/.*/,
 						handler: 'CacheFirst',
 						options: {
 							cacheName: 'learn-pages',
