@@ -146,10 +146,10 @@ In a culture that often mistakes intensity for intimacy and speed for significan
 
 ## References
 
-1. Husband, L. (2023). How to Navigate Pacing in a New Dating Relationship. *DrLoriHusband.com*.
-2. Harvard Medical School. Love and the Brain. *Harvard Medical School News*.
-3. Busby, D.M., Carroll, J.S., & Willoughby, B.J. (2010). Compatibility or restraint? The effects of sexual timing on marriage relationships. *Journal of Family Psychology*, 24(6), 766-774.
-4. Wilson, T. et al. (2018). 9 Signs Your Relationship Isn't Moving At A Healthy Pace. *Bustle*.
-5. Degges-White, S. (2024). Dating Without Drama: Modern Trends Support Mental Health. *Psychology Today*.
-6. Sagebrush Psychotherapy. (2025). Taking It Slow Dating: Why Slower Can Help Your Mental Health.
-7. Bridgehaven Counseling Associates. Intensity vs. Intimacy and Pacing in Dating.
+1. Husband, L. (2023). [How to Navigate Pacing in a New Dating Relationship](https://drlorihusband.com/how-to-navigate-pacing-in-a-new-dating-relationship/). *DrLoriHusband.com*.
+2. Harvard Medical School. [Love and the Brain](https://hms.harvard.edu/news-events/publications-archive/brain/love-brain). *Harvard Medical School News*.
+3. Busby, D.M., Carroll, J.S., & Willoughby, B.J. (2010). [Compatibility or restraint? The effects of sexual timing on marriage relationships](https://doi.org/10.1037/a0021690). *Journal of Family Psychology*, 24(6), 766-774.
+4. Wilson, T. et al. (2018). [9 Signs Your Relationship Isn't Moving At A Healthy Pace](https://www.bustle.com/p/9-signs-your-relationship-isnt-moving-at-a-healthy-pace-according-to-experts-9986232). *Bustle*.
+5. Degges-White, S. (2024). [Dating Without Drama: Modern Trends Support Mental Health](https://www.psychologytoday.com/us/blog/lifetime-connections/202401/dating-without-drama-modern-trends-support-mental-health). *Psychology Today*.
+6. Sagebrush Psychotherapy. [Taking It Slow Dating: Why Slower Can Help Your Mental Health](https://www.sagebrushcounseling.com/blog/taking-it-slow-dating-why-slower-can-help-your-mental-health).
+7. Bridgehaven Counseling Associates. [Intensity vs. Intimacy and Pacing in Dating](https://www.bridgehavencounseling.com/blog/intensity-vs-intimacy-and-pacing-in-dating).

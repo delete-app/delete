@@ -140,9 +140,9 @@ That's what healthy long-term love looks like — and it's neurologically distin
 
 ## References
 
-1. Tennov, D. (1979). *Love and Limerence: The Experience of Being in Love*. Stein and Day.
-2. Levine, A. & Heller, R. (2010). *Attached: The New Science of Adult Attachment*. Penguin.
-3. Aakhansha Varghese. (2024). 7 Reasons You Lose Feelings For Someone Fast. *Bonobology*.
-4. Husband, L. (2023). How to Navigate Pacing in a New Dating Relationship. *DrLoriHusband.com*.
-5. Campbell, K. (2018). 4 Reasons People Lose Interest in a Partner. *Psychology Today*.
-6. Acevedo, B.P., Aron, A., Fisher, H.E., & Brown, L.L. (2011). Neural correlates of long-term intense romantic love. *Social Cognitive and Affective Neuroscience*, 7(2), 145-159.
+1. Tennov, D. (1979). [*Love and Limerence: The Experience of Being in Love*](https://www.goodreads.com/book/show/46156.Love_and_Limerence). Stein and Day.
+2. Levine, A. & Heller, R. (2010). [*Attached: The New Science of Adult Attachment*](https://www.attachedthebook.com/). Penguin.
+3. Aakhansha Varghese. (2024). [7 Reasons You Lose Feelings For Someone Fast](https://www.bonobology.com/why-do-i-lose-feelings-so-fast/). *Bonobology*.
+4. Husband, L. (2023). [How to Navigate Pacing in a New Dating Relationship](https://drlorihusband.com/how-to-navigate-pacing-in-a-new-dating-relationship/). *DrLoriHusband.com*.
+5. Campbell, K. (2018). [4 Reasons People Lose Interest in a Partner](https://www.psychologytoday.com/us/blog/the-science-of-relationships/201810/4-reasons-people-lose-interest-in-their-partner). *Psychology Today*.
+6. Acevedo, B.P., Aron, A., Fisher, H.E., & Brown, L.L. (2011). [Neural correlates of long-term intense romantic love](https://doi.org/10.1093/scan/nsq092). *Social Cognitive and Affective Neuroscience*, 7(2), 145-159.

@@ -147,7 +147,7 @@ This is what lies on the other side of Phase 2 — if you do the work.
 
 ## References
 
-1. Gottman, J.M. The 3 Phases of Love. *The Gottman Institute*.
-2. Fisher, H.E., Aron, A., & Brown, L.L. (2005). Romantic love: An fMRI study of a neural mechanism for mate choice. *Journal of Comparative Neurology*, 493(1), 58-62.
-3. Gottman, J.M. & Silver, N. (1999). *The Seven Principles for Making Marriage Work*. Crown.
-4. Acevedo, B.P., Aron, A., Fisher, H.E., & Brown, L.L. (2011). Neural correlates of long-term intense romantic love. *Social Cognitive and Affective Neuroscience*, 7(2), 145-159.
+1. Gottman, J.M. [The 3 Phases of Love](https://www.gottman.com/blog/the-3-phases-of-love/). *The Gottman Institute*.
+2. Fisher, H.E., Aron, A., & Brown, L.L. (2005). [Romantic love: An fMRI study of a neural mechanism for mate choice](https://doi.org/10.1002/cne.20772). *Journal of Comparative Neurology*, 493(1), 58-62.
+3. Gottman, J.M. & Silver, N. (1999). [*The Seven Principles for Making Marriage Work*](https://www.gottman.com/product/the-seven-principles-for-making-marriage-work/). Crown.
+4. Acevedo, B.P., Aron, A., Fisher, H.E., & Brown, L.L. (2011). [Neural correlates of long-term intense romantic love](https://doi.org/10.1093/scan/nsq092). *Social Cognitive and Affective Neuroscience*, 7(2), 145-159.
