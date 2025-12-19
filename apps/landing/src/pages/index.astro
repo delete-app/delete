@@ -73,6 +73,7 @@
         .sl{display:flex;gap:1rem}
         .sl a{color:#888;text-decoration:none;transition:color .15s}
         .sl a:hover{color:#e67e22}
+        @media(max-width:599px){.hero{min-height:auto;padding:4rem 0 2rem}.pts{padding:1.5rem 0 2rem}}
         @media(min-width:600px){form{flex-direction:row;flex-wrap:wrap}input{flex:2}select{flex:1}button{width:auto}}
     </style>
 </head>
@@ -94,11 +95,13 @@
                 <p class="note">Launching 2026</p>
             </div>
         </section>
-        <section class="pts">
+        <section class="trust">
             <div class="c">
-                <p>We match on how you actually live, not just how you look.</p>
-                <p>Built for relationships that outlast the honeymoon phase.</p>
-                <p>No hidden algorithms. No engagement tricks. Just honesty.</p>
+                <div class="trust-box">
+                    <p class="trust-headline">Most dating apps don't want you to understand how attraction <em>actually</em> works.</p>
+                    <p class="trust-sub">We built a free research library on the science of relationships — attachment styles, why interest fades, what predicts long-term success. No signup required.</p>
+                    <a href="/learn" class="trust-link">Explore the research <span>→</span></a>
+                </div>
             </div>
         </section>
         <section class="why">
@@ -109,13 +112,11 @@
                 </a>
             </div>
         </section>
-        <section class="trust">
+        <section class="pts">
             <div class="c">
-                <div class="trust-box">
-                    <p class="trust-headline">Most dating apps don't want you to understand how attraction <em>actually</em> works.</p>
-                    <p class="trust-sub">We built a free research library on the science of relationships — attachment styles, why interest fades, what predicts long-term success. No signup required.</p>
-                    <a href="/learn" class="trust-link">Explore the research <span>→</span></a>
-                </div>
+                <p>We match on how you actually live, not just how you look.</p>
+                <p>Built for relationships that outlast the honeymoon phase.</p>
+                <p>No hidden algorithms. No engagement tricks. Just honesty.</p>
             </div>
         </section>
     </main>
